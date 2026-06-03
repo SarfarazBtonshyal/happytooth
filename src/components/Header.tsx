@@ -27,9 +27,16 @@ export default function Header() {
     { name: "About Us", path: "/about" },
     { name: "Services", path: "/services" },
     { name: "Facilities", path: "/facilities" },
+    {
+      name: "Clinics",
+      path: "#",
+      dropdown: [
+        { name: "Kallambalam Clinic", path: "/clinics/kallambalam" },
+        { name: "Murukkumpuzha Studio", path: "/clinics/murukkumpuzha" },
+      ],
+    },
     { name: "International Patients", path: "/international" },
     { name: "FAQ", path: "/faq" },
-    { name: "Blog", path: "/blog" },
     { name: "Contact Us", path: "/contact" },
   ];
 
@@ -61,8 +68,31 @@ export default function Header() {
             </div>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex space-x-8 items-center">
+            <nav className="hidden lg:flex space-x-6 items-center">
               {navLinks.map((link) => {
+                if (link.dropdown) {
+                  return (
+                    <div key={link.name} className="relative group py-2">
+                      <button className="text-sm font-semibold text-navy-blue hover:text-primary-teal transition-colors duration-300 flex items-center gap-1">
+                        <span>{link.name}</span>
+                        <svg className="w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </button>
+                      <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-100 rounded-2xl shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        {link.dropdown.map((sub) => (
+                          <Link
+                            key={sub.name}
+                            href={sub.path}
+                            className="block px-4 py-2.5 text-xs font-bold text-navy-blue hover:bg-bg-light-blue hover:text-primary-teal transition-colors"
+                          >
+                            {sub.name}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  );
+                }
                 const isActive =
                   pathname === link.path ||
                   (link.path !== "/" && pathname.startsWith(link.path));
@@ -199,8 +229,27 @@ export default function Header() {
             </button>
           </div>
 
-          <nav className="flex-grow flex flex-col space-y-2 py-8">
+          <nav className="flex-grow flex flex-col space-y-2 py-8 overflow-y-auto">
             {navLinks.map((link) => {
+              if (link.dropdown) {
+                return (
+                  <div key={link.name} className="space-y-1">
+                    <span className="block text-xs font-extrabold text-soft-gray px-4 uppercase tracking-wider mt-2">
+                      {link.name}
+                    </span>
+                    {link.dropdown.map((sub) => (
+                      <Link
+                        key={sub.name}
+                        href={sub.path}
+                        onClick={() => setIsOpen(false)}
+                        className="block text-base font-semibold py-3 px-6 rounded-xl text-navy-blue hover:bg-bg-light-blue hover:text-primary-teal transition-all duration-200"
+                      >
+                        {sub.name}
+                      </Link>
+                    ))}
+                  </div>
+                );
+              }
               const isActive =
                 pathname === link.path ||
                 (link.path !== "/" && pathname.startsWith(link.path));
