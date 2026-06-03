@@ -364,14 +364,19 @@ export default function Facilities() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t border-white/10">
               <div className="space-y-4 text-sm text-gray-200">
                 <div className="flex items-start gap-3">
-                  <span className="text-primary-teal font-bold shrink-0">📍</span>
+                  <svg className="w-5 h-5 text-primary-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
                   <div>
                     <span className="block font-bold text-white">Address:</span>
                     <span className="block text-xs text-gray-300 mt-1">Ground Floor, Mangalasseri Tower, Murukkumpuzha, Thiruvananthapuram – 695302</span>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-primary-teal font-bold shrink-0">📞</span>
+                  <svg className="w-5 h-5 text-primary-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
                   <div>
                     <span className="block font-bold text-white">Phone:</span>
                     <a href="tel:+917356100602" className="block text-xs text-gray-300 hover:text-primary-teal transition mt-1">+91 73561 00602</a>
@@ -381,14 +386,20 @@ export default function Facilities() {
 
               <div className="space-y-4 text-sm text-gray-200">
                 <div className="flex items-start gap-3">
-                  <span className="text-primary-teal font-bold shrink-0">⏰</span>
+                  <svg className="w-5 h-5 text-primary-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
                   <div>
                     <span className="block font-bold text-white">Hours:</span>
                     <span className="block text-xs text-gray-300 mt-1">All 7 days including Sunday  ·  9:30 AM – 6:30 PM</span>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-primary-teal font-bold shrink-0">🚗</span>
+                  <svg className="w-5 h-5 text-primary-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 16h-1c0-1.1-.9-2-2-2s-2 .9-2 2H10c0-1.1-.9-2-2-2s-2 .9-2 2H5c-1.1 0-2-.9-2-2V9c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v5c0 1.1-.9 2-2 2zM12 3v4" />
+                    <circle cx="8" cy="16" r="1" />
+                    <circle cx="16" cy="16" r="1" />
+                  </svg>
                   <div>
                     <span className="block font-bold text-white">Parking:</span>
                     <span className="block text-xs text-gray-300 mt-1">Ample space available — fits 6+ cars comfortably</span>

@@ -34,8 +34,8 @@ export default function FAQ() {
             <li>
               <strong>Call or WhatsApp:</strong> Connect with the clinic of your choice.
               <ul className="list-none pl-4 mt-1 text-xs space-y-1">
-                <li>📞 Kallambalam (Dental Care & Root Canal Centre): <a href="tel:+918714470808" className="text-primary-teal hover:underline font-bold">+91 87144 70808</a></li>
-                <li>📞 Murukkumpuzha (Smile Studio): <a href="tel:+917356100602" className="text-primary-teal hover:underline font-bold">+91 73561 00602</a></li>
+                <li>Kallambalam (Dental Care & Root Canal Centre): <a href="tel:+918714470808" className="text-primary-teal hover:underline font-bold">+91 87144 70808</a></li>
+                <li>Murukkumpuzha (Smile Studio): <a href="tel:+917356100602" className="text-primary-teal hover:underline font-bold">+91 73561 00602</a></li>
               </ul>
             </li>
             <li><strong>Online Form:</strong> Fill out the appointment form on our Contact page, and we will call you back to confirm a slot.</li>
@@ -172,14 +172,14 @@ export default function FAQ() {
           <div className="bg-bg-light-blue/40 border border-gray-100 p-4 rounded-xl">
             <span className="block text-xs font-black text-primary-teal tracking-wide uppercase mb-1">Established Clinic</span>
             <strong className="block text-navy-blue text-sm">Kallambalam</strong>
-            <p className="text-xs text-soft-gray mt-1">Alinmoodu, Kallambalam–Varkala Road, Kallambalam. Serving families for over five years.</p>
-            <a href="tel:+918714470808" className="block text-xs font-bold text-navy-blue mt-2 hover:underline">📞 +91 87144 70808</a>
+            <p className="text-xs text-soft-gray mt-1">Mavinmoodu, Kallambalam–Varkala Road, Kallambalam. Serving families for over five years.</p>
+            <a href="tel:+918714470808" className="block text-xs font-bold text-navy-blue mt-2 hover:underline">Phone: +91 87144 70808</a>
           </div>
           <div className="bg-bg-light-blue/40 border border-gray-100 p-4 rounded-xl">
             <span className="block text-xs font-black text-primary-teal tracking-wide uppercase mb-1">Specialist Studio</span>
             <strong className="block text-navy-blue text-sm">Murukkumpuzha</strong>
             <p className="text-xs text-soft-gray mt-1">Ground Floor, Mangalasseri Tower, Murukkumpuzha, Thiruvananthapuram - 695302. Serve Kazhakoottam, Attingal, Pothencode & nearby.</p>
-            <a href="tel:+917356100602" className="block text-xs font-bold text-navy-blue mt-2 hover:underline">📞 +91 73561 00602</a>
+            <a href="tel:+917356100602" className="block text-xs font-bold text-navy-blue mt-2 hover:underline">Phone: +91 73561 00602</a>
           </div>
         </div>
       ),
@@ -288,7 +288,11 @@ export default function FAQ() {
           {/* Search bar Widget */}
           <div className="max-w-2xl mx-auto mb-12">
             <div className="relative shadow-md rounded-2xl border border-gray-100 overflow-hidden bg-white flex items-center p-1.5 focus-within:ring-2 focus-within:ring-primary-teal focus-within:ring-offset-2 transition-all duration-300">
-              <span className="pl-4 text-soft-gray">🔍</span>
+              <span className="pl-4 text-soft-gray">
+                <svg className="w-4 h-4 text-soft-gray" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </span>
               <input
                 type="text"
                 placeholder="Search questions or keywords..."
@@ -381,7 +385,6 @@ export default function FAQ() {
                 </div>
               ) : (
                 <div className="text-center py-12 bg-bg-light-blue/15 border border-dashed border-gray-200 rounded-3xl">
-                  <span className="block text-3xl">🔍</span>
                   <span className="block text-sm font-bold text-navy-blue mt-2">No matching questions found</span>
                   <span className="block text-xs text-soft-gray mt-1">Try selecting another category or typing different terms.</span>
                 </div>
