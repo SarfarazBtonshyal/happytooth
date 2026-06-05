@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     default: "Happy Tooth Dental Care & Root Canal Centre",
     template: "%s – happytoothdental.in",
   },
-  description: "Welcome to Happy Tooth Dental Care & Root Canal Centre, a trusted dental clinic in Kallambalam, Varkala, where modern dentistry meets genuinely gentle care.",
+  description: "Welcome to Happy Tooth, featuring specialist dental clinics in Murukkumpuzha and Kallambalam, Thiruvananthapuram. Modern, patient-friendly treatments led by specialist Endodontist Dr. Thushara Sudhakaran.",
   icons: {
     icon: "/favicon.ico",
   },

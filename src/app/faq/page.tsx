@@ -34,8 +34,8 @@ export default function FAQ() {
             <li>
               <strong>Call or WhatsApp:</strong> Connect with the clinic of your choice.
               <ul className="list-none pl-4 mt-1 text-xs space-y-1">
-                <li>Kallambalam (Dental Care & Root Canal Centre): <a href="tel:+918714470808" className="text-primary-teal hover:underline font-bold">+91 87144 70808</a></li>
                 <li>Murukkumpuzha (Smile Studio): <a href="tel:+917356100602" className="text-primary-teal hover:underline font-bold">+91 73561 00602</a></li>
+                <li>Kallambalam (Dental Care & Root Canal Centre): <a href="tel:+918714470808" className="text-primary-teal hover:underline font-bold">+91 87144 70808</a></li>
               </ul>
             </li>
             <li><strong>Online Form:</strong> Fill out the appointment form on our Contact page, and we will call you back to confirm a slot.</li>
@@ -170,16 +170,16 @@ export default function FAQ() {
       answer: (
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2">
           <div className="bg-bg-light-blue/40 border border-gray-100 p-4 rounded-xl">
-            <span className="block text-xs font-black text-primary-teal tracking-wide uppercase mb-1">Established Clinic</span>
-            <strong className="block text-navy-blue text-sm">Kallambalam</strong>
-            <p className="text-xs text-soft-gray mt-1">Mavinmoodu, Kallambalam–Varkala Road, Kallambalam. Serving families for over five years.</p>
-            <a href="tel:+918714470808" className="block text-xs font-bold text-navy-blue mt-2 hover:underline">Phone: +91 87144 70808</a>
-          </div>
-          <div className="bg-bg-light-blue/40 border border-gray-100 p-4 rounded-xl">
             <span className="block text-xs font-black text-primary-teal tracking-wide uppercase mb-1">Specialist Studio</span>
             <strong className="block text-navy-blue text-sm">Murukkumpuzha</strong>
             <p className="text-xs text-soft-gray mt-1">Ground Floor, Mangalasseri Tower, Murukkumpuzha, Thiruvananthapuram - 695302. Serve Kazhakoottam, Attingal, Pothencode & nearby.</p>
             <a href="tel:+917356100602" className="block text-xs font-bold text-navy-blue mt-2 hover:underline">Phone: +91 73561 00602</a>
+          </div>
+          <div className="bg-bg-light-blue/40 border border-gray-100 p-4 rounded-xl">
+            <span className="block text-xs font-black text-primary-teal tracking-wide uppercase mb-1">Established Clinic</span>
+            <strong className="block text-navy-blue text-sm">Kallambalam</strong>
+            <p className="text-xs text-soft-gray mt-1">Mavinmoodu, Kallambalam–Varkala Road, Kallambalam. Serving families for over five years.</p>
+            <a href="tel:+918714470808" className="block text-xs font-bold text-navy-blue mt-2 hover:underline">Phone: +91 87144 70808</a>
           </div>
         </div>
       ),
@@ -190,16 +190,16 @@ export default function FAQ() {
       answer: (
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2 text-xs">
           <div className="border border-gray-100 p-4 rounded-xl bg-white shadow-xs">
-            <strong className="block text-navy-blue mb-1">Kallambalam Clinic</strong>
-            <span className="block text-soft-gray">Monday – Saturday</span>
-            <span className="block font-bold text-primary-teal">9:30 AM – 6:30 PM</span>
-            <span className="block text-red-500 font-medium mt-1">Closed on Sunday</span>
-          </div>
-          <div className="border border-gray-100 p-4 rounded-xl bg-white shadow-xs">
             <strong className="block text-navy-blue mb-1">Murukkumpuzha Smile Studio</strong>
             <span className="block text-soft-gray">All 7 days</span>
             <span className="block font-bold text-primary-teal">9:30 AM – 6:30 PM</span>
             <span className="block text-green-600 font-medium mt-1">Open Daily (Inc. Sundays)</span>
+          </div>
+          <div className="border border-gray-100 p-4 rounded-xl bg-white shadow-xs">
+            <strong className="block text-navy-blue mb-1">Kallambalam Clinic</strong>
+            <span className="block text-soft-gray">Monday – Saturday</span>
+            <span className="block font-bold text-primary-teal">9:30 AM – 6:30 PM</span>
+            <span className="block text-red-500 font-medium mt-1">Closed on Sunday</span>
           </div>
         </div>
       ),
@@ -218,7 +218,7 @@ export default function FAQ() {
       question: "What if I have a dental emergency?",
       answer: (
         <p>
-          If you are in severe pain, have a knocked-out or broken tooth, swelling, or bleeding that will not stop, call us right away. We make every effort to see urgent cases the same day. Calling first lets us prepare so you are seen as quickly as possible. Contact numbers are: Kallambalam <a href="tel:+918714470808" className="text-primary-teal hover:underline font-bold">+91 87144 70808</a> or Murukkumpuzha <a href="tel:+917356100602" className="text-primary-teal hover:underline font-bold">+91 73561 00602</a>.
+          If you are in severe pain, have a knocked-out or broken tooth, swelling, or bleeding that will not stop, call us right away. We make every effort to see urgent cases the same day. Calling first lets us prepare so you are seen as quickly as possible. Contact numbers are: Murukkumpuzha <a href="tel:+917356100602" className="text-primary-teal hover:underline font-bold">+91 73561 00602</a> or Kallambalam <a href="tel:+918714470808" className="text-primary-teal hover:underline font-bold">+91 87144 70808</a>.
         </p>
       ),
     },

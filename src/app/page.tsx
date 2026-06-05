@@ -19,7 +19,7 @@ export default function Home() {
   ];
 
   const highlights = [
-    "Murukkumpuzha, Thiruvananthapuram",
+    "Murukkumpuzha & Kallambalam",
     "Root Canal Specialist on site",
     "Digital X-rays & diagnostics",
     "Children welcome",
@@ -94,7 +94,7 @@ export default function Home() {
             {/* Left Column: Headings & Selector */}
             <div className="lg:col-span-6 space-y-6 text-center lg:text-left">
               <span className="inline-block text-primary-teal font-extrabold text-xs tracking-widest uppercase bg-primary-teal/15 py-2 px-5 rounded-full">
-                ✨ Specialist Dental Clinic · Thiruvananthapuram
+                Specialist Dental Clinic · Thiruvananthapuram
               </span>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-navy-blue leading-tight">
                 Your Teeth <br />
@@ -102,7 +102,7 @@ export default function Home() {
                 <span className="bg-gradient-to-r from-primary-teal to-accent-teal bg-clip-text text-transparent">Than Just Fine.</span>
               </h1>
               <p className="text-sm sm:text-base md:text-lg text-soft-gray leading-relaxed max-w-xl mx-auto lg:mx-0">
-                HappyTooth Smile Studio is a specialist dental clinic in Murukkumpuzha — built for people who want proper care, honest answers, and a dentist who actually explains what is going on. Led by an MDS Endodontist. Equipped for everything from a routine clean to a full smile transformation.
+                HappyTooth has been saving teeth in Thiruvananthapuram for over five years. Our Kallambalam Root Canal Centre built that reputation — honest answers, specialist-led treatment, and a dentist who actually explains what is going on. Now we are bringing that same standard to a larger, state-of-the-art specialist facility: the new Smile Studio in Murukkumpuzha, equipped for everything from a routine clean to a full smile transformation.
               </p>
 
               {/* Clean trust checkmarks row */}
@@ -200,7 +200,12 @@ export default function Home() {
                 {/* Floating trust badge */}
                 <div className="absolute bottom-28 left-0 bg-white/95 backdrop-blur-md rounded-2xl py-3.5 px-5 shadow-xl border border-gray-100 flex items-center gap-3 z-30 animate-bounce duration-1000">
                   <div className="w-10 h-10 rounded-full bg-primary-teal/15 flex items-center justify-center text-primary-teal">
-                    <span className="text-xs font-black">⭐ 4.9</span>
+                    <span className="flex items-center gap-0.5 text-xs font-black">
+                      <svg className="w-3.5 h-3.5 text-amber-500 fill-current" viewBox="0 0 24 24">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                      </svg>
+                      <span>4.9</span>
+                    </span>
                   </div>
                   <div>
                     <span className="block text-xs font-extrabold text-navy-blue leading-none">Google Rating</span>
@@ -245,13 +250,13 @@ export default function Home() {
 
               <div className="space-y-4 text-soft-gray leading-relaxed text-sm md:text-base">
                 <p className="font-bold text-navy-blue">
-                  We opened in Murukkumpuzha because this neighbourhood deserves a proper specialist clinic.
+                  We operate clinics in Murukkumpuzha and Kallambalam because both neighbourhoods deserve proper specialist care.
                 </p>
                 <p>
-                  Most people in Kazhakoottam, Attingal, Pothencode, and the surrounding area have been making a long, tiring trip to the city every single time they need anything beyond a basic filling. That should not be the case.
+                  Most people in Kazhakoottam, Attingal, Pothencode, Kallambalam, and the surrounding areas have been making a long, tiring trip to the city every single time they need anything beyond a basic filling. That should not be the case.
                 </p>
                 <p className="border-l-4 border-primary-teal pl-4 py-1.5 bg-bg-light-blue/40 rounded-r-xl font-medium text-navy-blue">
-                  HappyTooth Smile Studio brings specialist-level dental care — root canal, smile design, implants, and orthodontics — directly to your own backyard.
+                  HappyTooth brings specialist-level dental care — root canal, smile design, implants, and orthodontics — directly to your own backyard.
                 </p>
               </div>
 
@@ -281,15 +286,15 @@ export default function Home() {
               </span>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-blue leading-tight">
                 Five years of fixing teeth. <br />
-                <span className="text-primary-teal bg-gradient-to-r from-primary-teal to-accent-teal bg-clip-text text-transparent">One new clinic built right.</span>
+                <span className="text-primary-teal bg-gradient-to-r from-primary-teal to-accent-teal bg-clip-text text-transparent">Two locations, one standard.</span>
               </h2>
 
               <div className="space-y-4 text-soft-gray leading-relaxed text-sm md:text-base">
                 <p>
-                  HappyTooth Smile Studio did not appear out of nowhere. It is the natural next step for a practice that has been quietly serving patients in Kallambalam for the last five years — where Dr. Thushara Sudhakaran has spent over half a decade saving teeth that other dentists have written off.
+                  HappyTooth did not appear out of nowhere. Starting with our established Kallambalam clinic, we have expanded to a second specialist location in Murukkumpuzha to serve more patients across Thiruvananthapuram.
                 </p>
                 <p>
-                  The Smile Studio is what happens when you take that same clinical standard, add space, add technology, and build a facility that can handle everything in one place — so patients do not have to run between clinics, get conflicting advice, or wait months for a specialist referral that lands them right back where they started.
+                  Our clinics are what happens when you take that same clinical standard, add space, add technology, and build facilities that can handle everything in one place — so patients do not have to run between clinics, get conflicting advice, or wait months for a specialist referral.
                 </p>
                 <p className="text-xs md:text-sm font-semibold italic text-navy-blue">
                   “Saving Teeth. Designing Smiles.” That is our tagline, and it is literal.

@@ -27,7 +27,7 @@ export default function Footer() {
   return (
     <footer className="bg-navy-blue text-white pt-16 pb-8 font-poppins">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           {/* Brand/About Section */}
           <div className="space-y-6">
             <Link href="/" className="inline-block">
@@ -42,6 +42,12 @@ export default function Footer() {
             <p className="text-gray-300 text-sm leading-relaxed">
               At Happy Tooth, we focus on delivering reliable, patient-friendly treatments using modern techniques, while making sure every visit feels calm, clear, and reassuring.
             </p>
+            <div className="text-xs text-gray-300">
+              <strong>Email:</strong>{" "}
+              <a href="mailto:smile@happytoothdental.in" className="hover:text-primary-teal transition-colors">
+                smile@happytoothdental.in
+              </a>
+            </div>
             {/* Social Icons */}
             <div className="flex space-x-4">
               <a
@@ -109,101 +115,68 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact Info Section */}
+          {/* Murukkumpuzha Clinic Contact */}
           <div>
-            <h4 className="text-lg font-semibold mb-6 relative pb-2 after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 after:bg-primary-teal">
-              Contact Info
+            <h4 className="text-lg font-semibold mb-6 relative pb-2 after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 after:bg-primary-teal text-white uppercase tracking-wider">
+              Murukkumpuzha Studio
             </h4>
-            <ul className="space-y-4 text-sm text-gray-300">
-              <li className="flex items-start gap-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 text-primary-teal shrink-0 mt-0.5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
+            <ul className="space-y-4 text-xs text-gray-300">
+              <li className="flex items-start gap-2.5">
+                <svg className="h-4 w-4 text-primary-teal shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                <span>Murukkumpuzha | Kallambalam</span>
+                <span>Ground Floor, Mangalasseri Tower, Murukkumpuzha, Thiruvananthapuram – 695302</span>
               </li>
-              <li className="flex items-start gap-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 text-primary-teal shrink-0 mt-0.5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                  />
+              <li className="flex items-start gap-2.5">
+                <svg className="h-4 w-4 text-primary-teal shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                <div className="flex flex-col text-xs md:text-sm">
-                  <a href="tel:+918714470808" className="hover:text-primary-teal transition-colors">
-                    Kallambalam: +91 87144 70808
-                  </a>
-                  <a href="tel:+917356100602" className="hover:text-primary-teal transition-colors mt-1">
-                    Murukkumpuzha: +91 73561 00602
-                  </a>
-                </div>
-              </li>
-              <li className="flex items-start gap-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 text-primary-teal shrink-0 mt-0.5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                  />
-                </svg>
-                <a href="mailto:smile@happytoothdental.in" className="hover:text-primary-teal transition-colors">
-                  smile@happytoothdental.in
+                <a href="tel:+917356100602" className="hover:text-primary-teal font-bold transition-colors">
+                  +91 73561 00602
                 </a>
               </li>
-              <li className="flex items-start gap-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 text-primary-teal shrink-0 mt-0.5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
+              <li className="flex items-start gap-2.5">
+                <svg className="h-4 w-4 text-primary-teal shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                <div className="text-xs">
-                  <span className="block font-semibold text-white">Hours:</span>
-                  <span className="block text-gray-300 mt-1">
-                    Kallambalam: Mon–Sat, 9:00 AM – 6:30 PM (Sun closed)
-                  </span>
-                  <span className="block text-gray-300 mt-1">
-                    Murukkumpuzha: All 7 days, 9:30 AM – 6:30 PM
-                  </span>
+                <div>
+                  <span className="block text-gray-300">All 7 days</span>
+                  <span className="block font-bold text-white">9:30 AM – 6:30 PM</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          {/* Kallambalam Clinic Contact */}
+          <div>
+            <h4 className="text-lg font-semibold mb-6 relative pb-2 after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 after:bg-primary-teal text-white uppercase tracking-wider">
+              Kallambalam Clinic
+            </h4>
+            <ul className="space-y-4 text-xs text-gray-300">
+              <li className="flex items-start gap-2.5">
+                <svg className="h-4 w-4 text-primary-teal shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <span>Mavinmoodu, Kallambalam–Varkala Road, Kallambalam, Thiruvananthapuram – 695605</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <svg className="h-4 w-4 text-primary-teal shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                <a href="tel:+918714470808" className="hover:text-primary-teal font-bold transition-colors">
+                  +91 87144 70808
+                </a>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <svg className="h-4 w-4 text-primary-teal shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <div>
+                  <span className="block text-gray-300">Monday – Saturday</span>
+                  <span className="block font-bold text-white">9:00 AM – 6:30 PM</span>
+                  <span className="block text-red-400 text-[10px]">Closed on Sunday</span>
                 </div>
               </li>
             </ul>

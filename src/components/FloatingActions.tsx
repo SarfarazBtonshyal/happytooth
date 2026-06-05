@@ -9,11 +9,11 @@ export default function FloatingActions() {
         href="https://wa.me/917356100602"
         target="_blank"
         rel="noopener noreferrer"
-        className="flex-1 bg-[#25D366] hover:bg-[#20ba59] text-white font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 text-sm shadow-sm transition active:scale-95 duration-200"
+        className="bg-[#25D366] hover:bg-[#20ba59] text-white font-bold p-3 rounded-xl flex items-center justify-center gap-1.5 text-xs shadow-sm transition active:scale-95 duration-200"
       >
         {/* WhatsApp Icon */}
         <svg
-          className="w-5 h-5 fill-current"
+          className="w-4 h-4 fill-current"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -23,22 +23,15 @@ export default function FloatingActions() {
       </a>
       <a
         href="tel:+917356100602"
-        className="flex-1 bg-navy-blue hover:bg-navy-blue/90 text-white font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 text-sm shadow-sm transition active:scale-95 duration-200"
+        className="flex-1 bg-navy-blue hover:bg-navy-blue/90 text-white font-bold p-3 rounded-xl flex items-center justify-center gap-1.5 text-xs shadow-sm transition active:scale-95 duration-200"
       >
-        {/* Phone Icon */}
-        <svg
-          className="w-5 h-5 fill-none stroke-current"
-          strokeWidth="2"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-          />
-        </svg>
         <span>Call Murukkumpuzha</span>
+      </a>
+      <a
+        href="tel:+918714470808"
+        className="flex-1 bg-primary-teal hover:bg-primary-teal/90 text-white font-bold p-3 rounded-xl flex items-center justify-center gap-1.5 text-xs shadow-sm transition active:scale-95 duration-200"
+      >
+        <span>Call Kallambalam</span>
       </a>
     </div>
   );

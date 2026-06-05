@@ -5,7 +5,7 @@ import BreadcrumbHero from "@/components/BreadcrumbHero";
 
 export const metadata = {
   title: "Advanced Facilities & Sterilization | Happy Tooth Dental Care",
-  description: "Learn about the advanced diagnostic tools, client comfort features, and Class B autoclave sterilization protocols at HappyTooth Smile Studio, Murukkumpuzha.",
+  description: "Explore the advanced clinical facilities, treatment technology, and sterilization standards at HappyTooth clinics in Murukkumpuzha and Kallambalam.",
 };
 
 export default function Facilities() {
@@ -347,22 +347,27 @@ export default function Facilities() {
         </div>
       </section>
 
-      {/* 6. Murukkumpuzha Studio Info Details Card */}
+      {/* 6. Clinic Info Details Cards */}
       <section className="bg-navy-blue py-16 text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-primary-teal/10 rounded-full blur-3xl"></div>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           
-          <div className="bg-white/5 border border-white/10 rounded-[2rem] p-8 md:p-10 backdrop-blur-md space-y-8">
-            <div className="text-center space-y-2">
-              <span className="text-primary-teal font-extrabold text-xs tracking-wider uppercase bg-primary-teal/15 py-1.5 px-4 rounded-full inline-block">
-                Studio Address & Contact
-              </span>
-              <h3 className="text-2xl sm:text-3xl font-black">HAPPYTOOTH SMILE STUDIO — MURUKKUMPUZHA</h3>
-              <p className="text-xs text-gray-300">Open for consultations and appointment bookings.</p>
-            </div>
+          <div className="text-center max-w-3xl mx-auto mb-12 space-y-2">
+            <span className="text-primary-teal font-extrabold text-xs tracking-wider uppercase bg-primary-teal/15 py-1.5 px-4 rounded-full inline-block">
+              Our Clinics
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-black">Clinic Address & Contact Info</h2>
+            <p className="text-xs text-gray-300">Open for consultations and appointment bookings.</p>
+          </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t border-white/10">
-              <div className="space-y-4 text-sm text-gray-200">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Murukkumpuzha */}
+            <div className="bg-white/5 border border-white/10 rounded-[2rem] p-8 backdrop-blur-md space-y-6">
+              <span className="text-[10px] font-black text-accent-teal tracking-widest uppercase bg-white/10 py-1 px-3 rounded-full inline-block">
+                Murukkumpuzha Studio
+              </span>
+              <h3 className="text-lg font-black text-white">HappyTooth Smile Studio</h3>
+              <div className="space-y-4 text-xs text-gray-200">
                 <div className="flex items-start gap-3">
                   <svg className="w-5 h-5 text-primary-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -382,9 +387,6 @@ export default function Facilities() {
                     <a href="tel:+917356100602" className="block text-xs text-gray-300 hover:text-primary-teal transition mt-1">+91 73561 00602</a>
                   </div>
                 </div>
-              </div>
-
-              <div className="space-y-4 text-sm text-gray-200">
                 <div className="flex items-start gap-3">
                   <svg className="w-5 h-5 text-primary-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -408,16 +410,64 @@ export default function Facilities() {
               </div>
             </div>
 
-            <div className="text-center pt-4">
-              <Link
-                href="/contact"
-                className="inline-block bg-primary-teal hover:bg-white hover:text-navy-blue text-white font-bold py-3.5 px-8 rounded-full transition-all duration-300 shadow-md"
-              >
-                Book Appointment at Smile Studio
-              </Link>
+            {/* Kallambalam */}
+            <div className="bg-white/5 border border-white/10 rounded-[2rem] p-8 backdrop-blur-md space-y-6">
+              <span className="text-[10px] font-black text-accent-teal tracking-widest uppercase bg-white/10 py-1 px-3 rounded-full inline-block">
+                Kallambalam Clinic
+              </span>
+              <h3 className="text-lg font-black text-white">Happy Tooth Dental Care & Root Canal Centre</h3>
+              <div className="space-y-4 text-xs text-gray-200">
+                <div className="flex items-start gap-3">
+                  <svg className="w-5 h-5 text-primary-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  <div>
+                    <span className="block font-bold text-white">Address:</span>
+                    <span className="block text-xs text-gray-300 mt-1">Mavinmoodu, Kallambalam–Varkala Road, Kallambalam, Thiruvananthapuram – 695605</span>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <svg className="w-5 h-5 text-primary-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                  <div>
+                    <span className="block font-bold text-white">Phone:</span>
+                    <a href="tel:+918714470808" className="block text-xs text-gray-300 hover:text-primary-teal transition mt-1">+91 87144 70808</a>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <svg className="w-5 h-5 text-primary-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <div>
+                    <span className="block font-bold text-white">Hours:</span>
+                    <span className="block text-xs text-gray-300 mt-1">Monday to Saturday · 9:00 AM – 6:30 PM (Closed on Sundays)</span>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <svg className="w-5 h-5 text-primary-teal shrink-0 mt-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 16h-1c0-1.1-.9-2-2-2s-2 .9-2 2H10c0-1.1-.9-2-2-2s-2 .9-2 2H5c-1.1 0-2-.9-2-2V9c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v5c0 1.1-.9 2-2 2zM12 3v4" />
+                    <circle cx="8" cy="16" r="1" />
+                    <circle cx="16" cy="16" r="1" />
+                  </svg>
+                  <div>
+                    <span className="block font-bold text-white">Parking:</span>
+                    <span className="block text-xs text-gray-300 mt-1">Parking available</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
+          <div className="text-center pt-10">
+            <Link
+              href="/contact"
+              className="inline-block bg-primary-teal hover:bg-white hover:text-navy-blue text-white font-bold py-3.5 px-8 rounded-full transition-all duration-300 shadow-md"
+            >
+              Book Appointment
+            </Link>
+          </div>
         </div>
       </section>
     </div>

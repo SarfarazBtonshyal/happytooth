@@ -64,7 +64,7 @@ export default function Privacy() {
                 <li><strong>Website enquiry data:</strong> Name, phone, or email submitted through contact or booking forms on our website.</li>
               </ul>
               <div className="bg-red-50 text-red-700 p-4 rounded-2xl border border-red-100 font-bold text-xs">
-                ⚠️ Health data is classified as Sensitive Personal Data or Information (SPDI) under Indian law. We apply the highest standards of physical and electronic protection to this category.
+                <strong>Note:</strong> Health data is classified as Sensitive Personal Data or Information (SPDI) under Indian law. We apply the highest standards of physical and electronic protection to this category.
               </div>
             </div>
 
@@ -190,8 +190,8 @@ export default function Privacy() {
                 </div>
                 <div className="space-y-1.5 text-xs sm:text-right">
                   <span className="block"><strong>Email:</strong> smile@happytoothdental.in</span>
-                  <span className="block"><strong>Kallambalam:</strong> +91 87144 70808</span>
                   <span className="block"><strong>Murukkumpuzha:</strong> +91 73561 00602</span>
+                  <span className="block"><strong>Kallambalam:</strong> +91 87144 70808</span>
                 </div>
               </div>
               <div className="text-center text-xs font-black text-primary-teal pt-2">

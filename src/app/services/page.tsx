@@ -434,7 +434,12 @@ export default function Services() {
                           </p>
                         </div>
                         <div className="mt-4 pt-3 border-t border-gray-50 text-[10px] font-bold text-primary-teal leading-snug">
-                          💡 {svc.whyHere}
+                          <span className="inline-flex items-center gap-1.5">
+                            <span className="uppercase text-[9px] font-black tracking-wider px-2 py-0.5 bg-primary-teal/15 text-primary-teal rounded-full shrink-0">
+                              Clinical Insight
+                            </span>
+                            <span>{svc.whyHere}</span>
+                          </span>
                         </div>
                       </div>
                     </div>

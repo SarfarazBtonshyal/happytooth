@@ -31,8 +31,8 @@ export default function Header() {
       name: "Clinics",
       path: "#",
       dropdown: [
-        { name: "Kallambalam Clinic", path: "/clinics/kallambalam" },
         { name: "Murukkumpuzha Studio", path: "/clinics/murukkumpuzha" },
+        { name: "Kallambalam Clinic", path: "/clinics/kallambalam" },
       ],
     },
     { name: "International Patients", path: "/international" },
@@ -277,10 +277,13 @@ export default function Header() {
             >
               Make Appointment
             </Link>
-            <div className="text-center">
+            <div className="text-center space-y-2">
               <span className="block text-xs text-soft-gray font-medium mb-1">Call us any time</span>
-              <a href="tel:+918714470808" className="text-base font-bold text-navy-blue hover:text-primary-teal hover:underline transition">
-                +91 87144 70808
+              <a href="tel:+917356100602" className="block text-sm font-bold text-navy-blue hover:text-primary-teal hover:underline transition">
+                Murukkumpuzha: +91 73561 00602
+              </a>
+              <a href="tel:+918714470808" className="block text-sm font-bold text-navy-blue hover:text-primary-teal hover:underline transition">
+                Kallambalam: +91 87144 70808
               </a>
             </div>
           </div>
