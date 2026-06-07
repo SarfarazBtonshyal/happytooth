@@ -64,7 +64,7 @@ export default function Services() {
       expectTitle: "Treatment timeline:",
       expectDesc: "Varies by case. Simple smile makeovers (whitening + veneers on front teeth) can be completed in 2–3 visits over 2–3 weeks. More comprehensive cases involving multiple teeth and gum correction may take 4–8 weeks.",
       whyHere: "Our first step is always a consultation and smile assessment — with no commitment required at that stage.",
-      image: "/images/indian_smile_design.png"
+      image: "/images/happytooth-varkala1.jpg"
     },
     {
       id: "Orthodontics",
