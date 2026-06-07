@@ -224,7 +224,7 @@ export default function Services() {
       expectTitle: "Post-appointment sensation:",
       expectDesc: "Some patients experience mild sensitivity to cold or hot liquids for 24–48 hours, particularly where the gums were inflamed before scaling. This is temporary and resolves as gums heal.",
       whyHere: "Detecting a cavity at 6 months means a small, simple filling. Waiting 2 years can mean a root canal and a crown. We focus on interception.",
-      image: "/images/indian_dentist_lobby.png"
+      image: "/images/happytooth-varkala12-1.jpg"
     },
     {
       id: "ExtractionsWisdom",
