@@ -6,11 +6,11 @@
 }
 
 @theme {
-  --color-primary-teal: #00886E;
-  --color-accent-teal: #52C5AF;
-  --color-navy-blue: #011033;
-  --color-gold: #D8A642;
-  --color-bg-light-blue: #F2F5FF;
+  --color-primary-teal: #005C49; /* Luxury Emerald Green */
+  --color-accent-teal: #C5A566;  /* Brushed Champagne Gold */
+  --color-navy-blue: #0B1815;    /* Deep Forest Night */
+  --color-gold: #E5C07B;         /* Radiant Accent Gold */
+  --color-bg-light-blue: #F7F5F0;/* Premium Pearl Ivory */
   --color-dark-text: #0C0D0E;
   --color-soft-gray: #706F6F;
   --color-border-gray: #E0E0E0;
@@ -53,8 +53,8 @@
 
   body {
     background: 
-      radial-gradient(circle, rgba(0, 136, 110, 0.035) 1.5px, transparent 1.5px) 0 0 / 24px 24px,
-      linear-gradient(180deg, #FCFDFD 0%, #F5FAF8 45%, #ECF4F2 100%);
+      radial-gradient(circle, rgba(197, 165, 102, 0.05) 1.5px, transparent 1.5px) 0 0 / 24px 24px,
+      linear-gradient(180deg, #FAF8F5 0%, #F5F1E9 45%, #ECE7DB 100%);
     background-attachment: fixed;
     color: var(--foreground);
     font-family: var(--font-poppins);
@@ -70,7 +70,7 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-rubik);
     font-weight: 600;
-    color: #011033;
+    color: #0B1815;
   }
 
   footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
@@ -79,7 +79,7 @@
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #00886E 0%, #52C5AF 100%);
+  background: linear-gradient(135deg, #005C49 0%, #C5A566 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
