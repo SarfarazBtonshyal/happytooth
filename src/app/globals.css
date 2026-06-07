@@ -46,24 +46,26 @@
   }
 }
 
-html {
-  scroll-behavior: smooth;
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-poppins);
-}
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-poppins);
+  }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-rubik);
-  font-weight: 600;
-  color: #011033;
-}
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-rubik);
+    font-weight: 600;
+    color: #011033;
+  }
 
-footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
-  color: #ffffff;
+  footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+    color: #ffffff;
+  }
 }
 
 .text-gradient {
