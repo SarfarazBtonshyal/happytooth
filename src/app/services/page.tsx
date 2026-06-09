@@ -318,18 +318,37 @@ export default function Services() {
       />
 
       {/* Sticky Top Sub-navigation */}
-      <section className="sticky top-20 z-40 bg-white/95 backdrop-blur-md py-4 border-b border-gray-100 shadow-sm overflow-x-auto scrollbar-thin">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center lg:justify-center gap-2 whitespace-nowrap min-w-max pb-2 lg:pb-0">
-            {serviceCards.map((card, idx) => (
-              <a
-                key={idx}
-                href={card.link}
-                className="bg-bg-light-blue/60 hover:bg-primary-teal hover:text-white text-navy-blue font-bold text-[10px] md:text-xs py-2 px-3.5 rounded-full border border-gray-200/50 transition-all duration-300 transform hover:-translate-y-0.5"
-              >
-                {card.name}
-              </a>
-            ))}
+      <section className="sticky top-20 z-40 bg-white/95 backdrop-blur-md py-4 border-b border-gray-100 shadow-sm overflow-hidden">
+        <div className="w-full overflow-hidden relative">
+          {/* Subtle gradient overlays to fade edges */}
+          <div className="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+
+          <div className="flex animate-marquee whitespace-nowrap w-max py-1">
+            {/* First Set */}
+            <div className="flex items-center gap-2 pr-2">
+              {serviceCards.map((card, idx) => (
+                <a
+                  key={`set1-${idx}`}
+                  href={card.link}
+                  className="bg-bg-light-blue/60 hover:bg-primary-teal hover:text-white text-navy-blue font-bold text-[10px] md:text-xs py-2 px-3.5 rounded-full border border-gray-200/50 transition-all duration-300 transform hover:-translate-y-0.5"
+                >
+                  {card.name}
+                </a>
+              ))}
+            </div>
+            {/* Second Set for Loop */}
+            <div className="flex items-center gap-2 pr-2" aria-hidden="true">
+              {serviceCards.map((card, idx) => (
+                <a
+                  key={`set2-${idx}`}
+                  href={card.link}
+                  className="bg-bg-light-blue/60 hover:bg-primary-teal hover:text-white text-navy-blue font-bold text-[10px] md:text-xs py-2 px-3.5 rounded-full border border-gray-200/50 transition-all duration-300 transform hover:-translate-y-0.5"
+                >
+                  {card.name}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       </section>

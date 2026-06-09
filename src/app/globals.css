@@ -44,6 +44,16 @@
       transform: translateY(0);
     }
   }
+  --animate-marquee: marquee 45s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
 }
 
 @layer base {
@@ -89,6 +99,11 @@
     -webkit-background-clip: border-box !important;
     -webkit-text-fill-color: initial !important;
     color: var(--color-primary-teal) !important;
+  }
+
+  /* Pause marquee on hover to allow clicking links */
+  .animate-marquee:hover {
+    animation-play-state: paused !important;
   }
 }
 
