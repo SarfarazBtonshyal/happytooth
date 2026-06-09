@@ -44,7 +44,7 @@ export default function Footer() {
             </p>
             <div className="text-xs text-gray-300">
               <strong>Email:</strong>{" "}
-              <a href="mailto:smile@happytoothdental.in" className="hover:text-primary-teal transition-colors">
+              <a href="mailto:smile@happytoothdental.in" className="hover:text-accent-teal transition-colors">
                 smile@happytoothdental.in
               </a>
             </div>
@@ -54,7 +54,7 @@ export default function Footer() {
                 href="https://www.facebook.com/HappyToothDentalCare.21?mibextid=wwXIfr&rdid=Nw9MQinokZ0zBFrJ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17XNV4oarF%2F%3Fmibextid%3DwwXIfr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary-teal transition-all duration-300"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent-teal transition-all duration-300"
                 aria-label="Facebook"
               >
                 <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
@@ -65,7 +65,7 @@ export default function Footer() {
                 href="https://www.instagram.com/happytooth_dentalcare?igsh=cThmeGZ2ZmJycHhm&utm_source=qr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary-teal transition-all duration-300"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent-teal transition-all duration-300"
                 aria-label="Instagram"
               >
                 <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
@@ -85,9 +85,9 @@ export default function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.path}
-                    className="text-gray-300 hover:text-primary-teal transition-colors duration-200 text-sm flex items-center gap-2 group"
+                    className="text-gray-300 hover:text-accent-teal transition-colors duration-200 text-sm flex items-center gap-2 group"
                   >
-                    <span className="h-1.5 w-1.5 rounded-full bg-gray-500 group-hover:bg-primary-teal transition-all"></span>
+                    <span className="h-1.5 w-1.5 rounded-full bg-gray-500 group-hover:bg-accent-teal transition-all"></span>
                     {link.name}
                   </Link>
                 </li>
@@ -105,9 +105,9 @@ export default function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.path}
-                    className="text-gray-300 hover:text-primary-teal transition-colors duration-200 text-sm flex items-center gap-2 group"
+                    className="text-gray-300 hover:text-accent-teal transition-colors duration-200 text-sm flex items-center gap-2 group"
                   >
-                    <span className="h-1.5 w-1.5 rounded-full bg-gray-500 group-hover:bg-primary-teal transition-all"></span>
+                    <span className="h-1.5 w-1.5 rounded-full bg-gray-500 group-hover:bg-accent-teal transition-all"></span>
                     {link.name}
                   </Link>
                 </li>
@@ -132,7 +132,7 @@ export default function Footer() {
                 <svg className="h-4 w-4 text-primary-teal shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                <a href="tel:+917356100602" className="hover:text-primary-teal font-bold transition-colors">
+                <a href="tel:+917356100602" className="hover:text-accent-teal font-bold transition-colors">
                   +91 73561 00602
                 </a>
               </li>
@@ -165,7 +165,7 @@ export default function Footer() {
                 <svg className="h-4 w-4 text-primary-teal shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                <a href="tel:+918714470808" className="hover:text-primary-teal font-bold transition-colors">
+                <a href="tel:+918714470808" className="hover:text-accent-teal font-bold transition-colors">
                   +91 87144 70808
                 </a>
               </li>
@@ -187,13 +187,13 @@ export default function Footer() {
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400">
           <p>Copyright © 2026. All rights reserved.</p>
           <div className="flex space-x-6">
-            <Link href="/faq" className="hover:text-primary-teal transition-colors">
+            <Link href="/faq" className="hover:text-accent-teal transition-colors">
               FAQs
             </Link>
-            <Link href="/terms" className="hover:text-primary-teal transition-colors">
+            <Link href="/terms" className="hover:text-accent-teal transition-colors">
               Terms & Conditions
             </Link>
-            <Link href="/privacy" className="hover:text-primary-teal transition-colors">
+            <Link href="/privacy" className="hover:text-accent-teal transition-colors">
               Privacy Policy
             </Link>
           </div>
