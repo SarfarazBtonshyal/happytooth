@@ -95,16 +95,6 @@
     background-image: none !important;
   }
 
-  /* Disable Tailwind gradient text to keep it plain and professional */
-  .bg-clip-text.text-transparent,
-  [class*="bg-clip-text"][class*="text-transparent"] {
-    background: none !important;
-    background-clip: border-box !important;
-    -webkit-background-clip: border-box !important;
-    -webkit-text-fill-color: initial !important;
-    color: var(--color-primary-teal) !important;
-  }
-
   /* Pause marquee on hover to allow clicking links */
   .animate-marquee:hover {
     animation-play-state: paused !important;
@@ -113,8 +103,9 @@
 
 /* Fallback/compatibility class for standard gradient text utility */
 .text-gradient {
-  background: none !important;
-  -webkit-background-clip: initial !important;
-  -webkit-text-fill-color: initial !important;
-  color: var(--color-primary-teal) !important;
+  background: linear-gradient(135deg, #101E2E 0%, #AC9266 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
 }
