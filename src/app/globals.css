@@ -2,21 +2,21 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #0C0D0E;
+  --foreground: #1E293B;
 }
 
 @theme {
-  --color-primary-teal: #005C49; /* Luxury Emerald Green */
-  --color-accent-teal: #C5A566;  /* Brushed Champagne Gold */
-  --color-navy-blue: #0B1815;    /* Deep Forest Night */
-  --color-gold: #E5C07B;         /* Radiant Accent Gold */
-  --color-bg-light-blue: #F7F5F0;/* Premium Pearl Ivory */
-  --color-dark-text: #0C0D0E;
-  --color-soft-gray: #706F6F;
-  --color-border-gray: #E0E0E0;
+  --color-primary-teal: #0F2942;   /* Prestigious Classic Deep Blue */
+  --color-accent-teal: #1992D4;    /* Clinical/Medical Accent Blue */
+  --color-navy-blue: #0F2942;      /* Deep Navy for dark sections */
+  --color-gold: #D8A642;           /* Classic Gold Accent */
+  --color-bg-light-blue: #F0F4F8;  /* Clean Slate Off-White */
+  --color-dark-text: #1E293B;      /* Professional slate-black text */
+  --color-soft-gray: #64748B;      /* Professional slate-gray text */
+  --color-border-gray: #E2E8F0;    /* Light Slate Gray Border */
 
-  --font-rubik: var(--font-rubik), sans-serif;
-  --font-poppins: var(--font-poppins), sans-serif;
+  --font-rubik: "Times New Roman", Times, serif;
+  --font-poppins: "Times New Roman", Times, serif;
 
   --animate-fade-in: fade-in 1s ease-out forwards;
   --animate-fade-in-up: fade-in-up 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
@@ -51,35 +51,51 @@
     scroll-behavior: smooth;
   }
 
+  /* Force Times New Roman globally across the entire website completely */
+  html, body, h1, h2, h3, h4, h5, h6, button, input, select, textarea, a, p, span, li, blockquote, div {
+    font-family: "Times New Roman", Times, serif !important;
+  }
+
   body {
-    background: 
-      radial-gradient(circle, rgba(197, 165, 102, 0.05) 1.5px, transparent 1.5px) 0 0 / 24px 24px,
-      linear-gradient(180deg, #FAF8F5 0%, #F5F1E9 45%, #ECE7DB 100%);
-    background-attachment: fixed;
+    background: #FFFFFF;
     color: var(--foreground);
-    font-family: var(--font-poppins);
     min-height: 100vh;
   }
 
-  section.bg-white {
-    background-color: rgba(255, 255, 255, 0.45) !important;
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-  }
-
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-rubik);
-    font-weight: 600;
-    color: #0B1815;
+    font-weight: 700;
+    color: #0F2942;
   }
 
   footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
     color: #ffffff;
   }
+
+  /* Hide all AI-like glowing backdrop blur halos */
+  .blur-3xl, [class*="blur-3xl"] {
+    display: none !important;
+  }
+
+  /* Clear radial gradients that create glowing backdrops */
+  [class*="bg-[radial-gradient"] {
+    background-image: none !important;
+  }
+
+  /* Disable Tailwind gradient text to keep it plain and professional */
+  .bg-clip-text.text-transparent,
+  [class*="bg-clip-text"][class*="text-transparent"] {
+    background: none !important;
+    background-clip: border-box !important;
+    -webkit-background-clip: border-box !important;
+    -webkit-text-fill-color: initial !important;
+    color: var(--color-primary-teal) !important;
+  }
 }
 
+/* Fallback/compatibility class for standard gradient text utility */
 .text-gradient {
-  background: linear-gradient(135deg, #005C49 0%, #C5A566 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  -webkit-text-fill-color: initial !important;
+  color: var(--color-primary-teal) !important;
 }
