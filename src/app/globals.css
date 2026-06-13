@@ -1,20 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --background: #F8FAFC;           /* Pure Ice White */
-  --foreground: #111E2F;           /* Deep Navy Black */
+  --background: #FAF6F5;           /* Soft Blush White */
+  --foreground: #2C1423;           /* Plum Black */
 }
 
 @theme {
-  --color-bg-main: #F8FAFC;        /* Pure Ice White background */
-  --color-primary-teal: #0F1E36;   /* Deep Sapphire Blue */
-  --color-accent-teal: #7C95B3;    /* Platinum Silver / Ice Blue */
-  --color-navy-blue: #0F1E36;      /* Deep Sapphire Blue */
-  --color-gold: #8C9EA6;           /* Muted Steel Gold */
-  --color-bg-light-blue: #E8EEF5;  /* Soft Ice Blue Gray */
-  --color-dark-text: #111E2F;      /* Deep Navy Black for text */
-  --color-soft-gray: #5F6F81;      /* Slate Silver Gray */
-  --color-border-gray: #E2EAF3;    /* Ice Blue Border */
+  --color-bg-main: #FAF6F5;        /* Soft Blush White background */
+  --color-primary-teal: #3B1A30;   /* Royal Plum */
+  --color-accent-teal: #C59B93;    /* Rose Gold */
+  --color-navy-blue: #3B1A30;      /* Royal Plum */
+  --color-gold: #D4B3AB;           /* Soft Muted Rose Gold */
+  --color-bg-light-blue: #F5EDE9;  /* Warm Soft Cream */
+  --color-dark-text: #2C1423;      /* Plum Black for text */
+  --color-soft-gray: #75626F;      /* Muted Plum Gray */
+  --color-border-gray: #EDE1DE;    /* Soft Warm Border */
 
   --font-rubik: "Times New Roman", Times, serif;
   --font-poppins: "Times New Roman", Times, serif;
