@@ -501,15 +501,15 @@ export default function Home() {
                       ))}
                     </div>
                     <p className="text-xs md:text-sm text-soft-gray italic leading-relaxed">
-                      "Dr. Thushara explained my root canal treatment so clearly and performed it absolutely painlessly. Her honest answers and specialist approach made me feel extremely comfortable. Truly the best specialist clinic in Thiruvananthapuram."
+                      "Dr. Thushara did a great job in getting my Root canal treatment (RCT) done. Clinic has got a very pleasant ambience, staffs are all great too. Best dental clinic in Kallambalam."
                     </p>
                   </div>
                   <div className="pt-6 border-t border-gray-100/50 flex items-center gap-3 mt-4">
                     <div className="w-9 h-9 rounded-full bg-primary-teal/15 text-primary-teal flex items-center justify-center font-extrabold text-xs">
-                      AR
+                      BI
                     </div>
                     <div>
-                      <span className="block text-xs font-bold text-navy-blue">Ananthakrishnan R.</span>
+                      <span className="block text-xs font-bold text-navy-blue">Bibin</span>
                       <span className="block text-[10px] text-soft-gray">Kallambalam Patient</span>
                     </div>
                   </div>
@@ -525,16 +525,16 @@ export default function Home() {
                       ))}
                     </div>
                     <p className="text-xs md:text-sm text-soft-gray italic leading-relaxed">
-                      "I was very anxious about my child's dental treatment, but the patience and care shown here was amazing. They took time to explain everything to him. Very professional setup and highly recommended for families!"
+                      "Best dental clinic now at Kallambalam. And best care and good service. Thank you."
                     </p>
                   </div>
                   <div className="pt-6 border-t border-gray-100/50 flex items-center gap-3 mt-4">
                     <div className="w-9 h-9 rounded-full bg-primary-teal/15 text-primary-teal flex items-center justify-center font-extrabold text-xs">
-                      SL
+                      MK
                     </div>
                     <div>
-                      <span className="block text-xs font-bold text-navy-blue">Soumya L.</span>
-                      <span className="block text-[10px] text-soft-gray">Mother of 6yo Patient</span>
+                      <span className="block text-xs font-bold text-navy-blue">Madhusoodana Kurup</span>
+                      <span className="block text-[10px] text-soft-gray">Kallambalam Patient</span>
                     </div>
                   </div>
                 </div>
@@ -549,15 +549,15 @@ export default function Home() {
                       ))}
                     </div>
                     <p className="text-xs md:text-sm text-soft-gray italic leading-relaxed">
-                      "Unlike other places where they push expensive crowns or extractions, Dr. Thushara advised keeping my natural tooth and gave a clear treatment plan before starting. Very honest and professional specialist dental team."
+                      "The customer service was great! The staff were very friendly and helpful. They gave good supervision during my visit, which made me feel safe. The care I received was gentle and kind. I also appreciated the quick service; I didn't have to wait long. Overall, it was an excellent visit!"
                     </p>
                   </div>
                   <div className="pt-6 border-t border-gray-100/50 flex items-center gap-3 mt-4">
                     <div className="w-9 h-9 rounded-full bg-primary-teal/15 text-primary-teal flex items-center justify-center font-extrabold text-xs">
-                      VN
+                      VE
                     </div>
                     <div>
-                      <span className="block text-xs font-bold text-navy-blue">Vipin Nair</span>
+                      <span className="block text-xs font-bold text-navy-blue">Velraj</span>
                       <span className="block text-[10px] text-soft-gray">Kallambalam Patient</span>
                     </div>
                   </div>
@@ -576,15 +576,15 @@ export default function Home() {
                       ))}
                     </div>
                     <p className="text-xs md:text-sm text-soft-gray italic leading-relaxed">
-                      "Dr. Thushara explained my root canal treatment so clearly and performed it absolutely painlessly. Her honest answers and specialist approach made me feel extremely comfortable. Truly the best specialist clinic in Thiruvananthapuram."
+                      "Dr. Thushara did a great job in getting my Root canal treatment (RCT) done. Clinic has got a very pleasant ambience, staffs are all great too. Best dental clinic in Kallambalam."
                     </p>
                   </div>
                   <div className="pt-6 border-t border-gray-100/50 flex items-center gap-3 mt-4">
                     <div className="w-9 h-9 rounded-full bg-primary-teal/15 text-primary-teal flex items-center justify-center font-extrabold text-xs">
-                      AR
+                      BI
                     </div>
                     <div>
-                      <span className="block text-xs font-bold text-navy-blue">Ananthakrishnan R.</span>
+                      <span className="block text-xs font-bold text-navy-blue">Bibin</span>
                       <span className="block text-[10px] text-soft-gray">Kallambalam Patient</span>
                     </div>
                   </div>
@@ -600,16 +600,16 @@ export default function Home() {
                       ))}
                     </div>
                     <p className="text-xs md:text-sm text-soft-gray italic leading-relaxed">
-                      "I was very anxious about my child's dental treatment, but the patience and care shown here was amazing. They took time to explain everything to him. Very professional setup and highly recommended for families!"
+                      "Best dental clinic now at Kallambalam. And best care and good service. Thank you."
                     </p>
                   </div>
                   <div className="pt-6 border-t border-gray-100/50 flex items-center gap-3 mt-4">
                     <div className="w-9 h-9 rounded-full bg-primary-teal/15 text-primary-teal flex items-center justify-center font-extrabold text-xs">
-                      SL
+                      MK
                     </div>
                     <div>
-                      <span className="block text-xs font-bold text-navy-blue">Soumya L.</span>
-                      <span className="block text-[10px] text-soft-gray">Mother of 6yo Patient</span>
+                      <span className="block text-xs font-bold text-navy-blue">Madhusoodana Kurup</span>
+                      <span className="block text-[10px] text-soft-gray">Kallambalam Patient</span>
                     </div>
                   </div>
                 </div>
@@ -624,15 +624,15 @@ export default function Home() {
                       ))}
                     </div>
                     <p className="text-xs md:text-sm text-soft-gray italic leading-relaxed">
-                      "Unlike other places where they push expensive crowns or extractions, Dr. Thushara advised keeping my natural tooth and gave a clear treatment plan before starting. Very honest and professional specialist dental team."
+                      "The customer service was great! The staff were very friendly and helpful. They gave good supervision during my visit, which made me feel safe. The care I received was gentle and kind. I also appreciated the quick service; I didn't have to wait long. Overall, it was an excellent visit!"
                     </p>
                   </div>
                   <div className="pt-6 border-t border-gray-100/50 flex items-center gap-3 mt-4">
                     <div className="w-9 h-9 rounded-full bg-primary-teal/15 text-primary-teal flex items-center justify-center font-extrabold text-xs">
-                      VN
+                      VE
                     </div>
                     <div>
-                      <span className="block text-xs font-bold text-navy-blue">Vipin Nair</span>
+                      <span className="block text-xs font-bold text-navy-blue">Velraj</span>
                       <span className="block text-[10px] text-soft-gray">Kallambalam Patient</span>
                     </div>
                   </div>
