@@ -1,20 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --background: #FAF9F6;           /* Warm Sea-Salt White */
-  --foreground: #111F24;           /* Deep Navy Black */
+  --background: #F5F2EB;           /* Solid Premium Alabaster Stone Background */
+  --foreground: #1C242E;           /* Midnight Charcoal */
 }
 
 @theme {
-  --color-bg-main: #FAF9F6;        /* Warm Sea-Salt White background */
-  --color-primary-teal: #0C2329;   /* Deep Spruce Blue */
-  --color-accent-teal: #C9AB83;    /* Sand Gold */
-  --color-navy-blue: #0C2329;      /* Deep Spruce Blue */
-  --color-gold: #D3C3AD;           /* Muted Champagne Gold */
-  --color-bg-light-blue: #EAE8E2;  /* Soft Warm Gray */
-  --color-dark-text: #111F24;      /* Deep Navy Black for text */
-  --color-soft-gray: #5F6B6F;      /* Muted Spruce Gray */
-  --color-border-gray: #EAE8E2;    /* Warm Sea-Salt Border */
+  --color-bg-main: #F5F2EB;        /* Alabaster Stone background */
+  --color-primary-teal: #101E2E;   /* Deep Midnight Slate Ink */
+  --color-accent-teal: #AC9266;    /* Muted Platinum Bronze */
+  --color-navy-blue: #101E2E;      /* Deep Midnight Slate Ink */
+  --color-gold: #C0A87F;           /* Traditional Luxury Gold */
+  --color-bg-light-blue: #EFECE5;  /* Soft Warm Alabaster Gray */
+  --color-dark-text: #1C242E;      /* Midnight Charcoal for text */
+  --color-soft-gray: #787E85;      /* Slate-Charcoal Gray */
+  --color-border-gray: #E0DDD6;    /* Warm Stone Border */
 
   --font-rubik: "Times New Roman", Times, serif;
   --font-poppins: "Times New Roman", Times, serif;
