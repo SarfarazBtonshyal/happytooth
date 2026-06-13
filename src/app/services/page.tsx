@@ -3,7 +3,7 @@ import Image from "next/image";
 import BreadcrumbHero from "@/components/BreadcrumbHero";
 
 export const metadata = {
-  title: "Specialist Dental Services | Happy Tooth Dental Care",
+  title: "Specialist Dental Services",
   description: "Explore our specialised dental treatments at HappyTooth Smile Studio, including root canals, smile designing, aligners, implants, pediatric care, and emergency dental assistance.",
 };
 
@@ -318,7 +318,7 @@ export default function Services() {
       />
 
       {/* Sticky Top Sub-navigation */}
-      <section className="sticky top-20 z-40 bg-white/95 backdrop-blur-md py-4 border-b border-gray-100 shadow-sm overflow-hidden">
+      <section className="services-subnav sticky top-20 lg:top-32 z-20 bg-white/95 backdrop-blur-md py-4 border-b border-gray-100 shadow-sm overflow-hidden">
         <div className="w-full overflow-hidden relative">
           {/* Subtle gradient overlays to fade edges */}
           <div className="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
@@ -363,7 +363,7 @@ export default function Services() {
             Specialised Dental Treatments
           </h2>
           <p className="text-xs md:text-sm text-soft-gray leading-relaxed">
-            A complete guide to the dental treatments available at HappyTooth Smile Studio. Each service listed here is delivered by our specialist team, led by Dr. Thushara Sudhakaran (BDS, MDS, Endodontist), with a focus on precision, patient comfort, and outcomes that last.
+            A complete guide to the dental treatments available at HappyTooth Smile Studio. Each service listed here is delivered by our specialist team, led by Dr. Thushara Sudhakaran BDS MDS, Clinical Director & Root Canal Specialist, with a focus on precision, patient comfort, and outcomes that last.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-6 mt-6 text-xs text-navy-blue font-extrabold">
             <span className="bg-bg-light-blue py-1.5 px-3 rounded-lg border border-gray-100">✓ 5-chair facility</span>
@@ -381,7 +381,7 @@ export default function Services() {
             <section
               key={svc.id}
               id={svc.id}
-              className={`py-20 scroll-mt-36 relative ${isEven ? "bg-white" : "bg-bg-light-blue/15"}`}
+              className={`services-section py-20 scroll-mt-[152px] lg:scroll-mt-[200px] relative ${isEven ? "bg-white" : "bg-bg-light-blue/15"}`}
             >
               {/* Blur accent halos */}
               <div className={`absolute top-1/4 w-80 h-80 rounded-full blur-3xl opacity-30 ${isEven ? "right-0 bg-primary-teal/10" : "left-0 bg-accent-teal/10"}`}></div>

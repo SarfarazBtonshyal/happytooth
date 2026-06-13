@@ -6,6 +6,7 @@ import Image from "next/image";
 
 export default function Home() {
   const [selectedService, setSelectedService] = useState("");
+  const [selectedLocation, setSelectedLocation] = useState("");
   const [showQuickBookAlert, setShowQuickBookAlert] = useState(false);
 
   const servicesList = [
@@ -62,9 +63,9 @@ export default function Home() {
 
   const handleQuickBook = (e: React.FormEvent) => {
     e.preventDefault();
-    if (selectedService) {
+    if (selectedService && selectedLocation) {
       setShowQuickBookAlert(true);
-      setTimeout(() => setShowQuickBookAlert(false), 2000);
+      setTimeout(() => setShowQuickBookAlert(false), 5000);
     }
   };
 
@@ -78,9 +79,14 @@ export default function Home() {
 
         {/* Quick booking Toast alert overlay */}
         {showQuickBookAlert && (
-          <div className="fixed top-24 right-5 bg-white border-l-4 border-primary-teal text-navy-blue py-3.5 px-6 rounded-2xl shadow-2xl z-50 animate-fade-in-up flex items-center gap-3">
-            <span className="w-6 h-6 rounded-full bg-primary-teal/10 flex items-center justify-center text-primary-teal text-xs font-bold">✓</span>
-            <span className="text-xs font-bold">Preferred slot locked for: {selectedService}!</span>
+          <div className="fixed top-24 right-5 bg-white border-l-4 border-primary-teal text-navy-blue py-4 px-6 rounded-2xl shadow-2xl z-50 animate-fade-in-up max-w-sm flex items-start gap-3 whitespace-normal">
+            <span className="w-6 h-6 rounded-full bg-primary-teal/10 flex items-center justify-center text-primary-teal text-xs font-bold shrink-0 mt-0.5">✓</span>
+            <div>
+              <p className="text-xs font-black text-navy-blue">Request Initiated!</p>
+              <p className="text-[11px] text-soft-gray mt-1 leading-relaxed">
+                Preferred slot for <strong className="text-navy-blue">{selectedService}</strong> at <strong className="text-navy-blue">{selectedLocation}</strong> has been selected. Our clinical desk will call or text you shortly on WhatsApp to confirm your appointment time.
+              </p>
+            </div>
           </div>
         )}
 
@@ -111,8 +117,8 @@ export default function Home() {
               </div>
 
               {/* Interactive Feature: Quick Treatment selector widget */}
-              <div className="bg-white p-4 sm:p-5 rounded-[2rem] shadow-xl border border-gray-100 max-w-lg mx-auto lg:mx-0">
-                <form onSubmit={handleQuickBook} className="flex flex-col sm:flex-row gap-3">
+              <div className="bg-white p-4 sm:p-5 rounded-[2rem] shadow-xl border border-gray-100 max-w-2xl mx-auto lg:mx-0">
+                <form onSubmit={handleQuickBook} className="flex flex-col md:flex-row gap-3">
                   <div className="flex-grow">
                     <select
                       value={selectedService}
@@ -120,17 +126,29 @@ export default function Home() {
                       required
                       className="w-full text-xs font-bold py-3.5 px-4 bg-gray-50 border border-gray-200 focus:border-primary-teal rounded-xl outline-none text-navy-blue transition"
                     >
-                      <option value="">Select Treatment Needed...</option>
+                      <option value="">Select Treatment...</option>
                       {servicesList.map((svc) => (
                         <option key={svc} value={svc}>{svc}</option>
                       ))}
+                    </select>
+                  </div>
+                  <div className="flex-grow">
+                    <select
+                      value={selectedLocation}
+                      onChange={(e) => setSelectedLocation(e.target.value)}
+                      required
+                      className="w-full text-xs font-bold py-3.5 px-4 bg-gray-50 border border-gray-200 focus:border-primary-teal rounded-xl outline-none text-navy-blue transition"
+                    >
+                      <option value="">Select Clinic Location...</option>
+                      <option value="Kallambalam Clinic">Kallambalam Clinic</option>
+                      <option value="Murukkumpuzha Studio">Murukkumpuzha Studio</option>
                     </select>
                   </div>
                   <button
                     type="submit"
                     className="bg-primary-teal hover:bg-navy-blue text-white text-xs font-bold py-3.5 px-6 rounded-xl transition duration-300 shadow-sm shrink-0"
                   >
-                    Quick Book Slot
+                    Quick Book
                   </button>
                 </form>
               </div>
@@ -410,9 +428,9 @@ export default function Home() {
                 Our Lead Clinician
               </span>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-blue leading-tight">
-                Dr. Thushara Sudhakaran <br />
+                Dr. Thushara Sudhakaran BDS MDS <br />
                 <span className="text-xs md:text-sm text-soft-gray font-bold tracking-wide block mt-1">
-                  BDS · MDS (Endodontics)  ·  Lead Dentist & Director
+                  Clinical Director & Root Canal Specialist
                 </span>
               </h2>
 
@@ -540,7 +558,7 @@ export default function Home() {
                     </div>
                     <div>
                       <span className="block text-xs font-bold text-navy-blue">Vipin Nair</span>
-                      <span className="block text-[10px] text-soft-gray">Murukkumpuzha Patient</span>
+                      <span className="block text-[10px] text-soft-gray">Kallambalam Patient</span>
                     </div>
                   </div>
                 </div>
@@ -615,7 +633,7 @@ export default function Home() {
                     </div>
                     <div>
                       <span className="block text-xs font-bold text-navy-blue">Vipin Nair</span>
-                      <span className="block text-[10px] text-soft-gray">Murukkumpuzha Patient</span>
+                      <span className="block text-[10px] text-soft-gray">Kallambalam Patient</span>
                     </div>
                   </div>
                 </div>

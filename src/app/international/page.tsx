@@ -4,7 +4,7 @@ import Image from "next/image";
 import BreadcrumbHero from "@/components/BreadcrumbHero";
 
 export const metadata = {
-  title: "International Patients & Dental Tourism | Happy Tooth Dental Care",
+  title: "International Patients & Dental Tourism",
   description: "Plan your dental treatment around your visit to Kerala. Specialist dental care for NRIs, tourists, and Maldivian patients with video consultations and full documentation.",
 };
 

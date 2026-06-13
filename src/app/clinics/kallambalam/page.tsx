@@ -3,7 +3,7 @@ import Link from "next/link";
 import BreadcrumbHero from "@/components/BreadcrumbHero";
 
 export const metadata = {
-  title: "Happy Tooth Dental Care & Root Canal Centre – Kallambalam",
+  title: "Kallambalam Clinic",
   description: "Clinic details for Happy Tooth Dental Care & Root Canal Centre in Kallambalam, as well as our new Murukkumpuzha Smile Studio.",
 };
 
@@ -21,8 +21,8 @@ export default function KallambalamClinic() {
       waLink: "https://wa.me/917356100602",
       timings: "9:30 AM – 6:30 PM (All 7 Days)",
       parking: "Ample private parking (fits 6+ cars)",
-      dentist: "Dr. Thushara Sudhakaran BDS, MDS",
-      dentistRole: "Specialist Endodontist · Lead Dentist",
+      dentist: "Dr. Thushara Sudhakaran BDS MDS",
+      dentistRole: "Clinical Director & Root Canal Specialist",
       mapUrl: "https://maps.google.com/?q=Ground+Floor,+Mangalasseri+Tower,+Murukkumpuzha,+Thiruvananthapuram",
     },
     {
@@ -37,8 +37,8 @@ export default function KallambalamClinic() {
       waLink: "https://wa.me/918714470808",
       timings: "9:30 AM – 6:30 PM (Monday to Saturday)",
       parking: "Street parking available near front",
-      dentist: "Dr. Thushara Sudhakaran BDS, MDS",
-      dentistRole: "Specialist Endodontist · Lead Dentist",
+      dentist: "Dr. Thushara Sudhakaran BDS MDS",
+      dentistRole: "Clinical Director & Root Canal Specialist",
       mapUrl: "https://maps.app.goo.gl/ve3hNRyxmV5PFGxR7",
     }
   ];

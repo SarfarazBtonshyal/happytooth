@@ -3,7 +3,7 @@ import Image from "next/image";
 import BreadcrumbHero from "@/components/BreadcrumbHero";
 
 export const metadata = {
-  title: "About Us | Happy Tooth Dental Care",
+  title: "About Us",
   description: "Learn about HappyTooth's medical philosophy, our specialist team across Murukkumpuzha & Kallambalam, and our Clinical Director Dr. Thushara Sudhakaran.",
 };
 
@@ -182,7 +182,7 @@ export default function About() {
             <div className="lg:col-span-4 space-y-8 bg-white border border-gray-100 p-8 rounded-[2rem] shadow-xl">
               <h3 className="text-2xl font-extrabold text-navy-blue">Our Team</h3>
               <p className="text-xs md:text-sm text-soft-gray leading-relaxed">
-                We have a team of over eighteen specialist doctors across both locations — more than ten at HappyTooth Smile Studio in Murukkumpuzha and eight at our Kallambalam clinic. Specialist doctor services are available across all dental specialisations, so whatever your dental concern, the right expertise is accessible to you.
+                Our team brings together specialist doctors across both locations — at HappyTooth Smile Studio in Murukkumpuzha and at our Kallambalam clinic. Specialist services are available across all major dental specialisations, so whatever your dental concern, the right expertise is accessible to you.
               </p>
               <p className="text-xs md:text-sm text-soft-gray leading-relaxed border-t border-gray-100 pt-4">
                 Every doctor on our team brings dedicated years of training and clinical experience in their own field. You are never seen by someone working outside their area of expertise.
@@ -247,9 +247,9 @@ export default function About() {
                 Our Clinical Director
               </span>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-blue leading-tight">
-                Dr. Thushara Sudhakaran <br />
+                Dr. Thushara Sudhakaran BDS MDS <br />
                 <span className="text-xs md:text-sm text-soft-gray font-bold tracking-wide block mt-1">
-                  BDS  ·  MDS (Endodontics & Conservative Dentistry)  ·  Specialist Endodontist
+                  Clinical Director & Root Canal Specialist
                 </span>
               </h2>
 

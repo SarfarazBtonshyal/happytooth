@@ -109,3 +109,38 @@
   background-clip: text;
   display: inline-block;
 }
+
+/* Enforce exact heights for header and spacer to prevent overlapping and scroll bugs */
+header {
+  height: 80px !important;
+}
+.header-spacer {
+  height: 80px !important;
+}
+@media (min-width: 1024px) {
+  header {
+    height: 128px !important;
+  }
+  .header-spacer {
+    height: 128px !important;
+  }
+}
+
+/* Enforce exact sticky offsets and scroll margins for services page */
+.services-subnav {
+  position: sticky !important;
+  top: 80px !important;
+  z-index: 20 !important;
+}
+.services-section {
+  scroll-margin-top: 152px !important; /* 80px header + 72px sub-nav = 152px */
+}
+@media (min-width: 1024px) {
+  .services-subnav {
+    top: 128px !important;
+  }
+  .services-section {
+    scroll-margin-top: 200px !important; /* 128px header + 72px sub-nav = 200px */
+  }
+}
+

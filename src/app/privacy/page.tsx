@@ -2,7 +2,7 @@ import React from "react";
 import BreadcrumbHero from "@/components/BreadcrumbHero";
 
 export const metadata = {
-  title: "Privacy Policy | Happy Tooth Dental Care",
+  title: "Privacy Policy",
   description: "Privacy and data protection policy for HappyTooth Smile Studio patients and website visitors, in compliance with DPDPA 2023.",
 };
 
@@ -45,7 +45,7 @@ export default function Privacy() {
                 1. Who We Are
               </h3>
               <p>
-                HappyTooth Smile Studio is a specialist dental clinic at Murukkumpuzha, Thiruvananthapuram, Kerala. The clinic is led by Dr. Thushara Sudhakaran (BDS, MDS, Endodontist). We are the data controller for all patient and visitor information collected through the clinic and our website, <strong>happytoothdental.in</strong>.
+                HappyTooth Smile Studio is a specialist dental clinic at Murukkumpuzha, Thiruvananthapuram, Kerala. The clinic is led by Dr. Thushara Sudhakaran BDS MDS, Clinical Director & Root Canal Specialist. We are the data controller for all patient and visitor information collected through the clinic and our website, <strong>happytoothdental.in</strong>.
               </p>
             </div>
 

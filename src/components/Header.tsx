@@ -42,7 +42,7 @@ export default function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-[9999] h-20 lg:h-32 transition-all duration-300 ${
           isScrolled
             ? "bg-white/95 backdrop-blur-md shadow-lg border-b border-primary-teal/10"
             : "bg-white/90 backdrop-blur-md border-b border-gray-100"
@@ -50,9 +50,9 @@ export default function Header() {
       >
         {/* Top Info Bar displaying phone numbers of both centers */}
         <div
-          className="bg-navy-blue text-white text-[10px] sm:text-xs font-bold py-2 px-4 sm:px-6 lg:px-8 border-b border-white/5 opacity-100 transition-all duration-300"
+          className="hidden lg:flex bg-navy-blue text-white text-[10px] sm:text-xs font-bold px-4 sm:px-6 lg:px-8 border-b border-white/5 h-8 items-center"
         >
-          <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+          <div className="w-full max-w-7xl mx-auto flex justify-between items-center">
             {/* Left: Email */}
             <div className="flex items-center gap-2 text-gray-300">
               <span>Email:</span>
@@ -62,9 +62,9 @@ export default function Header() {
             </div>
             
             {/* Right: Phone Numbers for both clinics */}
-            <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-6 w-full lg:w-auto">
+            <div className="flex items-center justify-end gap-6">
               <div className="flex items-center gap-1.5">
-                <span className="text-accent-teal uppercase tracking-wider text-[9px] sm:text-[10px]">Murukkumpuzha:</span>
+                <span className="text-accent-teal uppercase tracking-wider text-[10px]">Murukkumpuzha:</span>
                 <a href="tel:+917356100602" className="hover:text-primary-teal transition-colors font-extrabold text-white">+91 73561 00602</a>
                 <a href="https://wa.me/917356100602" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 transition-colors" title="Chat on WhatsApp">
                   <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -74,7 +74,7 @@ export default function Header() {
               </div>
               <div className="h-3 w-[1px] bg-white/20"></div>
               <div className="flex items-center gap-1.5">
-                <span className="text-accent-teal uppercase tracking-wider text-[9px] sm:text-[10px]">Kallambalam:</span>
+                <span className="text-accent-teal uppercase tracking-wider text-[10px]">Kallambalam:</span>
                 <a href="tel:+918714470808" className="hover:text-primary-teal transition-colors font-extrabold text-white">+91 87144 70808</a>
                 <a href="https://wa.me/918714470808" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 transition-colors" title="Chat on WhatsApp">
                   <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -86,99 +86,107 @@ export default function Header() {
           </div>
         </div>
 
-        <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 transition-all duration-300 ${isScrolled ? "py-2" : "py-3"}`}>
-          <div className="flex items-center justify-between h-16">
-            {/* Logo */}
-            <div className="flex-shrink-0 flex items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
+          <div className="flex items-center justify-between h-16 lg:h-20">
+            {/* Logo & Tagline */}
+            <div className="flex-shrink-0 flex items-center gap-4">
               <Link href="/" className="group flex items-center gap-2">
                 <div className="relative overflow-hidden transition-transform duration-300 group-hover:scale-[1.02]">
                   <Image
                     src="/images/happytooth-logo-1.png"
                     alt="Happy Tooth Logo"
-                    width={220}
-                    height={60}
-                    className="w-auto h-14 md:h-16 object-contain"
+                    width={280}
+                    height={80}
+                    className="w-auto h-14 lg:h-20 object-contain"
                     priority
                   />
                 </div>
               </Link>
+              {/* Tagline */}
+              <div className="hidden xl:flex flex-col pl-4 border-l border-primary-teal/20 leading-tight py-1">
+                <span className="text-[10px] font-black text-navy-blue tracking-widest uppercase">Saving Teeth.</span>
+                <span className="text-[10px] font-black text-primary-teal tracking-widest uppercase">Designing Smiles</span>
+              </div>
             </div>
 
-            {/* Desktop Navigation */}
-            <nav className="hidden lg:flex space-x-6 items-center">
-              {navLinks.map((link) => {
-                if (link.dropdown) {
-                  return (
-                    <div key={link.name} className="relative group py-2">
-                      <button className="text-sm font-semibold text-navy-blue hover:text-primary-teal transition-colors duration-300 flex items-center gap-1">
-                        <span>{link.name}</span>
-                        <svg className="w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                        </svg>
-                      </button>
-                      <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-100 rounded-2xl shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                        {link.dropdown.map((sub) => (
-                          <Link
-                            key={sub.name}
-                            href={sub.path}
-                            className="block px-4 py-2.5 text-xs font-bold text-navy-blue hover:bg-bg-light-blue hover:text-primary-teal transition-colors"
-                          >
-                            {sub.name}
-                          </Link>
-                        ))}
+            {/* Right Group: Desktop Navigation & CTA Button */}
+            <div className="hidden lg:flex items-center gap-8">
+              {/* Desktop Navigation */}
+              <nav className="flex space-x-6 items-center">
+                {navLinks.map((link) => {
+                  if (link.dropdown) {
+                    return (
+                      <div key={link.name} className="relative group py-2">
+                        <button className="text-sm font-semibold text-navy-blue hover:text-primary-teal transition-colors duration-300 flex items-center gap-1">
+                          <span>{link.name}</span>
+                          <svg className="w-4 h-4 transition-transform duration-300 group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                          </svg>
+                        </button>
+                        <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-100 rounded-2xl shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                          {link.dropdown.map((sub) => (
+                            <Link
+                              key={sub.name}
+                              href={sub.path}
+                              className="block px-4 py-2.5 text-xs font-bold text-navy-blue hover:bg-bg-light-blue hover:text-primary-teal transition-colors"
+                            >
+                              {sub.name}
+                            </Link>
+                          ))}
+                        </div>
                       </div>
-                    </div>
+                    );
+                  }
+                  const isActive =
+                    pathname === link.path ||
+                    (link.path !== "/" && pathname.startsWith(link.path));
+                  return (
+                    <Link
+                      key={link.name}
+                      href={link.path}
+                      className={`text-sm font-semibold relative py-2 transition-colors duration-300 ${
+                        isActive ? "text-primary-teal" : "text-navy-blue hover:text-primary-teal"
+                      } group`}
+                    >
+                      <span>{link.name}</span>
+                      {/* Animated Sliding Underline */}
+                      <span
+                        className={`absolute bottom-0 left-0 w-full h-0.5 bg-primary-teal transform origin-left transition-transform duration-300 ${
+                          isActive ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
+                        }`}
+                      ></span>
+                    </Link>
                   );
-                }
-                const isActive =
-                  pathname === link.path ||
-                  (link.path !== "/" && pathname.startsWith(link.path));
-                return (
-                  <Link
-                    key={link.name}
-                    href={link.path}
-                    className={`text-sm font-semibold relative py-2 transition-colors duration-300 ${
-                      isActive ? "text-primary-teal" : "text-navy-blue hover:text-primary-teal"
-                    } group`}
-                  >
-                    <span>{link.name}</span>
-                    {/* Animated Sliding Underline */}
-                    <span
-                      className={`absolute bottom-0 left-0 w-full h-0.5 bg-primary-teal transform origin-left transition-transform duration-300 ${
-                        isActive ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
-                      }`}
-                    ></span>
-                  </Link>
-                );
-              })}
-            </nav>
+                })}
+              </nav>
 
-            {/* CTA Button */}
-            <div className="hidden lg:block">
-              <Link
-                href="/contact"
-                className="relative overflow-hidden group bg-primary-teal text-white font-semibold text-sm py-3.5 px-7 rounded-full transition-all duration-300 shadow-md hover:shadow-xl hover:shadow-primary-teal/20 flex items-center gap-2 transform hover:-translate-y-0.5"
-              >
-                {/* Glow effect on hover */}
-                <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-accent-teal to-primary-teal opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
-                <span className="relative z-10 flex items-center gap-2">
-                  <span>Make Appointment</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </span>
-              </Link>
+              {/* CTA Button */}
+              <div>
+                <Link
+                  href="/contact"
+                  className="relative overflow-hidden group bg-primary-teal text-white font-semibold text-sm py-3.5 px-7 rounded-full transition-all duration-300 shadow-md hover:shadow-xl hover:shadow-primary-teal/20 flex items-center gap-2 transform hover:-translate-y-0.5"
+                >
+                  {/* Glow effect on hover */}
+                  <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-accent-teal to-primary-teal opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+                  <span className="relative z-10 flex items-center gap-2">
+                    <span>Make Appointment</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
+                  </span>
+                </Link>
+              </div>
             </div>
 
             {/* Mobile Menu Button */}
@@ -215,7 +223,7 @@ export default function Header() {
       </header>
 
       {/* Spacer for sticky header */}
-      <div className="h-[136px] sm:h-28"></div>
+      <div className="header-spacer h-20 lg:h-32"></div>
 
       {/* Mobile Menu Drawer */}
       <div

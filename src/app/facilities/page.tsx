@@ -4,7 +4,7 @@ import Link from "next/link";
 import BreadcrumbHero from "@/components/BreadcrumbHero";
 
 export const metadata = {
-  title: "Advanced Facilities & Sterilization | Happy Tooth Dental Care",
+  title: "Advanced Facilities & Sterilization",
   description: "Explore the advanced clinical facilities, treatment technology, and sterilization standards at HappyTooth clinics in Murukkumpuzha and Kallambalam.",
 };
 

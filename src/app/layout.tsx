@@ -21,8 +21,8 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: "Happy Tooth Dental Care & Root Canal Centre",
-    template: "%s – happytoothdental.in",
+    default: "Happy Tooth Dental Clinics",
+    template: "%s | Happy Tooth Dental Clinics",
   },
   description: "Welcome to Happy Tooth, featuring specialist dental clinics in Murukkumpuzha and Kallambalam, Thiruvananthapuram. Modern, patient-friendly treatments led by specialist Endodontist Dr. Thushara Sudhakaran.",
   icons: {

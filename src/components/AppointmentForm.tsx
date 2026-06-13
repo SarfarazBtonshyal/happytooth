@@ -8,12 +8,13 @@ export default function AppointmentForm() {
     phone: "",
     email: "",
     date: "",
+    location: "",
     message: "",
   });
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [focusedField, setFocusedField] = useState<string | null>(null);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
@@ -30,6 +31,7 @@ export default function AppointmentForm() {
         phone: "",
         email: "",
         date: "",
+        location: "",
         message: "",
       });
     }, 1200);
@@ -193,6 +195,36 @@ export default function AppointmentForm() {
                 : "border-gray-200 bg-gray-50/50 hover:bg-gray-50 focus:bg-white"
             }`}
           />
+        </div>
+
+        {/* Preferred Location */}
+        <div className="relative">
+          <label 
+            htmlFor="location" 
+            className={`block text-xs font-bold transition-colors duration-200 mb-1.5 ${
+              focusedField === "location" ? "text-primary-teal" : "text-navy-blue"
+            }`}
+          >
+            Preferred Clinic Location *
+          </label>
+          <select
+            id="location"
+            name="location"
+            required
+            value={formData.location}
+            onChange={handleChange}
+            onFocus={() => setFocusedField("location")}
+            onBlur={() => setFocusedField(null)}
+            className={`w-full text-sm border rounded-xl py-3.5 px-4 outline-none transition-all duration-300 text-navy-blue ${
+              focusedField === "location" 
+                ? "border-primary-teal ring-2 ring-primary-teal/15 bg-white" 
+                : "border-gray-200 bg-gray-50/50 hover:bg-gray-50 focus:bg-white"
+            }`}
+          >
+            <option value="">Select Clinic Location...</option>
+            <option value="Kallambalam Clinic">Kallambalam Clinic</option>
+            <option value="Murukkumpuzha Studio">Murukkumpuzha Studio</option>
+          </select>
         </div>
 
         {/* Message */}

@@ -4,7 +4,7 @@ import Link from "next/link";
 import BreadcrumbHero from "@/components/BreadcrumbHero";
 
 export const metadata = {
-  title: "5 Signs You Might Need a Root Canal (And Why You Shouldn’t Ignore Them)",
+  title: "5 Signs You Might Need a Root Canal",
   description: "Learn the 5 common symptoms that indicate you might need a root canal, and why delaying endodontic treatment can cause further dental complications.",
 };
 
