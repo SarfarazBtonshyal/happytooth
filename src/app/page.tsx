@@ -485,8 +485,8 @@ export default function Home() {
 
           <div className="w-full overflow-hidden relative py-4">
             {/* Subtle gradient overlays to fade edges */}
-            <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-[#F5F2EB] to-transparent z-10 pointer-events-none"></div>
-            <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-[#F5F2EB] to-transparent z-10 pointer-events-none"></div>
+            <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-bg-main to-transparent z-10 pointer-events-none"></div>
+            <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-bg-main to-transparent z-10 pointer-events-none"></div>
 
             <div className="flex animate-marquee whitespace-nowrap w-max">
               {/* Set 1 */}

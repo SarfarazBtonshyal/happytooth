@@ -1,19 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #1C242E;
+  --background: #FCFAF7;           /* Linen Silk White */
+  --foreground: #1A2B27;           /* Deep Forest Charcoal */
 }
 
 @theme {
-  --color-primary-teal: #101E2E;   /* Deep Midnight Slate Ink */
-  --color-accent-teal: #AC9266;    /* Muted Platinum Bronze */
-  --color-navy-blue: #101E2E;      /* Deep Midnight Slate Ink */
-  --color-gold: #C0A87F;           /* Traditional Luxury Gold */
-  --color-bg-light-blue: #EFECE5;  /* Soft Warm Alabaster Gray */
-  --color-dark-text: #1C242E;      /* Midnight Charcoal for text */
-  --color-soft-gray: #787E85;      /* Slate-Charcoal Gray */
-  --color-border-gray: #E0DDD6;    /* Warm Stone Border */
+  --color-bg-main: #FCFAF7;        /* Linen Silk White background */
+  --color-primary-teal: #0B2A22;   /* Deep Forest Emerald */
+  --color-accent-teal: #C5A059;    /* Brushed Champagne Gold */
+  --color-navy-blue: #0B2A22;      /* Deep Forest Emerald */
+  --color-gold: #CBB593;           /* Brushed Brass Gold */
+  --color-bg-light-blue: #F2EEE7;  /* Soft Pearl Linen */
+  --color-dark-text: #1A2B27;      /* Deep Forest Charcoal for text */
+  --color-soft-gray: #60736F;      /* Muted Sage Gray */
+  --color-border-gray: #E9E6DF;    /* Warm Silk Border */
 
   --font-rubik: "Times New Roman", Times, serif;
   --font-poppins: "Times New Roman", Times, serif;
@@ -67,7 +68,7 @@
   }
 
   body {
-    background: #F5F2EB; /* Solid Premium Alabaster Stone Background */
+    background: var(--background); /* Solid Premium Background */
     color: var(--foreground);
     min-height: 100vh;
   }
@@ -78,7 +79,7 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
-    color: #101E2E;
+    color: var(--color-navy-blue);
   }
 
   footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
@@ -103,7 +104,7 @@
 
 /* Fallback/compatibility class for standard gradient text utility */
 .text-gradient {
-  background: linear-gradient(135deg, #101E2E 0%, #AC9266 100%);
+  background: linear-gradient(135deg, var(--color-navy-blue) 0%, var(--color-accent-teal) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
