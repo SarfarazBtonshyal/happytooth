@@ -190,7 +190,7 @@ export default function Home() {
                 <div className="absolute bottom-4 right-4 w-[55%] h-[45%] rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white p-2.5 z-20 transform hover:rotate-1 hover:scale-102 transition duration-500">
                   <div className="relative w-full h-full rounded-xl overflow-hidden">
                     <Image
-                      src="/images/indian_dentist_consult.png"
+                      src="/images/dr_thushara.jpg"
                       alt="Doctor Profile Dr. Thushara Sudhakaran"
                       fill
                       className="object-cover"
@@ -411,7 +411,7 @@ export default function Home() {
               <div className="rounded-[2.5rem] overflow-hidden shadow-2xl border border-gray-100 bg-white p-3">
                 <div className="relative h-[32rem] rounded-[2rem] overflow-hidden">
                   <Image
-                    src="/images/indian_dentist_consult.png"
+                    src="/images/dr_thushara.jpg"
                     alt="Dr. Thushara Sudhakaran BDS MDS Lead Endodontist"
                     fill
                     className="object-cover object-top"
