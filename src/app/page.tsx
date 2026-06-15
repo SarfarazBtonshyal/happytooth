@@ -79,7 +79,7 @@ export default function Home() {
 
         {/* Quick booking Toast alert overlay */}
         {showQuickBookAlert && (
-          <div className="fixed top-24 right-5 bg-white border-l-4 border-primary-teal text-navy-blue py-4 px-6 rounded-2xl shadow-2xl z-50 animate-fade-in-up max-w-sm flex items-start gap-3 whitespace-normal">
+          <div className="fixed top-24 lg:top-36 right-5 bg-white border-l-4 border-primary-teal text-navy-blue py-4 px-6 rounded-2xl shadow-2xl z-[10000] animate-fade-in-up max-w-sm flex items-start gap-3 whitespace-normal">
             <span className="w-6 h-6 rounded-full bg-primary-teal/10 flex items-center justify-center text-primary-teal text-xs font-bold shrink-0 mt-0.5">✓</span>
             <div>
               <p className="text-xs font-black text-navy-blue">Request Initiated!</p>

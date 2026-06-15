@@ -48,13 +48,12 @@ export default function Footer() {
                 smile@happytoothdental.in
               </a>
             </div>
-            {/* Social Icons */}
             <div className="flex space-x-4">
               <a
                 href="https://www.facebook.com/HappyToothDentalCare.21?mibextid=wwXIfr&rdid=Nw9MQinokZ0zBFrJ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17XNV4oarF%2F%3Fmibextid%3DwwXIfr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent-teal transition-all duration-300"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:text-navy-blue hover:bg-accent-teal transition-all duration-300"
                 aria-label="Facebook"
               >
                 <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
@@ -65,7 +64,7 @@ export default function Footer() {
                 href="https://www.instagram.com/happytooth_dentalcare?igsh=cThmeGZ2ZmJycHhm&utm_source=qr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent-teal transition-all duration-300"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:text-navy-blue hover:bg-accent-teal transition-all duration-300"
                 aria-label="Instagram"
               >
                 <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
