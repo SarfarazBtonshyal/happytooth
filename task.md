@@ -1,0 +1,7 @@
+- [x] Create the reusable `ClinicCard` component with the new luxury design system details
+- [x] Refactor the homepage (`src/app/page.tsx`) to use the new `ClinicCard` component
+- [x] Refactor the contact page (`src/app/contact/page.tsx`) to use the new `ClinicCard` component
+- [x] Refactor the Kallambalam branch page (`src/app/clinics/kallambalam/page.tsx`) to use the new `ClinicCard` component
+- [x] Refactor the Murukkumpuzha branch page (`src/app/clinics/murukkumpuzha/page.tsx`) to use the new `ClinicCard` component
+- [x] Run automated tests and build checks to ensure compile health
+- [x] Verify styling details and responsiveness

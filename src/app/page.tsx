@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import ClinicCard from "@/components/ClinicCard";
 
 export default function Home() {
   const [selectedService, setSelectedService] = useState("");
@@ -217,56 +218,63 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 2. NEIGHBOURHOOD SPECIALIST FOCUS */}
+      {/* 2. LEAD CLINICIAN SECTION */}
       <section className="py-20 bg-bg-light-blue/10 relative">
         <div className="absolute top-1/3 left-0 w-80 h-80 bg-primary-teal/5 rounded-full blur-3xl"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            {/* Left Image */}
+            {/* Image Side */}
             <div className="lg:col-span-5 relative">
-              <div className="absolute -top-4 -left-4 w-12 h-12 border-t-4 border-l-4 border-primary-teal rounded-tl-2xl"></div>
-              <div className="absolute -bottom-4 -right-4 w-12 h-12 border-b-4 border-r-4 border-primary-teal rounded-br-2xl"></div>
-              <div className="rounded-3xl overflow-hidden shadow-2xl border border-gray-100 bg-white p-3">
-                <Image
-                  src="/images/indian_patient_smile.png"
-                  alt="Healthy Smiles at Happy Tooth"
-                  width={600}
-                  height={600}
-                  className="rounded-2xl w-full h-auto object-cover transform hover:scale-[1.02] transition-transform duration-700"
-                />
+              <div className="rounded-[2.5rem] overflow-hidden shadow-2xl border border-gray-100 bg-white p-3">
+                <div className="relative h-[32rem] rounded-[2rem] overflow-hidden">
+                  <Image
+                    src="/images/dr_thushara.jpg"
+                    alt="Dr. Thushara Sudhakaran BDS MDS Lead Endodontist"
+                    fill
+                    className="object-cover object-top"
+                  />
+                </div>
               </div>
             </div>
 
-            {/* Right Copy */}
+            {/* Copy details */}
             <div className="lg:col-span-7 space-y-6">
               <span className="text-primary-teal font-extrabold text-xs tracking-wider uppercase bg-primary-teal/10 py-1.5 px-4 rounded-full inline-block">
-                Trivandrum Specialist Care
+                Our Lead Clinician
               </span>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-blue leading-tight">
-                Why travel to the city for <br />
-                <span className="text-primary-teal bg-gradient-to-r from-primary-teal to-accent-teal bg-clip-text text-transparent">specialist treatments?</span>
+                Dr. Thushara Sudhakaran BDS MDS <br />
+                <span className="text-xs md:text-sm text-soft-gray font-bold tracking-wide block mt-1">
+                  Clinical Director & Root Canal Specialist
+                </span>
               </h2>
 
-              <div className="space-y-4 text-soft-gray leading-relaxed text-sm md:text-base">
-                <p className="font-bold text-navy-blue">
-                  We operate clinics in Murukkumpuzha and Kallambalam because both neighbourhoods deserve proper specialist care.
-                </p>
-                <p>
-                  Most people in Kazhakoottam, Attingal, Pothencode, Kallambalam, and the surrounding areas have been making a long, tiring trip to the city every single time they need anything beyond a basic filling. That should not be the case.
-                </p>
-                <p className="border-l-4 border-primary-teal pl-4 py-1.5 bg-bg-light-blue/40 rounded-r-xl font-medium text-navy-blue">
-                  HappyTooth brings specialist-level dental care — root canal, smile design, implants, and orthodontics — directly to your own backyard.
+              {/* Quote Block */}
+              <div className="border-l-4 border-primary-teal pl-4 py-2 bg-white rounded-r-xl shadow-xs">
+                <p className="text-sm md:text-base font-bold text-navy-blue italic">
+                  “A tooth is worth saving. Almost every tooth that someone wants extracted — I want to try to save first.”
                 </p>
               </div>
 
-              {/* Checklist details */}
-              <div className="grid grid-cols-2 gap-4 pt-4 text-xs font-bold text-navy-blue">
-                {highlights.map((hl, idx) => (
-                  <div key={idx} className="flex items-center gap-2 bg-bg-light-blue/20 py-2.5 px-4 rounded-xl border border-gray-50/50">
-                    <span className="w-1.5 h-1.5 rounded-full bg-primary-teal"></span>
-                    <span>{hl}</span>
-                  </div>
-                ))}
+              <div className="space-y-4 text-xs md:text-sm text-soft-gray leading-relaxed">
+                <p>
+                  Dr. Thushara Sudhakaran completed her BDS from a recognised dental college and went on to earn her MDS in Endodontics — the specialisation that covers root canal treatment, dental pulp disease, and the science of saving teeth that have been badly damaged or infected. She has been in clinical practice since 2021, during which time she has built a reputation in Thiruvananthapuram for being thorough, honest, and technically precise.
+                </p>
+                <p>
+                  She does not oversell treatment. If a tooth can be saved, she will tell you how. If it cannot, she will explain why clearly — and discuss the best replacement option for your situation. Patients who have come to her expecting an extraction have left with their tooth intact more often than they expected.
+                </p>
+                <p>
+                  The Smile Studio is her larger vision — a clinic with the space, equipment, and clinical team to handle the full range of what her patients need, without referring them elsewhere. She runs the clinical side of the clinic; her husband Gokul manages the operations. It is a family practice, built with a long-term view.
+                </p>
+              </div>
+
+              <div className="pt-2">
+                <Link
+                  href="/about"
+                  className="inline-block bg-navy-blue hover:bg-primary-teal text-white font-bold py-3.5 px-8 rounded-full transition-all duration-300 shadow-md text-xs"
+                >
+                  Meet Dr. Thushara
+                </Link>
               </div>
             </div>
           </div>
@@ -401,68 +409,57 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5. LEAD CLINICIAN SECTION */}
+      {/* 5. NEIGHBOURHOOD SPECIALIST FOCUS */}
       <section className="py-20 bg-white border-t border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
-            {/* Image Side */}
+            {/* Left Image */}
             <div className="lg:col-span-5 relative">
-              <div className="rounded-[2.5rem] overflow-hidden shadow-2xl border border-gray-100 bg-white p-3">
-                <div className="relative h-[32rem] rounded-[2rem] overflow-hidden">
-                  <Image
-                    src="/images/dr_thushara.jpg"
-                    alt="Dr. Thushara Sudhakaran BDS MDS Lead Endodontist"
-                    fill
-                    className="object-cover object-top"
-                  />
-                </div>
+              <div className="absolute -top-4 -left-4 w-12 h-12 border-t-4 border-l-4 border-primary-teal rounded-tl-2xl"></div>
+              <div className="absolute -bottom-4 -right-4 w-12 h-12 border-b-4 border-r-4 border-primary-teal rounded-br-2xl"></div>
+              <div className="rounded-3xl overflow-hidden shadow-2xl border border-gray-100 bg-white p-3">
+                <Image
+                  src="/images/indian_patient_smile.png"
+                  alt="Healthy Smiles at Happy Tooth"
+                  width={600}
+                  height={600}
+                  className="rounded-2xl w-full h-auto object-cover transform hover:scale-[1.02] transition-transform duration-700"
+                />
               </div>
-              
-
             </div>
 
-            {/* Copy details */}
+            {/* Right Copy */}
             <div className="lg:col-span-7 space-y-6">
               <span className="text-primary-teal font-extrabold text-xs tracking-wider uppercase bg-primary-teal/10 py-1.5 px-4 rounded-full inline-block">
-                Our Lead Clinician
+                Trivandrum Specialist Care
               </span>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-blue leading-tight">
-                Dr. Thushara Sudhakaran BDS MDS <br />
-                <span className="text-xs md:text-sm text-soft-gray font-bold tracking-wide block mt-1">
-                  Clinical Director & Root Canal Specialist
-                </span>
+                Why travel to the city for <br />
+                <span className="text-primary-teal bg-gradient-to-r from-primary-teal to-accent-teal bg-clip-text text-transparent">specialist treatments?</span>
               </h2>
 
-              {/* Quote Block */}
-              <div className="border-l-4 border-primary-teal pl-4 py-2 bg-white rounded-r-xl shadow-xs">
-                <p className="text-sm md:text-base font-bold text-navy-blue italic">
-                  “A tooth is worth saving. Almost every tooth that someone wants extracted — I want to try to save first.”
+              <div className="space-y-4 text-soft-gray leading-relaxed text-sm md:text-base">
+                <p className="font-bold text-navy-blue">
+                  We operate clinics in Murukkumpuzha and Kallambalam because both neighbourhoods deserve proper specialist care.
+                </p>
+                <p>
+                  Most people in Kazhakoottam, Attingal, Pothencode, Kallambalam, and the surrounding areas have been making a long, tiring trip to the city every single time they need anything beyond a basic filling. That should not be the case.
+                </p>
+                <p className="border-l-4 border-primary-teal pl-4 py-1.5 bg-bg-light-blue/40 rounded-r-xl font-medium text-navy-blue">
+                  HappyTooth brings specialist-level dental care — root canal, smile design, implants, and orthodontics — directly to your own backyard.
                 </p>
               </div>
 
-              <div className="space-y-4 text-xs md:text-sm text-soft-gray leading-relaxed">
-                <p>
-                  Dr. Thushara Sudhakaran completed her BDS from a recognised dental college and went on to earn her MDS in Endodontics — the specialisation that covers root canal treatment, dental pulp disease, and the science of saving teeth that have been badly damaged or infected. She has been in clinical practice since 2021, during which time she has built a reputation in Thiruvananthapuram for being thorough, honest, and technically precise.
-                </p>
-                <p>
-                  She does not oversell treatment. If a tooth can be saved, she will tell you how. If it cannot, she will explain why clearly — and discuss the best replacement option for your situation. Patients who have come to her expecting an extraction have left with their tooth intact more often than they expected.
-                </p>
-                <p>
-                  The Smile Studio is her larger vision — a clinic with the space, equipment, and clinical team to handle the full range of what her patients need, without referring them elsewhere. She runs the clinical side of the clinic; her husband Gokul manages the operations. It is a family practice, built with a long-term view.
-                </p>
-              </div>
-
-              <div className="pt-2">
-                <Link
-                  href="/about"
-                  className="inline-block bg-navy-blue hover:bg-primary-teal text-white font-bold py-3.5 px-8 rounded-full transition-all duration-300 shadow-md text-xs"
-                >
-                  Meet Dr. Thushara
-                </Link>
+              {/* Checklist details */}
+              <div className="grid grid-cols-2 gap-4 pt-4 text-xs font-bold text-navy-blue">
+                {highlights.map((hl, idx) => (
+                  <div key={idx} className="flex items-center gap-2 bg-bg-light-blue/20 py-2.5 px-4 rounded-xl border border-gray-50/50">
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary-teal"></span>
+                    <span>{hl}</span>
+                  </div>
+                ))}
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -660,203 +657,33 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* Murukkumpuzha Clinic */}
-            <div className="bg-white rounded-[2rem] border border-border-gray shadow-sm overflow-hidden flex flex-col justify-between hover:border-accent-teal/30 hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
-              <div className="p-6 md:p-8 border-b border-border-gray/60 bg-[#FAF7F2] space-y-4">
-                <div className="flex justify-between items-center gap-2">
-                  <span className="text-[10px] font-black text-accent-teal uppercase tracking-widest bg-accent-teal/10 py-1 px-3 rounded-md">
-                    Murukkumpuzha
-                  </span>
-                  <span className="text-[10px] font-black uppercase tracking-wider py-1 px-2.5 rounded-md bg-emerald-500/10 text-emerald-700 border border-emerald-500/20">
-                    Open All 7 Days
-                  </span>
-                </div>
-                <div>
-                  <h3 className="text-xl md:text-2xl font-black text-navy-blue tracking-tight">HappyTooth Smile Studio</h3>
-                  <p className="text-xs text-soft-gray font-bold tracking-wide mt-1">Flagship Studio · Murukkumpuzha, Thiruvananthapuram</p>
-                </div>
-              </div>
+            <ClinicCard
+              name="HappyTooth Smile Studio"
+              branch="Murukkumpuzha, Thiruvananthapuram"
+              badge="Flagship Studio · Open Daily"
+              status="Open All 7 Days"
+              address="Ground Floor, Mangalasseri Tower, Murukkumpuzha, Thiruvananthapuram – 695302"
+              phone="+91 73561 00602"
+              telLink="tel:+917356100602"
+              waLink="https://wa.me/917356100602"
+              timings="9:30 AM – 6:30 PM (All 7 Days)"
+              parking="Ample private parking (fits 6+ cars)"
+              mapUrl="https://maps.google.com/?q=Ground+Floor,+Mangalasseri+Tower,+Murukkumpuzha,+Thiruvananthapuram"
+            />
 
-              <div className="p-6 md:p-8 flex-grow space-y-6 bg-transparent">
-                <div className="space-y-5">
-                  {/* Address */}
-                  <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 rounded-full bg-accent-teal/10 flex items-center justify-center text-accent-teal shrink-0 mt-0.5">
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <strong className="block text-navy-blue text-[10px] uppercase tracking-widest mb-0.5">Address</strong>
-                      <span className="text-xs md:text-sm text-soft-gray font-medium leading-relaxed">Ground Floor, Mangalasseri Tower, Murukkumpuzha, Thiruvananthapuram – 695302</span>
-                    </div>
-                  </div>
-
-                  {/* Phone */}
-                  <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 rounded-full bg-accent-teal/10 flex items-center justify-center text-accent-teal shrink-0 mt-0.5">
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <strong className="block text-navy-blue text-[10px] uppercase tracking-widest mb-0.5">Phone</strong>
-                      <a href="tel:+917356100602" className="text-xs md:text-sm font-extrabold text-primary-teal hover:underline">+91 73561 00602</a>
-                    </div>
-                  </div>
-
-                  {/* Hours */}
-                  <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 rounded-full bg-accent-teal/10 flex items-center justify-center text-accent-teal shrink-0 mt-0.5">
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <strong className="block text-navy-blue text-[10px] uppercase tracking-widest mb-0.5">Working Hours</strong>
-                      <span className="text-xs md:text-sm text-soft-gray font-medium leading-relaxed">All 7 days including Sunday · 9:30 AM – 6:30 PM</span>
-                    </div>
-                  </div>
-
-                  {/* Parking */}
-                  <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 rounded-full bg-accent-teal/10 flex items-center justify-center text-accent-teal shrink-0 mt-0.5">
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M19 16h-1c0-1.1-.9-2-2-2s-2 .9-2 2H10c0-1.1-.9-2-2-2s-2 .9-2 2H5c-1.1 0-2-.9-2-2V9c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v5c0 1.1-.9 2-2 2zM12 3v4" />
-                        <circle cx="8" cy="16" r="1" />
-                        <circle cx="16" cy="16" r="1" />
-                      </svg>
-                    </div>
-                    <div>
-                      <strong className="block text-navy-blue text-[10px] uppercase tracking-widest mb-0.5">Parking</strong>
-                      <span className="text-xs md:text-sm text-soft-gray font-medium leading-relaxed">Ample parking — fits 6+ cars comfortably</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="p-6 md:p-8 pt-0 flex flex-col sm:flex-row gap-3 bg-transparent">
-                <a
-                  href="https://wa.me/917356100602"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-1 text-center border border-green-500 text-[#25D366] hover:bg-green-500 hover:text-white font-bold text-xs py-3.5 rounded-xl transition duration-300 flex items-center justify-center gap-1.5"
-                >
-                  <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.714-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.485 5.352 1.486 5.517 0 10.005-4.487 10.008-10.006.002-2.673-1.036-5.186-2.923-7.076-1.887-1.89-4.405-2.93-7.079-2.93-5.521 0-10.012 4.488-10.015 10.006-.001 1.916.48 3.791 1.399 5.431l-.993 3.634 3.753-.984zm11.083-7.5c-.302-.15-1.786-.881-2.062-.982-.278-.1-.48-.15-.68.15-.2.3-.775.98-.95 1.18-.175.2-.35.225-.65.075-.302-.15-1.274-.469-2.427-1.496-.897-.8-1.502-1.787-1.678-2.088-.175-.3-.018-.462.13-.61.135-.13.3-.35.45-.525.15-.175.2-.3.3-.5s.05-.375-.025-.525C9.7 7.731 9.12 6.32 8.878 5.742c-.235-.563-.473-.487-.65-.496-.17-.008-.363-.01-.555-.01-.192 0-.505.072-.77.357-.265.285-1.01.986-1.01 2.404s1.025 2.787 1.17 2.986c.145.2 2.017 3.08 4.887 4.318.682.295 1.215.47 1.63.602.686.218 1.311.187 1.805.114.55-.082 1.786-.731 2.037-1.438.25-.707.25-1.313.175-1.437-.075-.125-.275-.2-.575-.35z" />
-                  </svg>
-                  <span>Chat on WhatsApp</span>
-                </a>
-                <a
-                  href="https://maps.google.com/?q=Ground+Floor,+Mangalasseri+Tower,+Murukkumpuzha,+Thiruvananthapuram"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-1 text-center bg-navy-blue hover:bg-accent-teal hover:text-navy-blue text-white font-bold text-xs py-3.5 rounded-xl transition duration-300 shadow-md flex items-center justify-center gap-1.5"
-                >
-                  Open Google Maps
-                </a>
-              </div>
-            </div>
-
-            {/* Kallambalam Clinic */}
-            <div className="bg-white rounded-[2rem] border border-border-gray shadow-sm overflow-hidden flex flex-col justify-between hover:border-accent-teal/30 hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
-              <div className="p-6 md:p-8 border-b border-border-gray/60 bg-[#FAF7F2] space-y-4">
-                <div className="flex justify-between items-center gap-2">
-                  <span className="text-[10px] font-black text-accent-teal uppercase tracking-widest bg-accent-teal/10 py-1 px-3 rounded-md">
-                    Kallambalam
-                  </span>
-                  <span className="text-[10px] font-black uppercase tracking-wider py-1 px-2.5 rounded-md bg-amber-500/10 text-amber-700 border border-amber-500/20">
-                    Closed on Sundays
-                  </span>
-                </div>
-                <div>
-                  <h3 className="text-xl md:text-2xl font-black text-navy-blue tracking-tight">Happy Tooth Dental Care</h3>
-                  <p className="text-xs text-soft-gray font-bold tracking-wide mt-1">Root Canal Centre · Kallambalam, Thiruvananthapuram</p>
-                </div>
-              </div>
-
-              <div className="p-6 md:p-8 flex-grow space-y-6 bg-transparent">
-                <div className="space-y-5">
-                  {/* Address */}
-                  <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 rounded-full bg-accent-teal/10 flex items-center justify-center text-accent-teal shrink-0 mt-0.5">
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <strong className="block text-navy-blue text-[10px] uppercase tracking-widest mb-0.5">Address</strong>
-                      <span className="text-xs md:text-sm text-soft-gray font-medium leading-relaxed">Mavinmoodu, Kallambalam–Varkala Road, Kallambalam, Thiruvananthapuram – 695605</span>
-                    </div>
-                  </div>
-
-                  {/* Phone */}
-                  <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 rounded-full bg-accent-teal/10 flex items-center justify-center text-accent-teal shrink-0 mt-0.5">
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <strong className="block text-navy-blue text-[10px] uppercase tracking-widest mb-0.5">Phone</strong>
-                      <a href="tel:+918714470808" className="text-xs md:text-sm font-extrabold text-primary-teal hover:underline">+91 87144 70808</a>
-                    </div>
-                  </div>
-
-                  {/* Hours */}
-                  <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 rounded-full bg-accent-teal/10 flex items-center justify-center text-accent-teal shrink-0 mt-0.5">
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <strong className="block text-navy-blue text-[10px] uppercase tracking-widest mb-0.5">Working Hours</strong>
-                      <span className="text-xs md:text-sm text-soft-gray font-medium leading-relaxed">Monday to Saturday · 9:30 AM – 6:30 PM (Closed on Sundays)</span>
-                    </div>
-                  </div>
-
-                  {/* Parking */}
-                  <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 rounded-full bg-accent-teal/10 flex items-center justify-center text-accent-teal shrink-0 mt-0.5">
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M19 16h-1c0-1.1-.9-2-2-2s-2 .9-2 2H10c0-1.1-.9-2-2-2s-2 .9-2 2H5c-1.1 0-2-.9-2-2V9c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v5c0 1.1-.9 2-2 2zM12 3v4" />
-                        <circle cx="8" cy="16" r="1" />
-                        <circle cx="16" cy="16" r="1" />
-                      </svg>
-                    </div>
-                    <div>
-                      <strong className="block text-navy-blue text-[10px] uppercase tracking-widest mb-0.5">Parking</strong>
-                      <span className="text-xs md:text-sm text-soft-gray font-medium leading-relaxed">Parking available</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="p-6 md:p-8 pt-0 flex flex-col sm:flex-row gap-3 bg-transparent">
-                <a
-                  href="https://wa.me/918714470808"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-1 text-center border border-green-500 text-[#25D366] hover:bg-green-500 hover:text-white font-bold text-xs py-3.5 rounded-xl transition duration-300 flex items-center justify-center gap-1.5"
-                >
-                  <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.714-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.485 5.352 1.486 5.517 0 10.005-4.487 10.008-10.006.002-2.673-1.036-5.186-2.923-7.076-1.887-1.89-4.405-2.93-7.079-2.93-5.521 0-10.012 4.488-10.015 10.006-.001 1.916.48 3.791 1.399 5.431l-.993 3.634 3.753-.984zm11.083-7.5c-.302-.15-1.786-.881-2.062-.982-.278-.1-.48-.15-.68.15-.2.3-.775.98-.95 1.18-.175.2-.35.225-.65.075-.302-.15-1.274-.469-2.427-1.496-.897-.8-1.502-1.787-1.678-2.088-.175-.3-.018-.462.13-.61.135-.13.3-.35.45-.525.15-.175.2-.3.3-.5s.05-.375-.025-.525C9.7 7.731 9.12 6.32 8.878 5.742c-.235-.563-.473-.487-.65-.496-.17-.008-.363-.01-.555-.01-.192 0-.505.072-.77.357-.265.285-1.01.986-1.01 2.404s1.025 2.787 1.17 2.986c.145.2 2.017 3.08 4.887 4.318.682.295 1.215.47 1.63.602.686.218 1.311.187 1.805.114.55-.082 1.786-.731 2.037-1.438.25-.707.25-1.313.175-1.437-.075-.125-.275-.2-.575-.35z" />
-                  </svg>
-                  <span>Chat on WhatsApp</span>
-                </a>
-                <a
-                  href="https://maps.app.goo.gl/ve3hNRyxmV5PFGxR7"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-1 text-center bg-navy-blue hover:bg-accent-teal hover:text-navy-blue text-white font-bold text-xs py-3.5 rounded-xl transition duration-300 shadow-md flex items-center justify-center gap-1.5"
-                >
-                  Open Google Maps
-                </a>
-              </div>
-            </div>
+            <ClinicCard
+              name="Happy Tooth Dental Care"
+              branch="Kallambalam, Thiruvananthapuram"
+              badge="Root Canal Centre · Serving since 2021"
+              status="Closed on Sundays"
+              address="Mavinmoodu, Kallambalam–Varkala Road, Kallambalam, Thiruvananthapuram – 695605"
+              phone="+91 87144 70808"
+              telLink="tel:+918714470808"
+              waLink="https://wa.me/918714470808"
+              timings="9:30 AM – 6:30 PM (Monday to Saturday)"
+              parking="Parking available"
+              mapUrl="https://maps.app.goo.gl/ve3hNRyxmV5PFGxR7"
+            />
           </div>
         </div>
       </section>
