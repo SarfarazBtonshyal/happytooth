@@ -72,7 +72,7 @@ export default function Facilities() {
       <BreadcrumbHero
         title="Our Facilities"
         currentPage="Facilities"
-        bgImage="/images/happytooth-varkala13.jpg"
+        bgImage="/images/teeth_whitening_smile.png"
       />
 
       {/* 1. Introduction section */}

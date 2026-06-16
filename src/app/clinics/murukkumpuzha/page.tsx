@@ -49,7 +49,7 @@ export default function MurukkumpuzhaClinic() {
       <BreadcrumbHero
         title="Murukkumpuzha Studio"
         currentPage="Murukkumpuzha"
-        bgImage="/images/happytooth-varkala13.jpg"
+        bgImage="/images/happytooth-varkala12-1.jpg"
       />
 
       <section className="py-20 bg-white">
