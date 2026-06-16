@@ -226,12 +226,12 @@ export default function Home() {
             {/* Image Side */}
             <div className="lg:col-span-5 relative">
               <div className="rounded-[2.5rem] overflow-hidden shadow-2xl border border-gray-100 bg-white p-3">
-                <div className="relative aspect-[3/4] w-full rounded-[2rem] overflow-hidden">
+                <div className="relative h-[32rem] rounded-[2rem] overflow-hidden">
                   <Image
-                    src="/images/dr_thushara.png"
+                    src="/images/dr_thushara.jpg"
                     alt="Dr. Thushara Sudhakaran BDS MDS Lead Endodontist"
                     fill
-                    className="object-cover object-center"
+                    className="object-cover object-top"
                   />
                 </div>
               </div>
