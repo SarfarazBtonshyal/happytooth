@@ -56,7 +56,7 @@ export default function Header() {
             {/* Left: Email */}
             <div className="flex items-center gap-2 text-gray-300">
               <span>Email:</span>
-              <a href="mailto:smile@happytoothdental.in" className="hover:text-primary-teal transition-colors text-white font-semibold">
+              <a href="mailto:smile@happytoothdental.in" className="hover:text-accent-teal transition-colors text-white font-semibold">
                 smile@happytoothdental.in
               </a>
             </div>
@@ -65,7 +65,7 @@ export default function Header() {
             <div className="flex items-center justify-end gap-6">
               <div className="flex items-center gap-1.5">
                 <span className="text-accent-teal uppercase tracking-wider text-[10px]">Murukkumpuzha:</span>
-                <a href="tel:+917356100602" className="hover:text-primary-teal transition-colors font-extrabold text-white">+91 73561 00602</a>
+                <a href="tel:+917356100602" className="hover:text-accent-teal transition-colors font-extrabold text-white">+91 73561 00602</a>
                 <a href="https://wa.me/917356100602" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 transition-colors" title="Chat on WhatsApp">
                   <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.714-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.485 5.352 1.486 5.517 0 10.005-4.487 10.008-10.006.002-2.673-1.036-5.186-2.923-7.076-1.887-1.89-4.405-2.93-7.079-2.93-5.521 0-10.012 4.488-10.015 10.006-.001 1.916.48 3.791 1.399 5.431l-.993 3.634 3.753-.984zm11.083-7.5c-.302-.15-1.786-.881-2.062-.982-.278-.1-.48-.15-.68.15-.2.3-.775.98-.95 1.18-.175.2-.35.225-.65.075-.302-.15-1.274-.469-2.427-1.496-.897-.8-1.502-1.787-1.678-2.088-.175-.3-.018-.462.13-.61.135-.13.3-.35.45-.525.15-.175.2-.3.3-.5s.05-.375-.025-.525C9.7 7.731 9.12 6.32 8.878 5.742c-.235-.563-.473-.487-.65-.496-.17-.008-.363-.01-.555-.01-.192 0-.505.072-.77.357-.265.285-1.01.986-1.01 2.404s1.025 2.787 1.17 2.986c.145.2 2.017 3.08 4.887 4.318.682.295 1.215.47 1.63.602.686.218 1.311.187 1.805.114.55-.082 1.786-.731 2.037-1.438.25-.707.25-1.313.175-1.437-.075-.125-.275-.2-.575-.35z" />
@@ -75,7 +75,7 @@ export default function Header() {
               <div className="h-3 w-[1px] bg-white/20"></div>
               <div className="flex items-center gap-1.5">
                 <span className="text-accent-teal uppercase tracking-wider text-[10px]">Kallambalam:</span>
-                <a href="tel:+918714470808" className="hover:text-primary-teal transition-colors font-extrabold text-white">+91 87144 70808</a>
+                <a href="tel:+918714470808" className="hover:text-accent-teal transition-colors font-extrabold text-white">+91 87144 70808</a>
                 <a href="https://wa.me/918714470808" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 transition-colors" title="Chat on WhatsApp">
                   <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.504-5.714-1.464L0 24zm6.59-4.846c1.666.988 3.311 1.485 5.352 1.486 5.517 0 10.005-4.487 10.008-10.006.002-2.673-1.036-5.186-2.923-7.076-1.887-1.89-4.405-2.93-7.079-2.93-5.521 0-10.012 4.488-10.015 10.006-.001 1.916.48 3.791 1.399 5.431l-.993 3.634 3.753-.984zm11.083-7.5c-.302-.15-1.786-.881-2.062-.982-.278-.1-.48-.15-.68.15-.2.3-.775.98-.95 1.18-.175.2-.35.225-.65.075-.302-.15-1.274-.469-2.427-1.496-.897-.8-1.502-1.787-1.678-2.088-.175-.3-.018-.462.13-.61.135-.13.3-.35.45-.525.15-.175.2-.3.3-.5s.05-.375-.025-.525C9.7 7.731 9.12 6.32 8.878 5.742c-.235-.563-.473-.487-.65-.496-.17-.008-.363-.01-.555-.01-.192 0-.505.072-.77.357-.265.285-1.01.986-1.01 2.404s1.025 2.787 1.17 2.986c.145.2 2.017 3.08 4.887 4.318.682.295 1.215.47 1.63.602.686.218 1.311.187 1.805.114.55-.082 1.786-.731 2.037-1.438.25-.707.25-1.313.175-1.437-.075-.125-.275-.2-.575-.35z" />
