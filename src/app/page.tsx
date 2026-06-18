@@ -319,48 +319,15 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right Column: Interactive details / launch details */}
-            <div className="lg:col-span-5 bg-navy-blue text-white rounded-[2rem] p-8 md:p-10 shadow-2xl relative overflow-hidden">
-              <div className="absolute top-[-20%] right-[-20%] w-64 h-64 bg-primary-teal/10 rounded-full blur-3xl"></div>
-              
-              <div className="space-y-6 relative z-10 text-center lg:text-left">
-                <span className="text-[10px] font-black text-accent-teal tracking-widest uppercase bg-white/10 py-1.5 px-4 rounded-full inline-block">
-                  Launch Update
-                </span>
-                <h3 className="text-2xl sm:text-3xl font-black">Opening Soon!</h3>
-                <p className="text-gray-300 text-xs md:text-sm leading-relaxed">
-                  HappyTooth Smile Studio opens in June 2026. We are currently taking appointment bookings now for opening week onwards. Same founding clinical philosophy, broader scope.
-                </p>
-
-                <div className="pt-4 border-t border-white/10 space-y-4">
-                  <div className="flex items-center gap-3 justify-center lg:justify-start">
-                    <svg className="w-5 h-5 text-accent-teal shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <span className="text-xs text-gray-200 font-bold">All Advanced Dental Chairs</span>
-                  </div>
-                  <div className="flex items-center gap-3 justify-center lg:justify-start">
-                    <svg className="w-5 h-5 text-accent-teal shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <span className="text-xs text-gray-200 font-bold">Intraoral Digital Scanning</span>
-                  </div>
-                  <div className="flex items-center gap-3 justify-center lg:justify-start">
-                    <svg className="w-5 h-5 text-accent-teal shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <span className="text-xs text-gray-200 font-bold">Rotary Endodontic setup</span>
-                  </div>
-                </div>
-
-                <div className="pt-4 text-center lg:text-left">
-                  <Link
-                    href="/contact"
-                    className="inline-block bg-primary-teal hover:bg-white hover:text-navy-blue text-white font-bold py-3.5 px-8 rounded-full transition-all duration-300 shadow-md text-xs"
-                  >
-                    Reserve Opening Week Slot
-                  </Link>
-                </div>
+            {/* Right Column: Visual Clinic Image */}
+            <div className="lg:col-span-5 relative h-96 min-h-[350px] rounded-[2rem] overflow-hidden shadow-2xl border border-gray-100 bg-white p-2">
+              <div className="relative w-full h-full rounded-[1.8rem] overflow-hidden">
+                <Image
+                  src="/images/happytooth-varkala12-1.jpg"
+                  alt="HappyTooth Smile Studio Specialist Clinic Treatment Room"
+                  fill
+                  className="object-cover transform hover:scale-[1.02] transition-transform duration-500"
+                />
               </div>
             </div>
 

@@ -28,7 +28,7 @@ export default function Privacy() {
           <div className="bg-bg-light-blue/40 border border-gray-100 p-8 rounded-3xl space-y-4">
             <h2 className="text-xl md:text-2xl font-black text-navy-blue">HappyTooth Smile Studio</h2>
             <span className="block text-xs font-bold text-soft-gray uppercase tracking-widest">
-              Effective: June 2026  ·  Version 1.0  ·  Murukkumpuzha, Thiruvananthapuram, Kerala
+              Effective: July 2026  ·  Version 1.0  ·  Murukkumpuzha, Thiruvananthapuram, Kerala
             </span>
             <p className="text-xs md:text-sm text-soft-gray leading-relaxed">
               This policy explains what personal and health information HappyTooth Smile Studio collects, why we collect it, how we protect it, and what your rights are. We handle all patient data with the care and discretion that medical information requires, and in compliance with the Digital Personal Data Protection Act, 2023 (DPDPA) and the IT (Reasonable Security Practices) Rules, 2011.

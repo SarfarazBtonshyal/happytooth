@@ -71,7 +71,7 @@ export default function About() {
       desc: "Since 2021, it has built a steady, largely word-of-mouth following among patients seeking to save compromised teeth with specialized root canals and conservative dentistry.",
     },
     {
-      year: "Opening Soon / June 2026",
+      year: "Opening Soon / July 2026",
       title: "HappyTooth Smile Studio — Murukkumpuzha",
       subtitle: "Her second and flagship clinic",
       desc: "A purpose-built specialist centre expanding into implantology, orthodontics, digital smile design, teeth whitening, and cosmetic dentistry, alongside endodontics. Same founding philosophy, broader scope.",
