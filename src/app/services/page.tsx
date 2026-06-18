@@ -3,8 +3,8 @@ import Image from "next/image";
 import BreadcrumbHero from "@/components/BreadcrumbHero";
 
 export const metadata = {
-  title: "Specialist Dental Services",
-  description: "Explore our specialised dental treatments at HappyTooth Smile Studio, including root canals, smile designing, aligners, implants, pediatric care, and emergency dental assistance.",
+  title: "Specialist Dental Treatments & Services | Root Canal, Aligners & Implants",
+  description: "Professional dental services in Thiruvananthapuram. Specializing in painless Root Canal Treatment (RCT) by MDS Endodontist, Invisalign clear aligners, dental implants, pediatric care, and smile design.",
 };
 
 export default function Services() {

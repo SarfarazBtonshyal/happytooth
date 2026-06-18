@@ -3,8 +3,8 @@ import Image from "next/image";
 import BreadcrumbHero from "@/components/BreadcrumbHero";
 
 export const metadata = {
-  title: "About Us",
-  description: "Learn about HappyTooth's medical philosophy, our specialist team across Murukkumpuzha & Kallambalam, and our Clinical Director Dr. Thushara Sudhakaran.",
+  title: "Meet Dr. Thushara Sudhakaran | Clinical Director & Endodontist",
+  description: "Meet Dr. Thushara Sudhakaran (BDS, MDS), root canal specialist and Clinical Director at Happy Tooth. Learn about our dental care philosophy and clinic team serving Thiruvananthapuram.",
 };
 
 export default function About() {

@@ -4,8 +4,8 @@ import BreadcrumbHero from "@/components/BreadcrumbHero";
 import ClinicCard from "@/components/ClinicCard";
 
 export const metadata = {
-  title: "Kallambalam Clinic",
-  description: "Clinic details for Happy Tooth Dental Care & Root Canal Centre in Kallambalam, as well as our new Murukkumpuzha Smile Studio.",
+  title: "Best Dentist in Kallambalam | Happy Tooth Dental Care & Root Canal Centre",
+  description: "Visit Happy Tooth Dental Care in Kallambalam, Thiruvananthapuram. Specializing in advanced root canals, family dental care, and emergency treatments serving since 2021.",
 };
 
 export default function KallambalamClinic() {

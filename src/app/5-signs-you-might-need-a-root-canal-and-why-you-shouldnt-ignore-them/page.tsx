@@ -4,8 +4,8 @@ import Link from "next/link";
 import BreadcrumbHero from "@/components/BreadcrumbHero";
 
 export const metadata = {
-  title: "5 Signs You Might Need a Root Canal",
-  description: "Learn the 5 common symptoms that indicate you might need a root canal, and why delaying endodontic treatment can cause further dental complications.",
+  title: "5 Signs You Need a Root Canal | Dentist Advice & Warning Symptoms",
+  description: "Learn the 5 critical symptoms that indicate you need root canal treatment (RCT). Understand why delaying clinical treatment leads to tooth loss and severe dental pain.",
 };
 
 export default function BlogPost() {

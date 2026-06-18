@@ -4,8 +4,8 @@ import AppointmentForm from "@/components/AppointmentForm";
 import ClinicCard from "@/components/ClinicCard";
 
 export const metadata = {
-  title: "Contact Us & Locations",
-  description: "Get in touch with Happy Tooth Dental Care & Root Canal Centre. Find clinic directions, maps, timings, and phone details for Murukkumpuzha & Kallambalam.",
+  title: "Contact Happy Tooth Clinics | Book a Dentist Appointment",
+  description: "Book a dental consultation or root canal appointment at Happy Tooth. Find addresses, maps, phone numbers, WhatsApp links, and timings for Murukkumpuzha & Kallambalam.",
 };
 
 export default function Contact() {

@@ -4,8 +4,8 @@ import BreadcrumbHero from "@/components/BreadcrumbHero";
 import ClinicCard from "@/components/ClinicCard";
 
 export const metadata = {
-  title: "Murukkumpuzha Studio",
-  description: "Clinic details for HappyTooth Smile Studio in Murukkumpuzha, as well as our established Kallambalam clinic.",
+  title: "Best Dental Clinic in Murukkumpuzha | HappyTooth Smile Studio",
+  description: "Book an appointment at HappyTooth Smile Studio in Murukkumpuzha, Thiruvananthapuram. Our brand new flagship clinic specializing in cosmetic dentistry, dental implants, aligners, and root canals.",
 };
 
 export default function MurukkumpuzhaClinic() {
