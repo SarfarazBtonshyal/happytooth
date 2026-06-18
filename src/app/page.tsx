@@ -147,7 +147,7 @@ export default function Home() {
                   </div>
                   <button
                     type="submit"
-                    className="bg-primary-teal hover:bg-navy-blue text-white text-xs font-bold py-3.5 px-6 rounded-xl transition duration-300 shadow-sm shrink-0"
+                    className="bg-primary-teal hover:bg-accent-teal text-white text-xs font-bold py-3.5 px-6 rounded-xl transition-all duration-300 shadow-sm hover:shadow-md shrink-0 transform hover:-translate-y-0.5 active:scale-95"
                   >
                     Quick Book
                   </button>
