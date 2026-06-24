@@ -11,6 +11,7 @@ export default function Footer() {
     { name: "Kallambalam Clinic", path: "/clinics/kallambalam" },
     { name: "Murukkumpuzha Studio", path: "/clinics/murukkumpuzha" },
     { name: "International Patients", path: "/international" },
+    { name: "Blog", path: "/blog" },
     { name: "FAQ", path: "/faq" },
     { name: "Contact Us", path: "/contact" },
   ];
