@@ -364,7 +364,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="space-y-4 text-xs md:text-sm text-soft-gray leading-relaxed">
+              <div className="space-y-4 text-sm md:text-base text-soft-gray leading-relaxed">
                 <p className="text-justify hyphens-auto">
                   Dr. Thushara Sudhakaran completed her BDS from a recognised dental college and went on to earn her MDS in Endodontics, the specialisation that covers root canal treatment, dental pulp disease, and the science of saving teeth that have been badly damaged or infected. She has been in clinical practice since 2021, during which time she has built a reputation in Thiruvananthapuram for being thorough, honest, and technically precise.
                 </p>
@@ -411,17 +411,17 @@ export default function Home() {
                 <p className="text-justify hyphens-auto">
                   Our clinics are what happens when you take that same clinical standard, add space, add technology, and build facilities that can handle everything in one place, so patients do not have to run between clinics, get conflicting advice, or wait months for a specialist referral.
                 </p>
-                <p className="text-xs md:text-sm font-semibold italic text-navy-blue text-justify hyphens-auto">
+                <p className="text-sm md:text-base font-semibold italic text-navy-blue text-justify hyphens-auto">
                   “Saving Teeth. Designing Smiles.” That is our tagline, and it is literal.
                 </p>
               </div>
 
               {/* Callout box */}
               <div className="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm">
-                <h4 className="font-extrabold text-navy-blue text-xs uppercase tracking-wider mb-1">
+                <h4 className="font-extrabold text-navy-blue text-sm uppercase tracking-wider mb-1">
                   The Kallambalam Practice
                 </h4>
-                <p className="text-xs text-soft-gray leading-relaxed text-justify hyphens-auto">
+                <p className="text-sm text-soft-gray leading-relaxed text-justify hyphens-auto">
                   Our original clinic, HappyTooth Dental Care & Root Canal Centre in Kallambalam, has been treating patients since 2021. HappyTooth Smile Studio brings that same standard to a larger, fully-equipped specialist studio.
                 </p>
               </div>
@@ -456,7 +456,7 @@ export default function Home() {
               Things we do that <br />
               <span className="text-accent-teal">most clinics do not.</span>
             </h2>
-            <p className="text-soft-gray text-xs md:text-sm leading-relaxed max-w-lg mx-auto">
+            <p className="text-soft-gray text-sm md:text-base leading-relaxed max-w-lg mx-auto">
               Being a good dental clinic is not complicated, but it does require some things that are easy to skip. Here is what we do not skip.
             </p>
           </div>
@@ -474,7 +474,7 @@ export default function Home() {
                 <h3 className="text-base md:text-lg font-black text-navy-blue leading-snug">
                   {item.title}
                 </h3>
-                <p className="text-xs md:text-sm text-soft-gray leading-relaxed text-justify hyphens-auto">
+                <p className="text-sm md:text-base text-soft-gray leading-relaxed text-justify hyphens-auto">
                   {item.desc}
                 </p>
               </div>
@@ -542,7 +542,7 @@ export default function Home() {
             <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-blue leading-tight">
               Patient Google Reviews
             </h2>
-            <p className="text-soft-gray text-xs md:text-sm max-w-md mx-auto font-medium text-justify hyphens-auto">
+            <p className="text-soft-gray text-sm md:text-base max-w-md mx-auto font-medium text-justify hyphens-auto">
               Read feedback from patients who completed root canal treatments, pediatric care, and restorative procedures at our clinics.
             </p>
           </div>
@@ -564,7 +564,7 @@ export default function Home() {
                         </svg>
                       ))}
                     </div>
-                    <p className="text-xs md:text-sm text-soft-gray italic leading-relaxed">
+                    <p className="text-sm md:text-base text-soft-gray italic leading-relaxed">
                       {`"Dr. Thushara did a great job in getting my Root canal treatment (RCT) done. Clinic has got a very pleasant ambience, staffs are all great too. Best dental clinic in Kallambalam."`}
                     </p>
                   </div>
@@ -588,7 +588,7 @@ export default function Home() {
                         </svg>
                       ))}
                     </div>
-                    <p className="text-xs md:text-sm text-soft-gray italic leading-relaxed">
+                    <p className="text-sm md:text-base text-soft-gray italic leading-relaxed">
                       {`"Best dental clinic now at Kallambalam. And best care and good service. Thank you."`}
                     </p>
                   </div>
@@ -612,7 +612,7 @@ export default function Home() {
                         </svg>
                       ))}
                     </div>
-                    <p className="text-xs md:text-sm text-soft-gray italic leading-relaxed">
+                    <p className="text-sm md:text-base text-soft-gray italic leading-relaxed">
                       {`"The customer service was great! The staff were very friendly and helpful. They gave good supervision during my visit, which made me feel safe. The care I received was gentle and kind. I also appreciated the quick service; I didn't have to wait long. Overall, it was an excellent visit!"`}
                     </p>
                   </div>
@@ -639,7 +639,7 @@ export default function Home() {
                         </svg>
                       ))}
                     </div>
-                    <p className="text-xs md:text-sm text-soft-gray italic leading-relaxed">
+                    <p className="text-sm md:text-base text-soft-gray italic leading-relaxed">
                       {`"Dr. Thushara did a great job in getting my Root canal treatment (RCT) done. Clinic has got a very pleasant ambience, staffs are all great too. Best dental clinic in Kallambalam."`}
                     </p>
                   </div>
@@ -663,7 +663,7 @@ export default function Home() {
                         </svg>
                       ))}
                     </div>
-                    <p className="text-xs md:text-sm text-soft-gray italic leading-relaxed">
+                    <p className="text-sm md:text-base text-soft-gray italic leading-relaxed">
                       {`"Best dental clinic now at Kallambalam. And best care and good service. Thank you."`}
                     </p>
                   </div>
@@ -687,7 +687,7 @@ export default function Home() {
                         </svg>
                       ))}
                     </div>
-                    <p className="text-xs md:text-sm text-soft-gray italic leading-relaxed">
+                    <p className="text-sm md:text-base text-soft-gray italic leading-relaxed">
                       {`"The customer service was great! The staff were very friendly and helpful. They gave good supervision during my visit, which made me feel safe. The care I received was gentle and kind. I also appreciated the quick service; I didn't have to wait long. Overall, it was an excellent visit!"`}
                     </p>
                   </div>
@@ -718,7 +718,7 @@ export default function Home() {
             <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-blue">
               Contact & Locations
             </h2>
-            <p className="text-soft-gray text-xs md:text-sm leading-relaxed text-justify hyphens-auto max-w-2xl mx-auto">
+            <p className="text-soft-gray text-sm md:text-base leading-relaxed text-justify hyphens-auto max-w-2xl mx-auto">
               We operate two fully equipped dental offices headed by lead specialist Dr. Thushara Sudhakaran. Find the specific hours, phone lines, and locations for each branch below.
             </p>
           </div>
