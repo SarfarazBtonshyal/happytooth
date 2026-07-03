@@ -120,67 +120,67 @@ export default function Footer() {
           </div>
 
           {/* Murukkumpuzha Clinic Contact */}
-          <div>
+          <div className="text-left">
             <h4 className="text-sm font-extrabold uppercase tracking-wider mb-6 relative pb-2 text-white after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 after:bg-primary-teal">
               Murukkumpuzha Studio
             </h4>
-            <ul className="space-y-4 text-sm text-gray-300">
-              <li className="flex items-start gap-2.5">
-                <svg className="h-4 w-4 text-primary-teal shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <ul className="space-y-4 text-sm text-gray-300 text-left">
+              <li className="flex items-start gap-2.5 text-left">
+                <svg className="h-4 w-4 text-accent-teal shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                <span>Ground Floor, Mangalasseri Tower, Murukkumpuzha, Thiruvananthapuram - 695302</span>
+                <span className="text-left">Ground Floor, Mangalasseri Tower, Murukkumpuzha, Thiruvananthapuram - 695302</span>
               </li>
-              <li className="flex items-start gap-2.5">
-                <svg className="h-4 w-4 text-primary-teal shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <li className="flex items-start gap-2.5 text-left">
+                <svg className="h-4 w-4 text-accent-teal shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                <a href="tel:+917356100602" className="hover:text-accent-teal font-bold transition-colors">
+                <a href="tel:+917356100602" className="hover:text-accent-teal font-bold transition-colors text-left">
                   +91 73561 00602
                 </a>
               </li>
-              <li className="flex items-start gap-2.5">
-                <svg className="h-4 w-4 text-primary-teal shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <li className="flex items-start gap-2.5 text-left">
+                <svg className="h-4 w-4 text-accent-teal shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                <div>
-                  <span className="block text-gray-300">All 7 days</span>
-                  <span className="block font-bold text-white">9:30 AM - 6:30 PM</span>
+                <div className="text-left">
+                  <span className="block text-gray-300 text-left">All 7 days</span>
+                  <span className="block font-bold text-white text-left">9:30 AM - 6:30 PM</span>
                 </div>
               </li>
             </ul>
           </div>
 
           {/* Kallambalam Clinic Contact */}
-          <div>
+          <div className="text-left">
             <h4 className="text-sm font-extrabold uppercase tracking-wider mb-6 relative pb-2 text-white after:absolute after:bottom-0 after:left-0 after:w-12 after:h-0.5 after:bg-primary-teal">
               Kallambalam Clinic
             </h4>
-            <ul className="space-y-4 text-sm text-gray-300">
-              <li className="flex items-start gap-2.5">
-                <svg className="h-4 w-4 text-primary-teal shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <ul className="space-y-4 text-sm text-gray-300 text-left">
+              <li className="flex items-start gap-2.5 text-left">
+                <svg className="h-4 w-4 text-accent-teal shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                <span>Mavinmoodu, Kallambalam - Varkala Road, Kallambalam, Thiruvananthapuram - 695605</span>
+                <span className="text-left">Mavinmoodu, Kallambalam - Varkala Road, Kallambalam, Thiruvananthapuram - 695605</span>
               </li>
-              <li className="flex items-start gap-2.5">
-                <svg className="h-4 w-4 text-primary-teal shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <li className="flex items-start gap-2.5 text-left">
+                <svg className="h-4 w-4 text-accent-teal shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                <a href="tel:+918714470808" className="hover:text-accent-teal font-bold transition-colors">
+                <a href="tel:+918714470808" className="hover:text-accent-teal font-bold transition-colors text-left">
                   +91 87144 70808
                 </a>
               </li>
-              <li className="flex items-start gap-2.5">
-                <svg className="h-4 w-4 text-primary-teal shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <li className="flex items-start gap-2.5 text-left">
+                <svg className="h-4 w-4 text-accent-teal shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                <div>
-                  <span className="block text-gray-300">Monday - Saturday</span>
-                  <span className="block font-bold text-white">9:30 AM - 6:30 PM</span>
-                  <span className="block text-red-400 text-xs">Closed on Sunday</span>
+                <div className="text-left">
+                  <span className="block text-gray-300 text-left">Monday - Saturday</span>
+                  <span className="block font-bold text-white text-left">9:30 AM - 6:30 PM</span>
+                  <span className="block text-red-400 text-xs text-left">Closed on Sunday</span>
                 </div>
               </li>
             </ul>
