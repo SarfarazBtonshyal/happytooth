@@ -20,13 +20,6 @@ export default function Home() {
     "Crowns & Bridges",
   ];
 
-  const highlights = [
-    "Murukkumpuzha & Kallambalam",
-    "Root Canal Specialist on site",
-    "Digital X-rays & diagnostics",
-    "Children welcome",
-    "Emergency appointments available",
-  ];
 
   const whyChooseUs = [
     {
@@ -107,15 +100,7 @@ export default function Home() {
                 HappyTooth has been saving teeth in Thiruvananthapuram since 2021. Our Kallambalam Root Canal Centre built that reputation, honest answers, specialist-led treatment, and a dentist who actually explains what is going on. Now we are bringing that same standard to a larger, state-of-the-art specialist facility: the new Smile Studio in Murukkumpuzha, equipped for everything from a routine clean to a full smile transformation.
               </p>
 
-              {/* Clean trust checkmarks row */}
-              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 py-2 text-xs font-bold text-navy-blue">
-                {highlights.slice(0, 3).map((hl, idx) => (
-                  <span key={idx} className="flex items-center gap-2">
-                    <span className="w-5 h-5 rounded-full bg-primary-teal/15 flex items-center justify-center text-primary-teal text-[10px]">✓</span>
-                    <span>{hl}</span>
-                  </span>
-                ))}
-              </div>
+
 
               {/* Interactive Feature: Quick Treatment selector widget */}
               <div className="bg-white p-4 sm:p-5 rounded-[2rem] shadow-xl border border-gray-100 max-w-2xl mx-auto lg:mx-0">
@@ -417,15 +402,7 @@ export default function Home() {
                 </p>
               </div>
 
-              {/* Checklist details */}
-              <div className="grid grid-cols-2 gap-4 pt-4 text-xs font-bold text-navy-blue">
-                {highlights.map((hl, idx) => (
-                  <div key={idx} className="flex items-center gap-2 bg-bg-light-blue/20 py-2.5 px-4 rounded-xl border border-gray-50/50">
-                    <span className="w-1.5 h-1.5 rounded-full bg-primary-teal"></span>
-                    <span>{hl}</span>
-                  </div>
-                ))}
-              </div>
+
             </div>
           </div>
         </div>
