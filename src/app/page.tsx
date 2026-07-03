@@ -109,6 +109,21 @@ export default function Home() {
               </p>
 
 
+              <div className="flex flex-col sm:flex-row justify-center lg:justify-start items-center gap-4 pt-4">
+                <Link
+                  href="/contact"
+                  className="w-full sm:w-auto bg-navy-blue hover:bg-accent-teal text-white font-bold py-4 px-8 rounded-full transition-all duration-300 shadow-sm hover:shadow-md text-center transform hover:-translate-y-0.5 active:scale-95"
+                >
+                  Book an Appointment
+                </Link>
+                <Link
+                  href="/services"
+                  className="w-full sm:w-auto text-center font-bold text-sm text-soft-gray hover:text-primary-teal transition py-4 px-8 flex items-center justify-center gap-1"
+                >
+                  <span>See all treatments</span>
+                  <span>→</span>
+                </Link>
+              </div>
 
               {/* Click outside overlay for custom dropdowns */}
               {(isServiceDropdownOpen || isLocationDropdownOpen) && (
@@ -122,7 +137,7 @@ export default function Home() {
               )}
 
               {/* Interactive Feature: Quick Treatment selector widget */}
-              <div className="bg-white p-4 sm:p-5 rounded-[2rem] shadow-xl border border-gray-100 max-w-2xl mx-auto lg:mx-0 relative z-50">
+              <div className="bg-white p-4 sm:p-5 rounded-[2rem] shadow-xl border border-gray-100 max-w-2xl mx-auto lg:mx-0 relative z-50 mt-6">
                 <form onSubmit={handleQuickBook} className="flex flex-col md:flex-row gap-3">
                   {/* Service Custom Dropdown */}
                   <div className="flex-grow relative">
@@ -250,22 +265,6 @@ export default function Home() {
                     Quick Book
                   </button>
                 </form>
-              </div>
-
-              <div className="flex flex-col sm:flex-row justify-center lg:justify-start items-center gap-4 pt-2">
-                <Link
-                  href="/contact"
-                  className="w-full sm:w-auto bg-navy-blue hover:bg-accent-teal text-white font-bold py-4 px-8 rounded-full transition-all duration-300 shadow-sm hover:shadow-md text-center transform hover:-translate-y-0.5 active:scale-95"
-                >
-                  Book an Appointment
-                </Link>
-                <Link
-                  href="/services"
-                  className="w-full sm:w-auto text-center font-bold text-sm text-soft-gray hover:text-primary-teal transition py-4 px-8 flex items-center justify-center gap-1"
-                >
-                  <span>See all treatments</span>
-                  <span>→</span>
-                </Link>
               </div>
             </div>
 
