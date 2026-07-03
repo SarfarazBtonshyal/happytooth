@@ -164,27 +164,23 @@ export default function Header() {
               <div>
                 <Link
                   href="/contact"
-                  className="relative overflow-hidden group bg-primary-teal text-white font-semibold text-sm py-3.5 px-7 rounded-full transition-all duration-300 shadow-md hover:shadow-xl hover:shadow-primary-teal/20 flex items-center gap-2 transform hover:-translate-y-0.5"
+                  className="bg-navy-blue hover:bg-accent-teal text-white font-bold text-sm py-3.5 px-7 rounded-full transition-all duration-300 shadow-sm hover:shadow-md flex items-center gap-2 transform hover:-translate-y-0.5 active:scale-95"
                 >
-                  {/* Glow effect on hover */}
-                  <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-accent-teal to-primary-teal opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
-                  <span className="relative z-10 flex items-center gap-2">
-                    <span>Make Appointment</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 5l7 7-7 7"
-                      />
-                    </svg>
-                  </span>
+                  <span>Make Appointment</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
                 </Link>
               </div>
             </div>
@@ -319,7 +315,7 @@ export default function Header() {
             <Link
               href="/contact"
               onClick={() => setIsOpen(false)}
-              className="block w-full text-center bg-primary-teal hover:bg-navy-blue text-white font-semibold py-3.5 px-6 rounded-full transition duration-300 shadow-md"
+              className="block w-full text-center bg-navy-blue hover:bg-accent-teal text-white font-bold py-3.5 px-6 rounded-full transition-all duration-300 shadow-sm hover:shadow-md active:scale-95"
             >
               Make Appointment
             </Link>
