@@ -115,7 +115,7 @@ export default function Home() {
                 Deserve Better <br />
                 <span className="text-accent-teal">Than Just Fine.</span>
               </h1>
-              <p className="text-sm sm:text-base md:text-lg text-soft-gray leading-relaxed max-w-xl mx-auto lg:mx-0">
+              <p className="text-sm sm:text-base md:text-lg text-soft-gray leading-relaxed max-w-xl mx-auto lg:mx-0 text-justify hyphens-auto">
                 HappyTooth has been saving teeth in Thiruvananthapuram since 2021. Our Kallambalam Root Canal Centre built that reputation, honest answers, specialist-led treatment, and a dentist who actually explains what is going on. Now we are bringing that same standard to a larger, state-of-the-art specialist facility: the new Smile Studio in Murukkumpuzha, equipped for everything from a routine clean to a full smile transformation.
               </p>
 
@@ -365,13 +365,13 @@ export default function Home() {
               </div>
 
               <div className="space-y-4 text-xs md:text-sm text-soft-gray leading-relaxed">
-                <p>
+                <p className="text-justify hyphens-auto">
                   Dr. Thushara Sudhakaran completed her BDS from a recognised dental college and went on to earn her MDS in Endodontics, the specialisation that covers root canal treatment, dental pulp disease, and the science of saving teeth that have been badly damaged or infected. She has been in clinical practice since 2021, during which time she has built a reputation in Thiruvananthapuram for being thorough, honest, and technically precise.
                 </p>
-                <p>
+                <p className="text-justify hyphens-auto">
                   She does not oversell treatment. If a tooth can be saved, she will tell you how. If it cannot, she will explain why clearly, and discuss the best replacement option for your situation. Patients who have come to her expecting an extraction have left with their tooth intact more often than they expected.
                 </p>
-                <p>
+                <p className="text-justify hyphens-auto">
                   The Smile Studio is her larger vision, a clinic with the space, equipment, and clinical team to handle the full range of what her patients need, without referring them elsewhere. She runs the clinical side of the clinic; her husband Gokul manages the operations. It is a family practice, built with a long-term view.
                 </p>
               </div>
@@ -405,13 +405,13 @@ export default function Home() {
               </h2>
 
               <div className="space-y-4 text-soft-gray leading-relaxed text-sm md:text-base">
-                <p>
+                <p className="text-justify hyphens-auto">
                   HappyTooth did not appear out of nowhere. Starting with our established Kallambalam clinic, we have expanded to a second specialist location in Murukkumpuzha to serve more patients across Thiruvananthapuram.
                 </p>
-                <p>
+                <p className="text-justify hyphens-auto">
                   Our clinics are what happens when you take that same clinical standard, add space, add technology, and build facilities that can handle everything in one place, so patients do not have to run between clinics, get conflicting advice, or wait months for a specialist referral.
                 </p>
-                <p className="text-xs md:text-sm font-semibold italic text-navy-blue">
+                <p className="text-xs md:text-sm font-semibold italic text-navy-blue text-justify hyphens-auto">
                   “Saving Teeth. Designing Smiles.” That is our tagline, and it is literal.
                 </p>
               </div>
@@ -421,7 +421,7 @@ export default function Home() {
                 <h4 className="font-extrabold text-navy-blue text-xs uppercase tracking-wider mb-1">
                   The Kallambalam Practice
                 </h4>
-                <p className="text-xs text-soft-gray leading-relaxed">
+                <p className="text-xs text-soft-gray leading-relaxed text-justify hyphens-auto">
                   Our original clinic, HappyTooth Dental Care & Root Canal Centre in Kallambalam, has been treating patients since 2021. HappyTooth Smile Studio brings that same standard to a larger, fully-equipped specialist studio.
                 </p>
               </div>
@@ -514,13 +514,13 @@ export default function Home() {
               </h2>
 
               <div className="space-y-4 text-soft-gray leading-relaxed text-sm md:text-base">
-                <p className="font-bold text-navy-blue">
+                <p className="font-bold text-navy-blue text-justify hyphens-auto">
                   We operate clinics in Murukkumpuzha and Kallambalam because both neighbourhoods deserve proper specialist care.
                 </p>
-                <p>
+                <p className="text-justify hyphens-auto">
                   Most people in Kazhakoottam, Attingal, Pothencode, Kallambalam, and the surrounding areas have been making a long, tiring trip to the city every single time they need anything beyond a basic filling. That should not be the case.
                 </p>
-                <p className="border-l-4 border-primary-teal pl-4 py-1.5 bg-bg-light-blue/40 rounded-r-xl font-medium text-navy-blue">
+                <p className="border-l-4 border-primary-teal pl-4 py-1.5 bg-bg-light-blue/40 rounded-r-xl font-medium text-navy-blue text-justify hyphens-auto">
                   HappyTooth brings specialist-level dental care, root canal, smile design, implants, and orthodontics, directly to your own backyard.
                 </p>
               </div>
@@ -542,7 +542,7 @@ export default function Home() {
             <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-blue leading-tight">
               Patient Google Reviews
             </h2>
-            <p className="text-soft-gray text-xs md:text-sm max-w-md mx-auto font-medium">
+            <p className="text-soft-gray text-xs md:text-sm max-w-md mx-auto font-medium text-justify hyphens-auto">
               Read feedback from patients who completed root canal treatments, pediatric care, and restorative procedures at our clinics.
             </p>
           </div>
@@ -718,7 +718,7 @@ export default function Home() {
             <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-blue">
               Contact & Locations
             </h2>
-            <p className="text-soft-gray text-xs md:text-sm leading-relaxed">
+            <p className="text-soft-gray text-xs md:text-sm leading-relaxed text-justify hyphens-auto max-w-2xl mx-auto">
               We operate two fully equipped dental offices headed by lead specialist Dr. Thushara Sudhakaran. Find the specific hours, phone lines, and locations for each branch below.
             </p>
           </div>
@@ -768,7 +768,7 @@ export default function Home() {
             Come in once. <br />
             See what proper dental care feels like.
           </h2>
-          <p className="text-gray-300 text-xs sm:text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
+          <p className="text-gray-300 text-xs sm:text-sm md:text-base max-w-2xl mx-auto leading-relaxed text-justify hyphens-auto">
             A consultation is the best place to start, especially if it has been a while since you had a proper check-up, or if you have been putting off treatment because you were not sure where to go. We will examine your teeth, explain what we find, and give you a clear plan. No commitment required at that stage.
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 pt-4">
