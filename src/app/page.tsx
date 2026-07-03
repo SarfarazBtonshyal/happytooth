@@ -9,6 +9,8 @@ export default function Home() {
   const [selectedService, setSelectedService] = useState("");
   const [selectedLocation, setSelectedLocation] = useState("");
   const [showQuickBookAlert, setShowQuickBookAlert] = useState(false);
+  const [isServiceDropdownOpen, setIsServiceDropdownOpen] = useState(false);
+  const [isLocationDropdownOpen, setIsLocationDropdownOpen] = useState(false);
 
   const servicesList = [
     "Root Canal Treatment",
@@ -57,10 +59,16 @@ export default function Home() {
 
   const handleQuickBook = (e: React.FormEvent) => {
     e.preventDefault();
-    if (selectedService && selectedLocation) {
-      setShowQuickBookAlert(true);
-      setTimeout(() => setShowQuickBookAlert(false), 5000);
+    if (!selectedService) {
+      setIsServiceDropdownOpen(true);
+      return;
     }
+    if (!selectedLocation) {
+      setIsLocationDropdownOpen(true);
+      return;
+    }
+    setShowQuickBookAlert(true);
+    setTimeout(() => setShowQuickBookAlert(false), 5000);
   };
 
   return (
@@ -102,37 +110,142 @@ export default function Home() {
 
 
 
+              {/* Click outside overlay for custom dropdowns */}
+              {(isServiceDropdownOpen || isLocationDropdownOpen) && (
+                <div 
+                  className="fixed inset-0 z-40 cursor-default" 
+                  onClick={() => {
+                    setIsServiceDropdownOpen(false);
+                    setIsLocationDropdownOpen(false);
+                  }}
+                />
+              )}
+
               {/* Interactive Feature: Quick Treatment selector widget */}
-              <div className="bg-white p-4 sm:p-5 rounded-[2rem] shadow-xl border border-gray-100 max-w-2xl mx-auto lg:mx-0">
+              <div className="bg-white p-4 sm:p-5 rounded-[2rem] shadow-xl border border-gray-100 max-w-2xl mx-auto lg:mx-0 relative z-50">
                 <form onSubmit={handleQuickBook} className="flex flex-col md:flex-row gap-3">
-                  <div className="flex-grow">
-                    <select
-                      value={selectedService}
-                      onChange={(e) => setSelectedService(e.target.value)}
-                      required
-                      className="w-full text-xs font-bold py-3.5 px-4 bg-gray-50 border border-gray-200 focus:border-primary-teal rounded-xl outline-none text-navy-blue transition"
+                  {/* Service Custom Dropdown */}
+                  <div className="flex-grow relative">
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setIsServiceDropdownOpen(!isServiceDropdownOpen);
+                        setIsLocationDropdownOpen(false);
+                      }}
+                      className="w-full flex items-center justify-between text-xs font-bold py-3.5 px-4 bg-gray-50 border border-gray-200 hover:border-primary-teal/40 focus:border-primary-teal rounded-xl outline-none text-navy-blue transition text-left"
                     >
-                      <option value="">Select Treatment...</option>
-                      {servicesList.map((svc) => (
-                        <option key={svc} value={svc}>{svc}</option>
-                      ))}
-                    </select>
+                      <span className="truncate">{selectedService || "Select Treatment..."}</span>
+                      <svg 
+                        className={`w-4 h-4 text-soft-gray shrink-0 transition-transform duration-300 ${isServiceDropdownOpen ? "rotate-180" : ""}`} 
+                        fill="none" 
+                        stroke="currentColor" 
+                        strokeWidth="2" 
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+
+                    {isServiceDropdownOpen && (
+                      <div className="absolute left-0 right-0 mt-2 bg-white rounded-2xl border border-gray-150 shadow-2xl py-2 z-50 max-h-60 overflow-y-auto animate-fade-in">
+                        <button
+                          type="button"
+                          onClick={() => {
+                            setSelectedService("");
+                            setIsServiceDropdownOpen(false);
+                          }}
+                          className="w-full text-left text-xs font-bold py-2.5 px-4 hover:bg-bg-light-blue/30 text-soft-gray transition-colors"
+                        >
+                          Select Treatment...
+                        </button>
+                        {servicesList.map((svc) => (
+                          <button
+                            key={svc}
+                            type="button"
+                            onClick={() => {
+                              setSelectedService(svc);
+                              setIsServiceDropdownOpen(false);
+                            }}
+                            className={`w-full text-left text-xs font-bold py-2.5 px-4 transition-colors flex items-center justify-between ${
+                              selectedService === svc 
+                                ? "bg-[#FAF7F2] text-accent-teal" 
+                                : "hover:bg-bg-light-blue/30 text-navy-blue"
+                            }`}
+                          >
+                            <span>{svc}</span>
+                            {selectedService === svc && (
+                              <span className="text-accent-teal text-[10px] font-black">✓</span>
+                            )}
+                          </button>
+                        ))}
+                      </div>
+                    )}
                   </div>
-                  <div className="flex-grow">
-                    <select
-                      value={selectedLocation}
-                      onChange={(e) => setSelectedLocation(e.target.value)}
-                      required
-                      className="w-full text-xs font-bold py-3.5 px-4 bg-gray-50 border border-gray-200 focus:border-primary-teal rounded-xl outline-none text-navy-blue transition"
+
+                  {/* Location Custom Dropdown */}
+                  <div className="flex-grow relative">
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setIsLocationDropdownOpen(!isLocationDropdownOpen);
+                        setIsServiceDropdownOpen(false);
+                      }}
+                      className="w-full flex items-center justify-between text-xs font-bold py-3.5 px-4 bg-gray-50 border border-gray-200 hover:border-primary-teal/40 focus:border-primary-teal rounded-xl outline-none text-navy-blue transition text-left"
                     >
-                      <option value="">Select Clinic Location...</option>
-                      <option value="Kallambalam Clinic">Kallambalam Clinic</option>
-                      <option value="Murukkumpuzha Studio">Murukkumpuzha Studio</option>
-                    </select>
+                      <span className="truncate">{selectedLocation || "Select Clinic Location..."}</span>
+                      <svg 
+                        className={`w-4 h-4 text-soft-gray shrink-0 transition-transform duration-300 ${isLocationDropdownOpen ? "rotate-180" : ""}`} 
+                        fill="none" 
+                        stroke="currentColor" 
+                        strokeWidth="2" 
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+
+                    {isLocationDropdownOpen && (
+                      <div className="absolute left-0 right-0 mt-2 bg-white rounded-2xl border border-gray-150 shadow-2xl py-2 z-50 animate-fade-in">
+                        <button
+                          type="button"
+                          onClick={() => {
+                            setSelectedLocation("");
+                            setIsLocationDropdownOpen(false);
+                          }}
+                          className="w-full text-left text-xs font-bold py-2.5 px-4 hover:bg-bg-light-blue/30 text-soft-gray transition-colors"
+                        >
+                          Select Clinic Location...
+                        </button>
+                        {[
+                          "Kallambalam Clinic",
+                          "Murukkumpuzha Studio"
+                        ].map((loc) => (
+                          <button
+                            key={loc}
+                            type="button"
+                            onClick={() => {
+                              setSelectedLocation(loc);
+                              setIsLocationDropdownOpen(false);
+                            }}
+                            className={`w-full text-left text-xs font-bold py-2.5 px-4 transition-colors flex items-center justify-between ${
+                              selectedLocation === loc 
+                                ? "bg-[#FAF7F2] text-accent-teal" 
+                                : "hover:bg-bg-light-blue/30 text-navy-blue"
+                            }`}
+                          >
+                            <span>{loc}</span>
+                            {selectedLocation === loc && (
+                              <span className="text-accent-teal text-[10px] font-black">✓</span>
+                            )}
+                          </button>
+                        ))}
+                      </div>
+                    )}
                   </div>
+
                   <button
                     type="submit"
-                    className="bg-primary-teal hover:bg-accent-teal text-white text-xs font-bold py-3.5 px-6 rounded-xl transition-all duration-300 shadow-sm hover:shadow-md shrink-0 transform hover:-translate-y-0.5 active:scale-95"
+                    className="bg-primary-teal hover:bg-accent-teal text-white text-xs font-bold py-3.5 px-6 rounded-xl transition-all duration-300 shadow-sm hover:shadow-md shrink-0 transform hover:-translate-y-0.5 active:scale-95 z-10"
                   >
                     Quick Book
                   </button>
