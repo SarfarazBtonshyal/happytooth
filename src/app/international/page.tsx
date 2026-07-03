@@ -172,7 +172,7 @@ export default function InternationalPatients() {
                   {st.step}
                 </span>
                 <h3 className="text-lg font-black text-navy-blue">{st.title}</h3>
-                <p className="text-xs md:text-sm text-soft-gray leading-relaxed text-left">{st.desc}</p>
+                <p className="text-xs md:text-sm text-soft-gray leading-relaxed text-justify hyphens-auto">{st.desc}</p>
               </div>
             ))}
           </div>
@@ -198,7 +198,7 @@ export default function InternationalPatients() {
                   <span className="w-1.5 h-3.5 bg-primary-teal rounded-full"></span>
                   {r.title}
                 </h4>
-                <p className="text-xs md:text-sm text-soft-gray leading-relaxed text-left">{r.desc}</p>
+                <p className="text-xs md:text-sm text-soft-gray leading-relaxed text-justify hyphens-auto">{r.desc}</p>
               </div>
             ))}
           </div>
@@ -227,7 +227,7 @@ export default function InternationalPatients() {
                   <span className="block text-[10px] font-black text-primary-teal uppercase tracking-wide">
                     {c.badge}
                   </span>
-                  <p className="text-xs text-soft-gray leading-relaxed pt-1 text-left">{c.desc}</p>
+                  <p className="text-xs text-soft-gray leading-relaxed pt-1 text-justify hyphens-auto">{c.desc}</p>
                 </div>
               </div>
             ))}
@@ -241,7 +241,7 @@ export default function InternationalPatients() {
           <h2 className="text-2xl sm:text-3xl font-black text-navy-blue">
             {`Start with a message. We'll take it from there.`}
           </h2>
-          <p className="text-xs md:text-sm text-soft-gray leading-relaxed max-w-xl mx-auto text-left">
+          <p className="text-xs md:text-sm text-soft-gray leading-relaxed max-w-xl mx-auto text-justify hyphens-auto">
             {`You don't need to wait until you arrive to know what your treatment will involve or what it will cost. Send us a message, share whatever reports or scans you have, and we'll give you a clear picture before you travel.`}
           </p>
 
