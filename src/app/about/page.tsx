@@ -145,7 +145,7 @@ export default function About() {
                 A family dental clinic that takes <br />
                 <span className="text-primary-teal bg-gradient-to-r from-primary-teal to-accent-teal bg-clip-text text-transparent">specialist care seriously</span>
               </h2>
-              <p className="text-soft-gray text-base leading-relaxed">
+              <p className="text-soft-gray text-base leading-relaxed text-justify hyphens-auto">
                 {`HappyTooth covers the full range of dental needs, from a child's first visit to complex restorative treatment in later years. What sets us apart is not the treatments we offer, but the standard to which we deliver them.`}
               </p>
 
@@ -158,7 +158,7 @@ export default function About() {
                 <h4 className="font-extrabold text-navy-blue text-sm md:text-base leading-snug">
                   Every case is handled by the right specialist, not a generalist filling in
                 </h4>
-                <div className="text-xs md:text-sm text-soft-gray space-y-3 leading-relaxed">
+                <div className="text-xs md:text-sm text-soft-gray space-y-3 leading-relaxed text-justify hyphens-auto">
                   <p>
                     At most dental clinics, general dentists handle a wide range of treatments, including cases that technically require a specialist. We have made a deliberate choice not to work that way.
                   </p>
@@ -181,10 +181,10 @@ export default function About() {
             {/* Left side: stats card */}
             <div className="lg:col-span-4 space-y-8 bg-white border border-gray-100 p-8 rounded-[2rem] shadow-xl">
               <h3 className="text-2xl font-extrabold text-navy-blue">Our Team</h3>
-              <p className="text-xs md:text-sm text-soft-gray leading-relaxed">
+              <p className="text-xs md:text-sm text-soft-gray leading-relaxed text-justify hyphens-auto">
                 Our team brings together specialist doctors across both locations, at HappyTooth Smile Studio in Murukkumpuzha and at our Kallambalam clinic. Specialist services are available across all major dental specialisations, so whatever your dental concern, the right expertise is accessible to you.
               </p>
-              <p className="text-xs md:text-sm text-soft-gray leading-relaxed border-t border-gray-100 pt-4">
+              <p className="text-xs md:text-sm text-soft-gray leading-relaxed border-t border-gray-100 pt-4 text-justify hyphens-auto">
                 Every doctor on our team brings dedicated years of training and clinical experience in their own field. You are never seen by someone working outside their area of expertise.
               </p>
 
@@ -205,7 +205,7 @@ export default function About() {
                     <h4 className="font-extrabold text-primary-teal text-sm md:text-base">
                       {sp.title}
                     </h4>
-                    <p className="text-xs md:text-sm text-soft-gray leading-relaxed">
+                    <p className="text-xs md:text-sm text-soft-gray leading-relaxed text-justify hyphens-auto">
                       {sp.desc}
                     </p>
                   </div>
@@ -253,7 +253,7 @@ export default function About() {
                 </span>
               </h2>
 
-              <div className="space-y-4 text-soft-gray leading-relaxed text-sm md:text-base">
+              <div className="space-y-4 text-soft-gray leading-relaxed text-sm md:text-base text-justify hyphens-auto">
                 <p>
                   HappyTooth was founded by Dr. Thushara Sudhakaran, an endodontist whose practice is built on a single principle, save the tooth before considering extraction. She completed her Masters in Endodontics and Conservative Dentistry from A B Shetty Memorial Institute of Dental Sciences, Mangalore in 2017, and went on to practice at Apollo White Dental in Hyderabad before returning to Kerala to build her own clinics.
                 </p>
@@ -312,7 +312,7 @@ export default function About() {
                   <h4 className="text-xs font-bold text-soft-gray mt-1 mb-3">
                     {step.subtitle}
                   </h4>
-                  <p className="text-xs md:text-sm text-soft-gray leading-relaxed">
+                  <p className="text-xs md:text-sm text-soft-gray leading-relaxed text-justify hyphens-auto">
                     {step.desc}
                   </p>
                 </div>
@@ -351,7 +351,7 @@ export default function About() {
                   <h3 className="text-lg font-black text-navy-blue leading-snug">
                     {exp.title}
                   </h3>
-                  <p className="text-xs md:text-sm text-soft-gray leading-relaxed">
+                  <p className="text-xs md:text-sm text-soft-gray leading-relaxed text-justify hyphens-auto">
                     {exp.desc}
                   </p>
                 </div>
