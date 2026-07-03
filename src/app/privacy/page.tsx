@@ -8,8 +8,8 @@ export const metadata = {
 
 export default function Privacy() {
   const retentionPeriods = [
-    { type: "Clinical records — adult patients", period: "Minimum 5 years from last treatment date" },
-    { type: "Clinical records — minor patients", period: "Until patient turns 25, or 5 years from last visit — whichever is later" },
+    { type: "Clinical records, adult patients", period: "Minimum 5 years from last treatment date" },
+    { type: "Clinical records, minor patients", period: "Until patient turns 25, or 5 years from last visit, whichever is later" },
     { type: "Billing and financial records", period: "7 years (Income Tax Act / GST compliance)" },
     { type: "Website enquiry / contact forms", period: "12 months from date of submission" },
     { type: "Appointment and recall records", period: "2 years from last appointment" },
@@ -94,7 +94,7 @@ export default function Privacy() {
                 4. How We Store and Protect Your Data
               </h3>
               <p>
-                Patient records — including clinical charts, notes, digital X-rays, treatment plans, and billing summaries — are securely managed through <strong>Dentobees</strong>, a cloud-based dental practice management software. Dentobees stores data on encrypted, high-security servers and provides role-based access logs that restrict information visibility only to authorized dental and clinical staff.
+                Patient records, including clinical charts, notes, digital X-rays, treatment plans, and billing summaries, are securely managed through <strong>Dentobees</strong>, a cloud-based dental practice management software. Dentobees stores data on encrypted, high-security servers and provides role-based access logs that restrict information visibility only to authorized dental and clinical staff.
               </p>
               <p>
                 Paper files, written consent forms, and physical medical questionnaires are stored in locked, fire-resistant cabinets inside the clinic premises. Physical access is restricted strictly to authorized staff, all of whom are contractually bound to maintain strict patient confidentiality.

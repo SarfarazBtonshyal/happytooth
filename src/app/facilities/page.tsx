@@ -12,11 +12,11 @@ export default function Facilities() {
   const diagnosticGear = [
     {
       title: "Portable Digital X-Ray",
-      desc: "Digital X-rays produce a clear, detailed image of the tooth and surrounding bone in seconds — visible on screen immediately, with significantly less radiation than older film-based systems. There's no waiting, no chemical processing, and the image can be zoomed and examined in detail. For patients who feel anxious about X-rays, the speed and simplicity help.",
+      desc: "Digital X-rays produce a clear, detailed image of the tooth and surrounding bone in seconds, visible on screen immediately, with significantly less radiation than older film-based systems. There's no waiting, no chemical processing, and the image can be zoomed and examined in detail. For patients who feel anxious about X-rays, the speed and simplicity help.",
     },
     {
       title: "Intraoral Scanner",
-      desc: "The traditional way of taking a dental impression involved filling a tray with putty and asking patients to hold it in their mouth for several minutes — uncomfortable, and occasionally triggering a gag reflex. A digital intraoral scanner replaces that entirely. A small wand is passed gently over the teeth and produces a precise 3D digital model in under two minutes. Used for crowns, bridges, aligners, and treatment planning.",
+      desc: "The traditional way of taking a dental impression involved filling a tray with putty and asking patients to hold it in their mouth for several minutes, uncomfortable, and occasionally triggering a gag reflex. A digital intraoral scanner replaces that entirely. A small wand is passed gently over the teeth and produces a precise 3D digital model in under two minutes. Used for crowns, bridges, aligners, and treatment planning.",
     },
     {
       title: "Intraoral Camera",
@@ -27,18 +27,18 @@ export default function Facilities() {
   const treatmentGear = [
     {
       title: "Latest Dental Chairs",
-      desc: "Dental chairs at Smile Studio are modern units designed for patient comfort and clinical efficiency. Smooth electronic positioning, padded headrests, and proper lumbar support make a real difference during longer procedures. The chair adjusts precisely for each treatment — rather than the patient having to sit in an awkward position because the equipment is limited.",
+      desc: "Dental chairs at Smile Studio are modern units designed for patient comfort and clinical efficiency. Smooth electronic positioning, padded headrests, and proper lumbar support make a real difference during longer procedures. The chair adjusts precisely for each treatment, rather than the patient having to sit in an awkward position because the equipment is limited.",
     },
     {
       title: "Advanced Ultrasonic Scaler with Air Polishing",
-      desc: "Scaling — the removal of tartar and hardened deposits — has a reputation for being uncomfortable. The advanced ultrasonic scaler at Smile Studio uses precisely controlled vibrations to remove deposits with significantly less pressure and sensitivity than older manual instruments. The integrated air polishing removes surface stains and biofilm gently using a fine spray of water, air, and polishing powder — leaving teeth visibly cleaner with minimal abrasion and far less discomfort.",
+      desc: "Scaling, the removal of tartar and hardened deposits, has a reputation for being uncomfortable. The advanced ultrasonic scaler at Smile Studio uses precisely controlled vibrations to remove deposits with significantly less pressure and sensitivity than older manual instruments. The integrated air polishing removes surface stains and biofilm gently using a fine spray of water, air, and polishing powder, leaving teeth visibly cleaner with minimal abrasion and far less discomfort.",
     },
   ];
 
   const comfortFeatures = [
     {
       title: "In-Chair Television Screens",
-      desc: "Every treatment chair has a screen positioned where patients can watch something during their appointment. It sounds simple — and it is — but having something to focus on during a procedure makes a measurable difference to how patients experience treatment time, particularly for longer appointments. Bring your own content or watch from what's on.",
+      desc: "Every treatment chair has a screen positioned where patients can watch something during their appointment. It sounds simple, and it is, but having something to focus on during a procedure makes a measurable difference to how patients experience treatment time, particularly for longer appointments. Bring your own content or watch from what's on.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-primary-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4" />
@@ -47,7 +47,7 @@ export default function Facilities() {
     },
     {
       title: "Noise-Cancelling Headphones",
-      desc: "For many people, the sound of dental equipment is the hardest part. The drill, the suction, the scaling — these sounds trigger anxiety even in patients who are otherwise comfortable. Noise-cancelling headphones are available at every chair. Put them on, connect your phone, and the clinical sounds largely disappear. Use them with the in-chair screen, your own music, a podcast, or just silence.",
+      desc: "For many people, the sound of dental equipment is the hardest part. The drill, the suction, the scaling, these sounds trigger anxiety even in patients who are otherwise comfortable. Noise-cancelling headphones are available at every chair. Put them on, connect your phone, and the clinical sounds largely disappear. Use them with the in-chair screen, your own music, a podcast, or just silence.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-primary-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
@@ -57,7 +57,7 @@ export default function Facilities() {
     },
     {
       title: "Children's Play Area",
-      desc: "Waiting for a sibling's appointment, or sitting with a parent who's about to go in — for a child, that wait can feel long and unfamiliar. The play area at Smile Studio gives younger patients and siblings something to do while they wait, in a space that feels less clinical and more welcoming. It also helps reduce the anxiety around the visit itself — children who associate the clinic with something positive are far easier to treat when it's their turn.",
+      desc: "Waiting for a sibling's appointment, or sitting with a parent who's about to go in, for a child, that wait can feel long and unfamiliar. The play area at Smile Studio gives younger patients and siblings something to do while they wait, in a space that feels less clinical and more welcoming. It also helps reduce the anxiety around the visit itself, children who associate the clinic with something positive are far easier to treat when it's their turn.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-primary-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -129,7 +129,7 @@ export default function Facilities() {
                   Good dentistry needs the right tools. We've invested in equipment that makes treatment more accurate, faster, and genuinely more comfortable.
                 </p>
                 <p>
-                  HappyTooth Smile Studio is built from scratch as a full-service specialist clinic. Every piece of equipment here was chosen for a reason — not to fill a checklist, but because it changes something real about how treatment is delivered or how patients experience it.
+                  HappyTooth Smile Studio is built from scratch as a full-service specialist clinic. Every piece of equipment here was chosen for a reason, not to fill a checklist, but because it changes something real about how treatment is delivered or how patients experience it.
                 </p>
                 <p className="text-xs md:text-sm border-l-4 border-primary-teal pl-4 py-1.5 bg-bg-light-blue/40 rounded-r-xl">
                   The facilities listed here are at our Murukkumpuzha clinic. Our Kallambalam clinic, which has been serving patients since 2021, covers the core clinical services. Smile Studio is where everything comes together.
@@ -157,7 +157,7 @@ export default function Facilities() {
                   Diagnosis drives everything
                 </h2>
                 <p className="text-xs md:text-sm text-soft-gray font-semibold leading-relaxed">
-                  The more clearly a dentist can see what's happening — in the mouth, under the gum, inside a tooth — the better the treatment decision that follows.
+                  The more clearly a dentist can see what's happening, in the mouth, under the gum, inside a tooth, the better the treatment decision that follows.
                 </p>
               </div>
 
@@ -322,7 +322,7 @@ export default function Facilities() {
                   STERILISATION & HYGIENE
                 </span>
                 <h2 className="text-3xl font-extrabold text-navy-blue">
-                  This is the part most patients don't see — and that's exactly why it matters
+                  This is the part most patients don't see, and that's exactly why it matters
                 </h2>
                 <p className="text-soft-gray text-base leading-relaxed">
                   The cleanliness of instruments used in your mouth is non-negotiable. At Smile Studio, every reusable instrument goes through a validated sterilisation cycle before it is used again.
@@ -335,10 +335,10 @@ export default function Facilities() {
                   Class B Autoclave (Hospital Standard)
                 </h4>
                 <p className="text-xs md:text-sm text-soft-gray leading-relaxed">
-                  An autoclave sterilises instruments using high-pressure steam, killing all bacteria, viruses, fungal spores, and other microorganisms. Class B is the highest standard of autoclave — it removes air from the chamber in a pre-vacuum cycle before the steam enters, which ensures that even complex instruments with narrow channels and hollow sections are fully sterilised throughout. Not just on the surface. This is the standard used in hospitals and surgical theatres. We apply the same standard here.
+                  An autoclave sterilises instruments using high-pressure steam, killing all bacteria, viruses, fungal spores, and other microorganisms. Class B is the highest standard of autoclave, it removes air from the chamber in a pre-vacuum cycle before the steam enters, which ensures that even complex instruments with narrow channels and hollow sections are fully sterilised throughout. Not just on the surface. This is the standard used in hospitals and surgical theatres. We apply the same standard here.
                 </p>
                 <div className="bg-white py-3.5 px-5 rounded-2xl border border-gray-100 text-xs font-bold text-navy-blue">
-                  Every instrument that enters your mouth has completed a full Class B sterilisation cycle. No exceptions. Disposable items — needles, gloves, suction tips — are used once and discarded.
+                  Every instrument that enters your mouth has completed a full Class B sterilisation cycle. No exceptions. Disposable items, needles, gloves, suction tips, are used once and discarded.
                 </div>
               </div>
             </div>
@@ -375,7 +375,7 @@ export default function Facilities() {
                   </svg>
                   <div>
                     <span className="block font-bold text-white">Address:</span>
-                    <span className="block text-xs text-gray-300 mt-1">Ground Floor, Mangalasseri Tower, Murukkumpuzha, Thiruvananthapuram – 695302</span>
+                    <span className="block text-xs text-gray-300 mt-1">Ground Floor, Mangalasseri Tower, Murukkumpuzha, Thiruvananthapuram - 695302</span>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -393,7 +393,7 @@ export default function Facilities() {
                   </svg>
                   <div>
                     <span className="block font-bold text-white">Hours:</span>
-                    <span className="block text-xs text-gray-300 mt-1">All 7 days including Sunday  ·  9:30 AM – 6:30 PM</span>
+                    <span className="block text-xs text-gray-300 mt-1">All 7 days including Sunday  ·  9:30 AM - 6:30 PM</span>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -404,7 +404,7 @@ export default function Facilities() {
                   </svg>
                   <div>
                     <span className="block font-bold text-white">Parking:</span>
-                    <span className="block text-xs text-gray-300 mt-1">Ample space available — fits 6+ cars comfortably</span>
+                    <span className="block text-xs text-gray-300 mt-1">Ample space available, fits 6+ cars comfortably</span>
                   </div>
                 </div>
               </div>
@@ -424,7 +424,7 @@ export default function Facilities() {
                   </svg>
                   <div>
                     <span className="block font-bold text-white">Address:</span>
-                    <span className="block text-xs text-gray-300 mt-1">Mavinmoodu, Kallambalam–Varkala Road, Kallambalam, Thiruvananthapuram – 695605</span>
+                    <span className="block text-xs text-gray-300 mt-1">Mavinmoodu, Kallambalam - Varkala Road, Kallambalam, Thiruvananthapuram - 695605</span>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -442,7 +442,7 @@ export default function Facilities() {
                   </svg>
                   <div>
                     <span className="block font-bold text-white">Hours:</span>
-                    <span className="block text-xs text-gray-300 mt-1">Monday to Saturday · 9:30 AM – 6:30 PM (Closed on Sundays)</span>
+                    <span className="block text-xs text-gray-300 mt-1">Monday to Saturday · 9:30 AM - 6:30 PM (Closed on Sundays)</span>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">

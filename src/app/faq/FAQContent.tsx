@@ -39,7 +39,7 @@ export default function FAQContent() {
               </ul>
             </li>
             <li><strong>Online Form:</strong> Fill out the appointment form on our Contact page, and we will call you back to confirm a slot.</li>
-            <li><strong>Walk-In:</strong> Walk in during clinic hours — though booking ahead means little to no waiting.</li>
+            <li><strong>Walk-In:</strong> Walk in during clinic hours, though booking ahead means little to no waiting.</li>
           </ul>
           <p className="text-xs text-soft-gray italic mt-1">We will confirm your appointment, the doctor's availability, and roughly how long the visit will take.</p>
         </div>
@@ -59,7 +59,7 @@ export default function FAQContent() {
       question: "What should I bring to my first visit?",
       answer: (
         <p>
-          Just bring any previous dental records, X-rays, or prescriptions if you have them — and a list of any medicines you currently take. If you have had treatment elsewhere, telling us about it helps us plan better. There is no complicated paperwork for a first visit.
+          Just bring any previous dental records, X-rays, or prescriptions if you have them, and a list of any medicines you currently take. If you have had treatment elsewhere, telling us about it helps us plan better. There is no complicated paperwork for a first visit.
         </p>
       ),
     },
@@ -68,7 +68,7 @@ export default function FAQContent() {
       question: "I'm nervous about visiting the dentist. Can you help?",
       answer: (
         <p>
-          That is more common than you would think, and it is completely okay. Our whole approach is built around making the visit calm and unhurried. We explain each step before we do it, use modern anaesthesia techniques to keep procedures comfortable, and never rush you. Tell us you are anxious when you arrive — we will take it gently.
+          That is more common than you would think, and it is completely okay. Our whole approach is built around making the visit calm and unhurried. We explain each step before we do it, use modern anaesthesia techniques to keep procedures comfortable, and never rush you. Tell us you are anxious when you arrive, we will take it gently.
         </p>
       ),
     },
@@ -77,7 +77,7 @@ export default function FAQContent() {
       question: "Does a root canal hurt?",
       answer: (
         <p>
-          This is the question we hear most — and the honest answer is no, not the way people fear. A root canal is done under local anaesthesia, so the tooth is fully numb during treatment. Most patients are surprised at how comfortable it is. In fact, a root canal relieves the severe pain caused by an infected tooth. Our chief dentist is an endodontist (a root canal specialist), and we use modern rotary systems that make the procedure faster and gentler.
+          This is the question we hear most, and the honest answer is no, not the way people fear. A root canal is done under local anaesthesia, so the tooth is fully numb during treatment. Most patients are surprised at how comfortable it is. In fact, a root canal relieves the severe pain caused by an infected tooth. Our chief dentist is an endodontist (a root canal specialist), and we use modern rotary systems that make the procedure faster and gentler.
         </p>
       ),
     },
@@ -95,7 +95,7 @@ export default function FAQContent() {
       question: "Do you treat children?",
       answer: (
         <p>
-          Yes. We offer pediatric dentistry with a gentle, child-friendly approach — checkups, cleaning, fillings, and habit guidance. We focus on making the visit positive and fear-free so children grow up comfortable with dental care rather than afraid of it. Bringing children early also helps catch small problems before they become big ones.
+          Yes. We offer pediatric dentistry with a gentle, child-friendly approach, checkups, cleaning, fillings, and habit guidance. We focus on making the visit positive and fear-free so children grow up comfortable with dental care rather than afraid of it. Bringing children early also helps catch small problems before they become big ones.
         </p>
       ),
     },
@@ -113,7 +113,7 @@ export default function FAQContent() {
       question: "Can you improve the appearance of my teeth?",
       answer: (
         <p>
-          Yes — through cosmetic dentistry and smile design. This can range from simple teeth whitening to reshaping, fixing chips and gaps, or a complete smile makeover. Our approach is to enhance what already suits your face rather than create an artificial look. We plan every smile to look natural and balanced.
+          Yes, through cosmetic dentistry and smile design. This can range from simple teeth whitening to reshaping, fixing chips and gaps, or a complete smile makeover. Our approach is to enhance what already suits your face rather than create an artificial look. We plan every smile to look natural and balanced.
         </p>
       ),
     },
@@ -146,7 +146,7 @@ export default function FAQContent() {
       question: "Does insurance cover dental treatment?",
       answer: (
         <p>
-          Most standard health insurance policies in India cover dental treatment only in specific cases — for example, treatment following an accident or certain surgical procedures — and not routine care like cleaning, crowns, or fillings.
+          Most standard health insurance policies in India cover dental treatment only in specific cases, for example, treatment following an accident or certain surgical procedures, and not routine care like cleaning, crowns, or fillings.
         </p>
       ),
     },
@@ -173,7 +173,7 @@ export default function FAQContent() {
           <div className="bg-bg-light-blue/40 border border-gray-100 p-4 rounded-xl">
             <span className="block text-xs font-black text-primary-teal tracking-wide uppercase mb-1">Established Clinic</span>
             <strong className="block text-navy-blue text-sm">Kallambalam</strong>
-            <p className="text-xs text-soft-gray mt-1">Mavinmoodu, Kallambalam–Varkala Road, Kallambalam. Serving families since 2021.</p>
+            <p className="text-xs text-soft-gray mt-1">Mavinmoodu, Kallambalam - Varkala Road, Kallambalam. Serving families since 2021.</p>
             <a href="tel:+918714470808" className="block text-xs font-bold text-navy-blue mt-2 hover:underline">Phone: +91 87144 70808</a>
           </div>
         </div>
@@ -187,13 +187,13 @@ export default function FAQContent() {
           <div className="border border-gray-100 p-4 rounded-xl bg-white shadow-xs">
             <strong className="block text-navy-blue mb-1">Murukkumpuzha Smile Studio</strong>
             <span className="block text-soft-gray">All 7 days</span>
-            <span className="block font-bold text-primary-teal">9:30 AM – 6:30 PM</span>
+            <span className="block font-bold text-primary-teal">9:30 AM - 6:30 PM</span>
             <span className="block text-green-600 font-medium mt-1">Open Daily (Inc. Sundays)</span>
           </div>
           <div className="border border-gray-100 p-4 rounded-xl bg-white shadow-xs">
             <strong className="block text-navy-blue mb-1">Kallambalam Clinic</strong>
-            <span className="block text-soft-gray">Monday – Saturday</span>
-            <span className="block font-bold text-primary-teal">9:30 AM – 6:30 PM</span>
+            <span className="block text-soft-gray">Monday - Saturday</span>
+            <span className="block font-bold text-primary-teal">9:30 AM - 6:30 PM</span>
             <span className="block text-red-500 font-medium mt-1">Closed on Sunday</span>
           </div>
         </div>
@@ -231,7 +231,7 @@ export default function FAQContent() {
       question: "What hygiene and sterilization measures do you follow?",
       answer: (
         <p>
-          Your safety is non-negotiable for us. We follow strict sterilization protocols — instruments are cleaned and sterilized after every patient using a validated Class B Autoclave (hospital standard), treatment surfaces are disinfected between visits, and we use disposable single-use items wherever appropriate. Our goal is a clean, controlled clinical environment for every procedure.
+          Your safety is non-negotiable for us. We follow strict sterilization protocols, instruments are cleaned and sterilized after every patient using a validated Class B Autoclave (hospital standard), treatment surfaces are disinfected between visits, and we use disposable single-use items wherever appropriate. Our goal is a clean, controlled clinical environment for every procedure.
         </p>
       ),
     },

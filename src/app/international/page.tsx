@@ -13,33 +13,33 @@ export default function InternationalPatients() {
     {
       step: "Step 1",
       title: "Reach out before you travel",
-      desc: "Contact us on WhatsApp or arrange a video call before your trip. Tell us what's been bothering you, share any existing X-rays or dental reports, and we'll give you an honest assessment of what's needed — and how long it will take. You'll know the treatment plan and the approximate cost before you board a flight.",
+      desc: "Contact us on WhatsApp or arrange a video call before your trip. Tell us what's been bothering you, share any existing X-rays or dental reports, and we'll give you an honest assessment of what's needed, and how long it will take. You'll know the treatment plan and the approximate cost before you board a flight.",
     },
     {
       step: "Step 2",
       title: "We schedule around your dates",
-      desc: "Once we know how long you'll be in Thiruvananthapuram, we plan the treatment to fit. Most dental work — including root canals, implant consultations, crowns, whitening, and scaling — can be completed within a visit of a few days to two weeks. We tell you upfront what's realistic for your timeframe.",
+      desc: "Once we know how long you'll be in Thiruvananthapuram, we plan the treatment to fit. Most dental work, including root canals, implant consultations, crowns, whitening, and scaling, can be completed within a visit of a few days to two weeks. We tell you upfront what's realistic for your timeframe.",
     },
     {
       step: "Step 3",
       title: "Walk in, get treated",
-      desc: "Your appointment is confirmed in advance. You come in, the treatment happens as planned, and we make sure you leave with everything you need — prescriptions, documentation for your records abroad, and clear instructions for aftercare. If you need to continue treatment at home with your regular dentist, we'll make sure they have everything to pick up where we left off.",
+      desc: "Your appointment is confirmed in advance. You come in, the treatment happens as planned, and we make sure you leave with everything you need, prescriptions, documentation for your records abroad, and clear instructions for aftercare. If you need to continue treatment at home with your regular dentist, we'll make sure they have everything to pick up where we left off.",
     },
     {
       step: "Step 4",
       title: "Follow-up after you leave",
-      desc: "After you return home, we're reachable on WhatsApp if anything comes up. Questions about healing, discomfort that concerns you, or just wanting to know if something is normal — we respond. You're not on your own once you've left the clinic.",
+      desc: "After you return home, we're reachable on WhatsApp if anything comes up. Questions about healing, discomfort that concerns you, or just wanting to know if something is normal, we respond. You're not on your own once you've left the clinic.",
     },
   ];
 
   const reasons = [
     {
       title: "Specialist-led care",
-      desc: "Every treatment is delivered by a specialist with postgraduate training in that specific field. You get the same standard of care here that you would expect from a specialist clinic abroad — at a very different cost.",
+      desc: "Every treatment is delivered by a specialist with postgraduate training in that specific field. You get the same standard of care here that you would expect from a specialist clinic abroad, at a very different cost.",
     },
     {
       title: "Planned around your schedule",
-      desc: "We don't ask you to come back five times over five weeks. Treatment is planned to fit your time in Kerala — efficiently, without cutting corners on quality or rushing procedures.",
+      desc: "We don't ask you to come back five times over five weeks. Treatment is planned to fit your time in Kerala, efficiently, without cutting corners on quality or rushing procedures.",
     },
     {
       title: "Consult before you arrive",
@@ -51,7 +51,7 @@ export default function InternationalPatients() {
     },
     {
       title: "Full documentation provided",
-      desc: "Treatment records, X-rays, prescriptions, and clinical notes — all provided on request in a format your dentist at home can use. Continuity of care doesn't stop.",
+      desc: "Treatment records, X-rays, prescriptions, and clinical notes, all provided on request in a format your dentist at home can use. Continuity of care doesn't stop.",
     },
     {
       title: "English, Malayalam & Hindi",
@@ -83,7 +83,7 @@ export default function InternationalPatients() {
     {
       title: "Clinic Hours",
       badge: "Open all 7 days",
-      desc: "HappyTooth Smile Studio is open Monday through Sunday, 9:30 AM to 6:30 PM — including weekends and public holidays.",
+      desc: "HappyTooth Smile Studio is open Monday through Sunday, 9:30 AM to 6:30 PM, including weekends and public holidays.",
     },
     {
       title: "After Your Visit",
@@ -115,7 +115,7 @@ export default function InternationalPatients() {
                 <span className="text-primary-teal bg-gradient-to-r from-primary-teal to-accent-teal bg-clip-text text-transparent">planned around your visit.</span>
               </h2>
               <p className="text-soft-gray text-base leading-relaxed">
-                Whether you're an NRI visiting family, a tourist passing through Thiruvananthapuram, or travelling specifically for treatment — we make sure your dental care fits around your time here, not the other way around.
+                Whether you're an NRI visiting family, a tourist passing through Thiruvananthapuram, or travelling specifically for treatment, we make sure your dental care fits around your time here, not the other way around.
               </p>
               <div className="text-xs font-bold text-navy-blue flex items-center gap-3">
                 <span className="bg-bg-light-blue py-1.5 px-4 rounded-lg flex items-center gap-1.5">
@@ -127,7 +127,7 @@ export default function InternationalPatients() {
               </div>
               <div className="text-sm text-soft-gray space-y-4">
                 <p>
-                  Many of our patients are visiting Kerala from abroad — NRIs back home for a few weeks, tourists who've extended their stay, or patients from the Maldives who make the short trip across for specialist dental treatment. What they all have in common is that their time here is limited and their expectations are high.
+                  Many of our patients are visiting Kerala from abroad, NRIs back home for a few weeks, tourists who've extended their stay, or patients from the Maldives who make the short trip across for specialist dental treatment. What they all have in common is that their time here is limited and their expectations are high.
                 </p>
                 <p>
                   We've built a straightforward process for international patients: consult before you arrive, plan your treatment schedule in advance, and walk in knowing exactly what's going to happen. No surprises, no wasted trips.

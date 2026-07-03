@@ -15,10 +15,6 @@
   --color-dark-text: #101E2E;      /* Midnight Slate text */
   --color-soft-gray: #6B6150;      /* Muted Warm Brownish-Slate Gray */
   --color-border-gray: #DFD7C8;    /* Warm Stone Border */
-
-  --font-rubik: "Times New Roman", Times, serif;
-  --font-poppins: "Times New Roman", Times, serif;
-
   --animate-fade-in: fade-in 1s ease-out forwards;
   --animate-fade-in-up: fade-in-up 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
   --animate-slide-up: slide-up 0.8s ease-out forwards;
@@ -62,10 +58,7 @@
     scroll-behavior: smooth;
   }
 
-  /* Force Times New Roman globally across the entire website completely */
-  html, body, h1, h2, h3, h4, h5, h6, button, input, select, textarea, a, p, span, li, blockquote, div {
-    font-family: "Times New Roman", Times, serif !important;
-  }
+
 
   body {
     background: var(--background); /* Warm Linen Background */

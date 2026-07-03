@@ -53,26 +53,26 @@ export default function About() {
 
   const timeline = [
     {
-      year: "2014 – 2017",
-      title: "MDS — Endodontics & Conservative Dentistry",
+      year: "2014 - 2017",
+      title: "MDS, Endodontics & Conservative Dentistry",
       subtitle: "A B Shetty Memorial Institute of Dental Sciences, Mangalore",
       desc: "A 3-year postgraduate surgical and clinical programme covering advanced root canal therapy, endodontic microsurgery, regenerative endodontics, and complex restorative procedures.",
     },
     {
-      year: "2017 – 2021",
-      title: "Clinical Practice — Apollo White Dental, Hyderabad",
+      year: "2017 - 2021",
+      title: "Clinical Practice, Apollo White Dental, Hyderabad",
       subtitle: "Specialist endodontic practice at Apollo White Dental",
       desc: "Treating patients from across India and the NRI community, in a setting with international clinical standards and high procedural volume.",
     },
     {
       year: "2021",
-      title: "Happy Tooth Dental Care & Root Canal Centre — Kallambalam",
+      title: "Happy Tooth Dental Care & Root Canal Centre, Kallambalam",
       subtitle: "Her first clinic in Thiruvananthapuram",
       desc: "Since 2021, it has built a steady, largely word-of-mouth following among patients seeking to save compromised teeth with specialized root canals and conservative dentistry.",
     },
     {
       year: "Opening Soon / July 2026",
-      title: "HappyTooth Smile Studio — Murukkumpuzha",
+      title: "HappyTooth Smile Studio, Murukkumpuzha",
       subtitle: "Her second and flagship clinic",
       desc: "A purpose-built specialist centre expanding into implantology, orthodontics, digital smile design, teeth whitening, and cosmetic dentistry, alongside endodontics. Same founding philosophy, broader scope.",
     },
@@ -81,7 +81,7 @@ export default function About() {
   const expectations = [
     {
       title: "The right doctor for your case",
-      desc: "Every patient is matched to a specialist in the relevant field — not whoever happens to be available that day.",
+      desc: "Every patient is matched to a specialist in the relevant field, not whoever happens to be available that day.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-primary-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
@@ -99,7 +99,7 @@ export default function About() {
     },
     {
       title: "Pain-free, every time",
-      desc: "Dental anxiety keeps people away far longer than they should be. The clinical approach here is built around making that fear irrelevant — for every patient, every visit.",
+      desc: "Dental anxiety keeps people away far longer than they should be. The clinical approach here is built around making that fear irrelevant, for every patient, every visit.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-primary-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -146,7 +146,7 @@ export default function About() {
                 <span className="text-primary-teal bg-gradient-to-r from-primary-teal to-accent-teal bg-clip-text text-transparent">specialist care seriously</span>
               </h2>
               <p className="text-soft-gray text-base leading-relaxed">
-                HappyTooth covers the full range of dental needs — from a child's first visit to complex restorative treatment in later years. What sets us apart is not the treatments we offer, but the standard to which we deliver them.
+                HappyTooth covers the full range of dental needs, from a child's first visit to complex restorative treatment in later years. What sets us apart is not the treatments we offer, but the standard to which we deliver them.
               </p>
 
               {/* How we work card */}
@@ -156,14 +156,14 @@ export default function About() {
                   HOW WE WORK
                 </h3>
                 <h4 className="font-extrabold text-navy-blue text-sm md:text-base leading-snug">
-                  Every case is handled by the right specialist — not a generalist filling in
+                  Every case is handled by the right specialist, not a generalist filling in
                 </h4>
                 <div className="text-xs md:text-sm text-soft-gray space-y-3 leading-relaxed">
                   <p>
-                    At most dental clinics, general dentists handle a wide range of treatments — including cases that technically require a specialist. We have made a deliberate choice not to work that way.
+                    At most dental clinics, general dentists handle a wide range of treatments, including cases that technically require a specialist. We have made a deliberate choice not to work that way.
                   </p>
                   <p>
-                    At HappyTooth, your first visit is a consultation and diagnosis. From there, your treatment is assigned to the specialist trained for it — an orthodontic case goes to an orthodontist, a child's treatment to a paediatric dentist, gum problems to a periodontist, and so on. Every treatment is carried out by a specialist from our team of doctors.
+                    At HappyTooth, your first visit is a consultation and diagnosis. From there, your treatment is assigned to the specialist trained for it, an orthodontic case goes to an orthodontist, a child's treatment to a paediatric dentist, gum problems to a periodontist, and so on. Every treatment is carried out by a specialist from our team of doctors.
                   </p>
                 </div>
               </div>
@@ -182,7 +182,7 @@ export default function About() {
             <div className="lg:col-span-4 space-y-8 bg-white border border-gray-100 p-8 rounded-[2rem] shadow-xl">
               <h3 className="text-2xl font-extrabold text-navy-blue">Our Team</h3>
               <p className="text-xs md:text-sm text-soft-gray leading-relaxed">
-                Our team brings together specialist doctors across both locations — at HappyTooth Smile Studio in Murukkumpuzha and at our Kallambalam clinic. Specialist services are available across all major dental specialisations, so whatever your dental concern, the right expertise is accessible to you.
+                Our team brings together specialist doctors across both locations, at HappyTooth Smile Studio in Murukkumpuzha and at our Kallambalam clinic. Specialist services are available across all major dental specialisations, so whatever your dental concern, the right expertise is accessible to you.
               </p>
               <p className="text-xs md:text-sm text-soft-gray leading-relaxed border-t border-gray-100 pt-4">
                 Every doctor on our team brings dedicated years of training and clinical experience in their own field. You are never seen by someone working outside their area of expertise.
@@ -255,10 +255,10 @@ export default function About() {
 
               <div className="space-y-4 text-soft-gray leading-relaxed text-sm md:text-base">
                 <p>
-                  HappyTooth was founded by Dr. Thushara Sudhakaran, an endodontist whose practice is built on a single principle — save the tooth before considering extraction. She completed her Masters in Endodontics and Conservative Dentistry from A B Shetty Memorial Institute of Dental Sciences, Mangalore in 2017, and went on to practice at Apollo White Dental in Hyderabad before returning to Kerala to build her own clinics.
+                  HappyTooth was founded by Dr. Thushara Sudhakaran, an endodontist whose practice is built on a single principle, save the tooth before considering extraction. She completed her Masters in Endodontics and Conservative Dentistry from A B Shetty Memorial Institute of Dental Sciences, Mangalore in 2017, and went on to practice at Apollo White Dental in Hyderabad before returning to Kerala to build her own clinics.
                 </p>
                 <p>
-                  She has completed over a thousand root canal treatments — including single-sitting procedures and complex retreatments of previously failed root canals. As Clinical Director, she sets the clinical standards that apply across both HappyTooth locations.
+                  She has completed over a thousand root canal treatments, including single-sitting procedures and complex retreatments of previously failed root canals. As Clinical Director, she sets the clinical standards that apply across both HappyTooth locations.
                 </p>
               </div>
 

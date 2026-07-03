@@ -31,32 +31,32 @@ export default function Home() {
   const whyChooseUs = [
     {
       num: "01",
-      title: "A specialist treats you — not a generalist pretending to be one",
-      desc: "Dr. Thushara Sudhakaran holds an MDS in Endodontics. That is a postgraduate specialisation earned over three years — specifically in root canal treatment and dental pulp diseases. When you need a root canal here, you are treated by the person who trained to do exactly that.",
+      title: "A specialist treats you, not a generalist pretending to be one",
+      desc: "Dr. Thushara Sudhakaran holds an MDS in Endodontics. That is a postgraduate specialisation earned over three years, specifically in root canal treatment and dental pulp diseases. When you need a root canal here, you are treated by the person who trained to do exactly that.",
     },
     {
       num: "02",
-      title: "We tell you what we find — all of it, including the small stuff",
-      desc: "A full clinical examination takes time. We do it properly. If there is early decay forming between two teeth, we tell you — and show you on the X-ray. Small problems cost little to fix. The same problems left for two years cost considerably more. You deserve to know what is actually in your mouth.",
+      title: "We tell you what we find, all of it, including the small stuff",
+      desc: "A full clinical examination takes time. We do it properly. If there is early decay forming between two teeth, we tell you, and show you on the X-ray. Small problems cost little to fix. The same problems left for two years cost considerably more. You deserve to know what is actually in your mouth.",
     },
     {
       num: "03",
       title: "Modern equipment used correctly, not just displayed in the brochure",
-      desc: "Digital X-rays, rotary endodontic systems, ultrasonic scalers, intraoral scanners — we have them and we use them as intended. Good equipment in the hands of trained clinicians produces better outcomes. It is that straightforward.",
+      desc: "Digital X-rays, rotary endodontic systems, ultrasonic scalers, intraoral scanners, we have them and we use them as intended. Good equipment in the hands of trained clinicians produces better outcomes. It is that straightforward.",
     },
     {
       num: "04",
-      title: "We see children the right way — with patience, not just a small chair",
-      desc: "A child's first dental experience shapes how they feel about dentists for decades. We take time with young patients. No rushing, no dismissing their anxiety, no 'just open wide.' Children who leave here without fear come back when they need to — and that is what protects their teeth long-term.",
+      title: "We see children the right way, with patience, not just a small chair",
+      desc: "A child's first dental experience shapes how they feel about dentists for decades. We take time with young patients. No rushing, no dismissing their anxiety, no 'just open wide.' Children who leave here without fear come back when they need to, and that is what protects their teeth long-term.",
     },
     {
       num: "05",
       title: "You get a treatment plan with a price before anything starts",
-      desc: "Before we begin any procedure, you know what it involves, how many visits it requires, and what it costs. No mid-treatment surprises. No discovering halfway through that the total is three times what you expected. Every treatment decision is yours to make — informed, not pressured.",
+      desc: "Before we begin any procedure, you know what it involves, how many visits it requires, and what it costs. No mid-treatment surprises. No discovering halfway through that the total is three times what you expected. Every treatment decision is yours to make, informed, not pressured.",
     },
     {
       num: "06",
-      title: "Emergency cases get seen — not added to a waiting list",
+      title: "Emergency cases get seen, not added to a waiting list",
       desc: "We keep capacity for same-day emergency appointments. If you call us with a dental abscess, a tooth knocked loose, or pain that has stopped you sleeping, we will see you. Dental emergencies treated quickly stay manageable. Left waiting, they get significantly worse.",
     },
   ];
@@ -96,7 +96,7 @@ export default function Home() {
             {/* Left Column: Headings & Selector */}
             <div className="lg:col-span-6 space-y-6 text-center lg:text-left">
               <span className="inline-block text-primary-teal font-extrabold text-xs tracking-widest uppercase bg-primary-teal/15 py-2 px-5 rounded-full">
-                Specialist Dental Clinic · Thiruvananthapuram
+                Specialist Dental Clinic | Thiruvananthapuram
               </span>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-navy-blue leading-tight">
                 Your Teeth <br />
@@ -104,7 +104,7 @@ export default function Home() {
                 <span className="bg-gradient-to-r from-primary-teal to-accent-teal bg-clip-text text-transparent">Than Just Fine.</span>
               </h1>
               <p className="text-sm sm:text-base md:text-lg text-soft-gray leading-relaxed max-w-xl mx-auto lg:mx-0">
-                HappyTooth has been saving teeth in Thiruvananthapuram since 2021. Our Kallambalam Root Canal Centre built that reputation — honest answers, specialist-led treatment, and a dentist who actually explains what is going on. Now we are bringing that same standard to a larger, state-of-the-art specialist facility: the new Smile Studio in Murukkumpuzha, equipped for everything from a routine clean to a full smile transformation.
+                HappyTooth has been saving teeth in Thiruvananthapuram since 2021. Our Kallambalam Root Canal Centre built that reputation, honest answers, specialist-led treatment, and a dentist who actually explains what is going on. Now we are bringing that same standard to a larger, state-of-the-art specialist facility: the new Smile Studio in Murukkumpuzha, equipped for everything from a routine clean to a full smile transformation.
               </p>
 
               {/* Clean trust checkmarks row */}
@@ -252,19 +252,19 @@ export default function Home() {
               {/* Quote Block */}
               <div className="border-l-4 border-primary-teal pl-4 py-2 bg-white rounded-r-xl shadow-xs">
                 <p className="text-sm md:text-base font-bold text-navy-blue italic">
-                  “A tooth is worth saving. Almost every tooth that someone wants extracted — I want to try to save first.”
+                  “A tooth is worth saving. Almost every tooth that someone wants extracted, I want to try to save first.”
                 </p>
               </div>
 
               <div className="space-y-4 text-xs md:text-sm text-soft-gray leading-relaxed">
                 <p>
-                  Dr. Thushara Sudhakaran completed her BDS from a recognised dental college and went on to earn her MDS in Endodontics — the specialisation that covers root canal treatment, dental pulp disease, and the science of saving teeth that have been badly damaged or infected. She has been in clinical practice since 2021, during which time she has built a reputation in Thiruvananthapuram for being thorough, honest, and technically precise.
+                  Dr. Thushara Sudhakaran completed her BDS from a recognised dental college and went on to earn her MDS in Endodontics, the specialisation that covers root canal treatment, dental pulp disease, and the science of saving teeth that have been badly damaged or infected. She has been in clinical practice since 2021, during which time she has built a reputation in Thiruvananthapuram for being thorough, honest, and technically precise.
                 </p>
                 <p>
-                  She does not oversell treatment. If a tooth can be saved, she will tell you how. If it cannot, she will explain why clearly — and discuss the best replacement option for your situation. Patients who have come to her expecting an extraction have left with their tooth intact more often than they expected.
+                  She does not oversell treatment. If a tooth can be saved, she will tell you how. If it cannot, she will explain why clearly, and discuss the best replacement option for your situation. Patients who have come to her expecting an extraction have left with their tooth intact more often than they expected.
                 </p>
                 <p>
-                  The Smile Studio is her larger vision — a clinic with the space, equipment, and clinical team to handle the full range of what her patients need, without referring them elsewhere. She runs the clinical side of the clinic; her husband Gokul manages the operations. It is a family practice, built with a long-term view.
+                  The Smile Studio is her larger vision, a clinic with the space, equipment, and clinical team to handle the full range of what her patients need, without referring them elsewhere. She runs the clinical side of the clinic; her husband Gokul manages the operations. It is a family practice, built with a long-term view.
                 </p>
               </div>
 
@@ -301,7 +301,7 @@ export default function Home() {
                   HappyTooth did not appear out of nowhere. Starting with our established Kallambalam clinic, we have expanded to a second specialist location in Murukkumpuzha to serve more patients across Thiruvananthapuram.
                 </p>
                 <p>
-                  Our clinics are what happens when you take that same clinical standard, add space, add technology, and build facilities that can handle everything in one place — so patients do not have to run between clinics, get conflicting advice, or wait months for a specialist referral.
+                  Our clinics are what happens when you take that same clinical standard, add space, add technology, and build facilities that can handle everything in one place, so patients do not have to run between clinics, get conflicting advice, or wait months for a specialist referral.
                 </p>
                 <p className="text-xs md:text-sm font-semibold italic text-navy-blue">
                   “Saving Teeth. Designing Smiles.” That is our tagline, and it is literal.
@@ -314,7 +314,7 @@ export default function Home() {
                   The Kallambalam Practice
                 </h4>
                 <p className="text-xs text-soft-gray leading-relaxed">
-                  Our original clinic — Happy Tooth Dental Care & Root Canal Centre in Kallambalam — has been treating patients since 2021. HappyTooth Smile Studio brings that same standard to a larger, fully-equipped specialist studio.
+                  Our original clinic, Happy Tooth Dental Care & Root Canal Centre in Kallambalam, has been treating patients since 2021. HappyTooth Smile Studio brings that same standard to a larger, fully-equipped specialist studio.
                 </p>
               </div>
             </div>
@@ -349,7 +349,7 @@ export default function Home() {
               <span className="text-primary-teal bg-gradient-to-r from-primary-teal to-accent-teal bg-clip-text text-transparent">most clinics do not.</span>
             </h2>
             <p className="text-soft-gray text-xs md:text-sm leading-relaxed max-w-lg mx-auto">
-              Being a good dental clinic is not complicated — but it does require some things that are easy to skip. Here is what we do not skip.
+              Being a good dental clinic is not complicated, but it does require some things that are easy to skip. Here is what we do not skip.
             </p>
           </div>
 
@@ -413,7 +413,7 @@ export default function Home() {
                   Most people in Kazhakoottam, Attingal, Pothencode, Kallambalam, and the surrounding areas have been making a long, tiring trip to the city every single time they need anything beyond a basic filling. That should not be the case.
                 </p>
                 <p className="border-l-4 border-primary-teal pl-4 py-1.5 bg-bg-light-blue/40 rounded-r-xl font-medium text-navy-blue">
-                  HappyTooth brings specialist-level dental care — root canal, smile design, implants, and orthodontics — directly to your own backyard.
+                  HappyTooth brings specialist-level dental care, root canal, smile design, implants, and orthodontics, directly to your own backyard.
                 </p>
               </div>
 
@@ -629,11 +629,11 @@ export default function Home() {
               branch="Murukkumpuzha, Thiruvananthapuram"
               badge="Flagship Studio · Open Daily"
               status="Open All 7 Days"
-              address="Ground Floor, Mangalasseri Tower, Murukkumpuzha, Thiruvananthapuram – 695302"
+              address="Ground Floor, Mangalasseri Tower, Murukkumpuzha, Thiruvananthapuram to 695302"
               phone="+91 73561 00602"
               telLink="tel:+917356100602"
               waLink="https://wa.me/917356100602"
-              timings="9:30 AM – 6:30 PM (All 7 Days)"
+              timings="9:30 AM to 6:30 PM (All 7 Days)"
               parking="Ample private parking (fits 6+ cars)"
               mapUrl="https://maps.google.com/?q=HappyTooth+Smile+Studio,+Murukkumpuzha,+Thiruvananthapuram"
             />
@@ -643,11 +643,11 @@ export default function Home() {
               branch="Kallambalam, Thiruvananthapuram"
               badge="Root Canal Centre · Serving since 2021"
               status="Closed on Sundays"
-              address="Mavinmoodu, Kallambalam–Varkala Road, Kallambalam, Thiruvananthapuram – 695605"
+              address="Mavinmoodu, Kallambalam to Varkala Road, Kallambalam, Thiruvananthapuram to 695605"
               phone="+91 87144 70808"
               telLink="tel:+918714470808"
               waLink="https://wa.me/918714470808"
-              timings="9:30 AM – 6:30 PM (Monday to Saturday)"
+              timings="9:30 AM to 6:30 PM (Monday to Saturday)"
               parking="Parking available"
               mapUrl="https://maps.app.goo.gl/ve3hNRyxmV5PFGxR7"
             />
@@ -669,7 +669,7 @@ export default function Home() {
             See what proper dental care feels like.
           </h2>
           <p className="text-gray-300 text-xs sm:text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
-            A consultation is the best place to start — especially if it has been a while since you had a proper check-up, or if you have been putting off treatment because you were not sure where to go. We will examine your teeth, explain what we find, and give you a clear plan. No commitment required at that stage.
+            A consultation is the best place to start, especially if it has been a while since you had a proper check-up, or if you have been putting off treatment because you were not sure where to go. We will examine your teeth, explain what we find, and give you a clear plan. No commitment required at that stage.
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 pt-4">
             <Link
