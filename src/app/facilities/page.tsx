@@ -324,7 +324,7 @@ export default function Facilities() {
                 <h2 className="text-3xl font-extrabold text-navy-blue">
                   {`This is the part most patients don't see, and that's exactly why it matters`}
                 </h2>
-                <p className="text-soft-gray text-base leading-relaxed">
+                <p className="text-soft-gray text-base leading-relaxed text-justify hyphens-auto">
                   The cleanliness of instruments used in your mouth is non-negotiable. At Smile Studio, every reusable instrument goes through a validated sterilisation cycle before it is used again.
                 </p>
               </div>
@@ -334,10 +334,10 @@ export default function Facilities() {
                   <span className="w-2.5 h-2.5 bg-primary-teal rounded-full"></span>
                   Class B Autoclave (Hospital Standard)
                 </h4>
-                <p className="text-xs md:text-sm text-soft-gray leading-relaxed">
+                <p className="text-xs md:text-sm text-soft-gray leading-relaxed text-justify hyphens-auto">
                   An autoclave sterilises instruments using high-pressure steam, killing all bacteria, viruses, fungal spores, and other microorganisms. Class B is the highest standard of autoclave, it removes air from the chamber in a pre-vacuum cycle before the steam enters, which ensures that even complex instruments with narrow channels and hollow sections are fully sterilised throughout. Not just on the surface. This is the standard used in hospitals and surgical theatres. We apply the same standard here.
                 </p>
-                <div className="bg-white py-3.5 px-5 rounded-2xl border border-gray-100 text-xs font-bold text-navy-blue">
+                <div className="bg-white py-3.5 px-5 rounded-2xl border border-gray-100 text-xs font-bold text-navy-blue text-justify hyphens-auto">
                   Every instrument that enters your mouth has completed a full Class B sterilisation cycle. No exceptions. Disposable items, needles, gloves, suction tips, are used once and discarded.
                 </div>
               </div>
