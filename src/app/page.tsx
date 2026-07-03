@@ -67,8 +67,19 @@ export default function Home() {
       setIsLocationDropdownOpen(true);
       return;
     }
+
+    const waNumber = selectedLocation.includes("Kallambalam") ? "918714470808" : "917356100602";
+    const textMsg = `Hello HappyTooth! I would like to book a slot for ${selectedService} at ${selectedLocation}. Please let me know the available times.`;
+    const waLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(textMsg)}`;
+
     setShowQuickBookAlert(true);
-    setTimeout(() => setShowQuickBookAlert(false), 5000);
+
+    // Open WhatsApp in a new tab after 1.2s delay so they can read the toast message first
+    setTimeout(() => {
+      window.open(waLink, "_blank");
+    }, 1200);
+
+    setTimeout(() => setShowQuickBookAlert(false), 6000);
   };
 
   return (
@@ -81,12 +92,12 @@ export default function Home() {
 
         {/* Quick booking Toast alert overlay */}
         {showQuickBookAlert && (
-          <div className="fixed top-24 lg:top-36 right-5 bg-white border-l-4 border-primary-teal text-navy-blue py-4 px-6 rounded-2xl shadow-2xl z-[10000] animate-fade-in-up max-w-sm flex items-start gap-3 whitespace-normal">
-            <span className="w-6 h-6 rounded-full bg-primary-teal/10 flex items-center justify-center text-primary-teal text-xs font-bold shrink-0 mt-0.5">✓</span>
+          <div className="fixed top-24 lg:top-36 right-5 bg-white border-l-4 border-primary-teal text-navy-blue py-5 px-6 rounded-2xl shadow-2xl z-[10000] animate-fade-in-up max-w-sm sm:max-w-md flex items-start gap-4 whitespace-normal">
+            <span className="w-8 h-8 rounded-full bg-primary-teal/10 flex items-center justify-center text-primary-teal text-sm font-bold shrink-0 mt-0.5">✓</span>
             <div>
-              <p className="text-xs font-black text-navy-blue">Request Initiated!</p>
-              <p className="text-[11px] text-soft-gray mt-1 leading-relaxed">
-                Preferred slot for <strong className="text-navy-blue">{selectedService}</strong> at <strong className="text-navy-blue">{selectedLocation}</strong> has been selected. Our clinical desk will call or text you shortly on WhatsApp to confirm your appointment time.
+              <p className="text-sm sm:text-base font-black text-navy-blue">WhatsApp Booking Initiated!</p>
+              <p className="text-xs sm:text-sm text-soft-gray mt-1.5 leading-relaxed">
+                Preferred slot for <strong className="text-navy-blue">{selectedService}</strong> at <strong className="text-navy-blue">{selectedLocation}</strong> has been prepared. We are opening WhatsApp in a new window to instantly connect you with our clinical desk.
               </p>
             </div>
           </div>
