@@ -97,7 +97,7 @@ export default function Header() {
                     alt="HappyTooth Logo"
                     width={280}
                     height={80}
-                    className="w-auto h-14 lg:h-20 object-contain"
+                    className="w-auto h-12 lg:h-16 xl:h-18 object-contain"
                     priority
                   />
                 </div>
@@ -112,7 +112,7 @@ export default function Header() {
             {/* Right Group: Desktop Navigation & CTA Button */}
             <div className="hidden lg:flex items-center gap-8">
               {/* Desktop Navigation */}
-              <nav className="flex space-x-6 items-center">
+              <nav className="flex space-x-4 xl:space-x-5 items-center">
                 {navLinks.map((link) => {
                   if (link.dropdown) {
                     return (
