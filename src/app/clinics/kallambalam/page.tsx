@@ -63,28 +63,29 @@ export default function KallambalamClinic() {
             <p className="text-soft-gray text-xs md:text-sm leading-relaxed">
               Find directions, timings, and direct contact options for our established Kallambalam clinic below.
             </p>
-                  {clinics
-              .filter((c) => c.id === "kallambalam")
-              .map((clinic, idx) => {
-                return (
-                  <div key={idx} className="max-w-3xl mx-auto">
-                    <ClinicCard
-                      name={clinic.name}
-                      branch={clinic.branch}
-                      badge={clinic.badge}
-                      status={clinic.status}
-                      address={clinic.address}
-                      phone={clinic.phone}
-                      telLink={clinic.telLink}
-                      waLink={clinic.waLink}
-                      timings={clinic.timings}
-                      parking={clinic.parking}
-                      mapUrl={clinic.mapUrl}
-                    />
-                  </div>
-                );
-              })}
           </div>
+
+          {clinics
+            .filter((c) => c.id === "kallambalam")
+            .map((clinic, idx) => {
+              return (
+                <div key={idx} className="max-w-3xl mx-auto">
+                  <ClinicCard
+                    name={clinic.name}
+                    branch={clinic.branch}
+                    badge={clinic.badge}
+                    status={clinic.status}
+                    address={clinic.address}
+                    phone={clinic.phone}
+                    telLink={clinic.telLink}
+                    waLink={clinic.waLink}
+                    timings={clinic.timings}
+                    parking={clinic.parking}
+                    mapUrl={clinic.mapUrl}
+                  />
+                </div>
+              );
+            })}
         </div>
       </section>
     </div>
