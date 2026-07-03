@@ -63,35 +63,36 @@ export default function Contact() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-            {/* Clinics separate spaces (Left Column) */}
-            <div className="lg:col-span-8 space-y-12">
-              <div className="grid grid-cols-1 gap-8">
-                {clinics.map((clinic, idx) => (
-                  <ClinicCard
-                    key={idx}
-                    name={clinic.name}
-                    branch={clinic.branch}
-                    badge={clinic.badge}
-                    status={clinic.status}
-                    address={clinic.address}
-                    phone={clinic.phone}
-                    telLink={clinic.telLink}
-                    waLink={clinic.waLink}
-                    timings={clinic.timings}
-                    parking={clinic.parking}
-                    mapUrl={clinic.mapUrl}
-                  />
-                ))}
-              </div>
+          {/* 1. Clinics cards side-by-side */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            {clinics.map((clinic, idx) => (
+              <ClinicCard
+                key={idx}
+                name={clinic.name}
+                branch={clinic.branch}
+                badge={clinic.badge}
+                status={clinic.status}
+                address={clinic.address}
+                phone={clinic.phone}
+                telLink={clinic.telLink}
+                waLink={clinic.waLink}
+                timings={clinic.timings}
+                parking={clinic.parking}
+                mapUrl={clinic.mapUrl}
+              />
+            ))}
+          </div>
 
-              {/* Extra Help Area */}
+          {/* 2. Extra info and Appointment form side-by-side */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            {/* Extra Help Area (Left) */}
+            <div className="lg:col-span-6 space-y-8">
               <div className="bg-bg-light-blue/20 rounded-3xl p-6 md:p-8 border border-gray-150 space-y-4">
                 <h4 className="font-extrabold text-navy-blue text-base flex items-center gap-2">
                   <span className="w-2.5 h-2.5 bg-primary-teal rounded-full"></span>
                   Centralized Email & Record Submission
                 </h4>
-                <p className="text-xs md:text-sm text-soft-gray leading-relaxed">
+                <p className="text-xs md:text-sm text-soft-gray leading-relaxed text-justify hyphens-auto">
                   For administrative matters, digital dental X-ray/records submission, international case evaluations, or general dental tourism feedback, please email our centralized team:
                 </p>
                 <div className="bg-white py-3.5 px-6 rounded-2xl border border-gray-100 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 shadow-xs">
@@ -109,14 +110,12 @@ export default function Contact() {
                   </a>
                 </div>
               </div>
-
             </div>
 
-            {/* Appointment Form (Right Column) */}
-            <div className="lg:col-span-4">
+            {/* Appointment Form (Right) */}
+            <div className="lg:col-span-6">
               <AppointmentForm />
             </div>
-
           </div>
         </div>
       </section>

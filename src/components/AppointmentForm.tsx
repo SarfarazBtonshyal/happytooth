@@ -38,7 +38,7 @@ export default function AppointmentForm() {
   };
 
   return (
-    <div className="bg-white rounded-3xl shadow-2xl shadow-navy-blue/5 border border-gray-100 p-6 md:p-8 relative overflow-hidden">
+    <div className="bg-white rounded-[2rem] shadow-2xl shadow-navy-blue/5 border border-gray-150 p-8 md:p-10 relative overflow-hidden">
       {/* Decorative gradient border at top */}
       <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary-teal via-accent-teal to-gold"></div>
 
@@ -74,10 +74,10 @@ export default function AppointmentForm() {
       )}
 
       <div className="mb-6">
-        <h3 className="text-xl md:text-2xl font-extrabold text-navy-blue">
+        <h3 className="text-2xl md:text-3xl font-black text-navy-blue">
           Book an Appointment
         </h3>
-        <p className="text-xs text-soft-gray mt-1">
+        <p className="text-sm text-soft-gray mt-1.5">
           Fill in your details and we&apos;ll get back to confirm your appointment.
         </p>
       </div>
@@ -87,7 +87,7 @@ export default function AppointmentForm() {
         <div className="relative">
           <label 
             htmlFor="name" 
-            className={`block text-xs font-bold transition-colors duration-200 mb-1.5 ${
+            className={`block text-sm font-extrabold transition-colors duration-200 mb-1.5 ${
               focusedField === "name" ? "text-primary-teal" : "text-navy-blue"
             }`}
           >
@@ -102,8 +102,8 @@ export default function AppointmentForm() {
             onChange={handleChange}
             onFocus={() => setFocusedField("name")}
             onBlur={() => setFocusedField(null)}
-            placeholder="John Doe"
-            className={`w-full text-sm border rounded-xl py-3.5 px-4 outline-none transition-all duration-300 ${
+            placeholder=""
+            className={`w-full text-base border rounded-2xl py-4 px-5 outline-none transition-all duration-300 ${
               focusedField === "name" 
                 ? "border-primary-teal ring-2 ring-primary-teal/15 bg-white" 
                 : "border-gray-200 bg-gray-50/50 hover:bg-gray-50 focus:bg-white"
@@ -117,7 +117,7 @@ export default function AppointmentForm() {
           <div className="relative">
             <label 
               htmlFor="phone" 
-              className={`block text-xs font-bold transition-colors duration-200 mb-1.5 ${
+              className={`block text-sm font-extrabold transition-colors duration-200 mb-1.5 ${
                 focusedField === "phone" ? "text-primary-teal" : "text-navy-blue"
               }`}
             >
@@ -132,8 +132,8 @@ export default function AppointmentForm() {
               onChange={handleChange}
               onFocus={() => setFocusedField("phone")}
               onBlur={() => setFocusedField(null)}
-              placeholder="+91 XXXXX XXXXX"
-              className={`w-full text-sm border rounded-xl py-3.5 px-4 outline-none transition-all duration-300 ${
+              placeholder=""
+              className={`w-full text-base border rounded-2xl py-4 px-5 outline-none transition-all duration-300 ${
                 focusedField === "phone" 
                   ? "border-primary-teal ring-2 ring-primary-teal/15 bg-white" 
                   : "border-gray-200 bg-gray-50/50 hover:bg-gray-50 focus:bg-white"
@@ -145,7 +145,7 @@ export default function AppointmentForm() {
           <div className="relative">
             <label 
               htmlFor="email" 
-              className={`block text-xs font-bold transition-colors duration-200 mb-1.5 ${
+              className={`block text-sm font-extrabold transition-colors duration-200 mb-1.5 ${
                 focusedField === "email" ? "text-primary-teal" : "text-navy-blue"
               }`}
             >
@@ -160,8 +160,8 @@ export default function AppointmentForm() {
               onChange={handleChange}
               onFocus={() => setFocusedField("email")}
               onBlur={() => setFocusedField(null)}
-              placeholder="example@mail.com"
-              className={`w-full text-sm border rounded-xl py-3.5 px-4 outline-none transition-all duration-300 ${
+              placeholder=""
+              className={`w-full text-base border rounded-2xl py-4 px-5 outline-none transition-all duration-300 ${
                 focusedField === "email" 
                   ? "border-primary-teal ring-2 ring-primary-teal/15 bg-white" 
                   : "border-gray-200 bg-gray-50/50 hover:bg-gray-50 focus:bg-white"
@@ -174,7 +174,7 @@ export default function AppointmentForm() {
         <div className="relative">
           <label 
             htmlFor="date" 
-            className={`block text-xs font-bold transition-colors duration-200 mb-1.5 ${
+            className={`block text-sm font-extrabold transition-colors duration-200 mb-1.5 ${
               focusedField === "date" ? "text-primary-teal" : "text-navy-blue"
             }`}
           >
@@ -189,7 +189,7 @@ export default function AppointmentForm() {
             onChange={handleChange}
             onFocus={() => setFocusedField("date")}
             onBlur={() => setFocusedField(null)}
-            className={`w-full text-sm border rounded-xl py-3.5 px-4 outline-none transition-all duration-300 ${
+            className={`w-full text-base border rounded-2xl py-4 px-5 outline-none transition-all duration-300 ${
               focusedField === "date" 
                 ? "border-primary-teal ring-2 ring-primary-teal/15 bg-white" 
                 : "border-gray-200 bg-gray-50/50 hover:bg-gray-50 focus:bg-white"
@@ -201,7 +201,7 @@ export default function AppointmentForm() {
         <div className="relative">
           <label 
             htmlFor="location" 
-            className={`block text-xs font-bold transition-colors duration-200 mb-1.5 ${
+            className={`block text-sm font-extrabold transition-colors duration-200 mb-1.5 ${
               focusedField === "location" ? "text-primary-teal" : "text-navy-blue"
             }`}
           >
@@ -215,7 +215,7 @@ export default function AppointmentForm() {
             onChange={handleChange}
             onFocus={() => setFocusedField("location")}
             onBlur={() => setFocusedField(null)}
-            className={`w-full text-sm border rounded-xl py-3.5 px-4 outline-none transition-all duration-300 text-navy-blue ${
+            className={`w-full text-base border rounded-2xl py-4 px-5 outline-none transition-all duration-300 text-navy-blue ${
               focusedField === "location" 
                 ? "border-primary-teal ring-2 ring-primary-teal/15 bg-white" 
                 : "border-gray-200 bg-gray-50/50 hover:bg-gray-50 focus:bg-white"
@@ -231,7 +231,7 @@ export default function AppointmentForm() {
         <div className="relative">
           <label 
             htmlFor="message" 
-            className={`block text-xs font-bold transition-colors duration-200 mb-1.5 ${
+            className={`block text-sm font-extrabold transition-colors duration-200 mb-1.5 ${
               focusedField === "message" ? "text-primary-teal" : "text-navy-blue"
             }`}
           >
@@ -246,7 +246,7 @@ export default function AppointmentForm() {
             onFocus={() => setFocusedField("message")}
             onBlur={() => setFocusedField(null)}
             placeholder="Describe your dental concern or any specific requirements..."
-            className={`w-full text-sm border rounded-xl py-3.5 px-4 outline-none transition-all duration-300 resize-none ${
+            className={`w-full text-base border rounded-2xl py-4 px-5 outline-none transition-all duration-300 resize-none ${
               focusedField === "message" 
                 ? "border-primary-teal ring-2 ring-primary-teal/15 bg-white" 
                 : "border-gray-200 bg-gray-50/50 hover:bg-gray-50 focus:bg-white"
@@ -258,7 +258,7 @@ export default function AppointmentForm() {
         <button
           type="submit"
           disabled={status === "submitting"}
-          className="w-full relative overflow-hidden group bg-primary-teal text-white font-bold py-4 rounded-xl transition duration-300 shadow-md hover:shadow-xl hover:shadow-primary-teal/10 flex items-center justify-center gap-2 transform active:scale-98 disabled:opacity-75 disabled:pointer-events-none"
+          className="w-full relative overflow-hidden group bg-primary-teal text-white font-bold py-4 px-8 text-base rounded-2xl transition duration-300 shadow-md hover:shadow-xl hover:shadow-primary-teal/10 flex items-center justify-center gap-2 transform active:scale-98 disabled:opacity-75 disabled:pointer-events-none"
         >
           <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-accent-teal to-primary-teal opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
           
@@ -292,7 +292,7 @@ export default function AppointmentForm() {
                 <span>Send Appointment Request</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+                  className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
