@@ -143,7 +143,7 @@ export default function About() {
               </span>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-blue leading-tight">
                 A family dental clinic that takes <br />
-                <span className="text-primary-teal bg-gradient-to-r from-primary-teal to-accent-teal bg-clip-text text-transparent">specialist care seriously</span>
+                <span className="text-accent-teal">specialist care seriously</span>
               </h2>
               <p className="text-soft-gray text-base leading-relaxed text-justify hyphens-auto">
                 {`HappyTooth covers the full range of dental needs, from a child's first visit to complex restorative treatment in later years. What sets us apart is not the treatments we offer, but the standard to which we deliver them.`}

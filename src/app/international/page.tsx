@@ -111,7 +111,7 @@ export default function InternationalPatients() {
               </span>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-blue leading-tight">
                 Quality dental care, <br />
-                <span className="text-primary-teal bg-gradient-to-r from-primary-teal to-accent-teal bg-clip-text text-transparent">planned around your visit.</span>
+                <span className="text-accent-teal">planned around your visit.</span>
               </h2>
               <p className="text-soft-gray text-base leading-relaxed">
                 {`Whether you're an NRI visiting family, a tourist passing through Thiruvananthapuram, or travelling specifically for treatment, we make sure your dental care fits around your time here, not the other way around.`}

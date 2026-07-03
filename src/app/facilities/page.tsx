@@ -121,7 +121,7 @@ export default function Facilities() {
               </span>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-blue leading-tight">
                 Designed for comfort. <br />
-                <span className="text-primary-teal bg-gradient-to-r from-primary-teal to-accent-teal bg-clip-text text-transparent">Built for precise outcomes.</span>
+                <span className="text-accent-teal">Built for precise outcomes.</span>
               </h2>
               
               <div className="space-y-4 text-soft-gray text-base leading-relaxed">

@@ -113,7 +113,7 @@ export default function Home() {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-navy-blue leading-tight">
                 Your Teeth <br />
                 Deserve Better <br />
-                <span className="bg-gradient-to-r from-primary-teal to-accent-teal bg-clip-text text-transparent">Than Just Fine.</span>
+                <span className="text-accent-teal">Than Just Fine.</span>
               </h1>
               <p className="text-sm sm:text-base md:text-lg text-soft-gray leading-relaxed max-w-xl mx-auto lg:mx-0">
                 HappyTooth has been saving teeth in Thiruvananthapuram since 2021. Our Kallambalam Root Canal Centre built that reputation, honest answers, specialist-led treatment, and a dentist who actually explains what is going on. Now we are bringing that same standard to a larger, state-of-the-art specialist facility: the new Smile Studio in Murukkumpuzha, equipped for everything from a routine clean to a full smile transformation.
@@ -401,7 +401,7 @@ export default function Home() {
               </span>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-blue leading-tight">
                 Serving since 2021. <br />
-                <span className="text-primary-teal bg-gradient-to-r from-primary-teal to-accent-teal bg-clip-text text-transparent">Two locations, one standard.</span>
+                <span className="text-accent-teal">Two locations, one standard.</span>
               </h2>
 
               <div className="space-y-4 text-soft-gray leading-relaxed text-sm md:text-base">
@@ -454,7 +454,7 @@ export default function Home() {
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-blue leading-tight">
               Things we do that <br />
-              <span className="text-primary-teal bg-gradient-to-r from-primary-teal to-accent-teal bg-clip-text text-transparent">most clinics do not.</span>
+              <span className="text-accent-teal">most clinics do not.</span>
             </h2>
             <p className="text-soft-gray text-xs md:text-sm leading-relaxed max-w-lg mx-auto">
               Being a good dental clinic is not complicated, but it does require some things that are easy to skip. Here is what we do not skip.
@@ -510,7 +510,7 @@ export default function Home() {
               </span>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-blue leading-tight">
                 Why travel to the city for <br />
-                <span className="text-primary-teal bg-gradient-to-r from-primary-teal to-accent-teal bg-clip-text text-transparent">specialist treatments?</span>
+                <span className="text-accent-teal">specialist treatments?</span>
               </h2>
 
               <div className="space-y-4 text-soft-gray leading-relaxed text-sm md:text-base">

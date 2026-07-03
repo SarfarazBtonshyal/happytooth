@@ -154,13 +154,9 @@
   }
 }
 
-/* Fallback/compatibility class for standard gradient text utility */
+/* Single solid accent color — no gradient text anywhere */
 .text-gradient {
-  background: linear-gradient(135deg, #101E2E 0%, #AC9266 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  display: inline-block;
+  color: #AC9266;
 }
 
 /* Enforce exact heights for header and spacer to prevent overlapping and scroll bugs */
