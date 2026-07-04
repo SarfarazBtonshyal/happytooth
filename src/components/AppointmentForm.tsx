@@ -227,13 +227,13 @@ export default function AppointmentForm() {
             onClick={() => {
               setIsDropdownOpen(!isDropdownOpen);
             }}
-            className={`w-full flex items-center justify-between text-base border rounded-2xl py-4 px-5 outline-none transition-all duration-300 text-left ${
+            className={`w-full flex items-center justify-between text-base border rounded-2xl py-4 px-5 outline-none transition-all duration-300 text-left bg-white ${
               isDropdownOpen 
-                ? "border-primary-teal ring-2 ring-primary-teal/15 bg-[#FAF8F5]" 
-                : "border-gray-200 bg-white hover:border-gray-300"
+                ? "border-primary-teal ring-2 ring-primary-teal/15" 
+                : "border-gray-200 hover:border-gray-300"
             }`}
           >
-            <span className={formData.location ? "text-navy-blue font-bold" : "text-soft-gray font-normal"}>
+            <span className={formData.location ? "text-navy-blue font-normal" : "text-soft-gray font-normal"}>
               {formData.location || "Select Clinic Location..."}
             </span>
             <svg 
@@ -255,7 +255,7 @@ export default function AppointmentForm() {
                   setFormData((prev) => ({ ...prev, location: "" }));
                   setIsDropdownOpen(false);
                 }}
-                className="w-full text-left text-sm font-bold py-3 px-5 hover:bg-bg-light-blue/30 text-soft-gray transition-colors"
+                className="w-full text-left text-sm font-normal py-3 px-5 hover:bg-bg-light-blue/30 text-soft-gray transition-colors"
               >
                 Select Clinic Location...
               </button>
@@ -270,9 +270,9 @@ export default function AppointmentForm() {
                     setFormData((prev) => ({ ...prev, location: loc }));
                     setIsDropdownOpen(false);
                   }}
-                  className={`w-full text-left text-sm font-bold py-3 px-5 transition-colors flex items-center justify-between ${
+                  className={`w-full text-left text-sm font-normal py-3 px-5 transition-colors flex items-center justify-between ${
                     formData.location === loc 
-                      ? "bg-[#FAF7F2] text-accent-teal" 
+                      ? "bg-white text-accent-teal" 
                       : "hover:bg-bg-light-blue/30 text-navy-blue"
                   }`}
                 >
