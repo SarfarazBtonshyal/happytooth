@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/blog",
     "/contact",
     "/faq",
+    "/international",
     "/privacy",
     "/terms",
     "/clinics/kallambalam",
