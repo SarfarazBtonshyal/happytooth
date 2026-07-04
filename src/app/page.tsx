@@ -158,7 +158,7 @@ export default function Home() {
                         setIsServiceDropdownOpen(!isServiceDropdownOpen);
                         setIsLocationDropdownOpen(false);
                       }}
-                      className="w-full flex items-center justify-between text-xs font-bold py-3.5 px-4 bg-gray-50 border border-gray-200 hover:border-primary-teal/40 focus:border-primary-teal rounded-xl outline-none text-navy-blue transition text-left"
+                      className="w-full flex items-center justify-between text-xs font-bold py-3.5 px-4 bg-white border border-gray-200 hover:border-primary-teal/40 focus:border-primary-teal rounded-xl outline-none text-navy-blue transition text-left"
                     >
                       <span className="truncate">{selectedService || "Select Treatment..."}</span>
                       <svg 
@@ -216,7 +216,7 @@ export default function Home() {
                         setIsLocationDropdownOpen(!isLocationDropdownOpen);
                         setIsServiceDropdownOpen(false);
                       }}
-                      className="w-full flex items-center justify-between text-xs font-bold py-3.5 px-4 bg-gray-50 border border-gray-200 hover:border-primary-teal/40 focus:border-primary-teal rounded-xl outline-none text-navy-blue transition text-left"
+                      className="w-full flex items-center justify-between text-xs font-bold py-3.5 px-4 bg-white border border-gray-200 hover:border-primary-teal/40 focus:border-primary-teal rounded-xl outline-none text-navy-blue transition text-left"
                     >
                       <span className="truncate">{selectedLocation || "Select Clinic Location..."}</span>
                       <svg 
