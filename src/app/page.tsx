@@ -158,7 +158,7 @@ export default function Home() {
                         setIsServiceDropdownOpen(!isServiceDropdownOpen);
                         setIsLocationDropdownOpen(false);
                       }}
-                      className="w-full flex items-center justify-between text-xs font-bold py-3.5 px-4 bg-white border border-gray-200 hover:border-primary-teal/40 focus:border-primary-teal rounded-xl outline-none text-navy-blue transition text-left"
+                      className="w-full flex items-center justify-between text-xs font-normal py-3.5 px-4 bg-white border border-gray-200 hover:border-primary-teal/40 focus:border-primary-teal rounded-xl outline-none text-navy-blue transition text-left"
                     >
                       <span className="truncate">{selectedService || "Select Treatment..."}</span>
                       <svg 
@@ -180,7 +180,7 @@ export default function Home() {
                             setSelectedService("");
                             setIsServiceDropdownOpen(false);
                           }}
-                          className="w-full text-left text-xs font-bold py-2.5 px-4 hover:bg-bg-light-blue/30 text-soft-gray transition-colors"
+                          className="w-full text-left text-xs font-normal py-2.5 px-4 hover:bg-bg-light-blue/30 text-soft-gray transition-colors"
                         >
                           Select Treatment...
                         </button>
@@ -192,7 +192,7 @@ export default function Home() {
                               setSelectedService(svc);
                               setIsServiceDropdownOpen(false);
                             }}
-                            className={`w-full text-left text-xs font-bold py-2.5 px-4 transition-colors flex items-center justify-between ${
+                            className={`w-full text-left text-xs font-normal py-2.5 px-4 transition-colors flex items-center justify-between ${
                               selectedService === svc 
                                 ? "bg-[#FAF7F2] text-accent-teal" 
                                 : "hover:bg-bg-light-blue/30 text-navy-blue"
@@ -216,7 +216,7 @@ export default function Home() {
                         setIsLocationDropdownOpen(!isLocationDropdownOpen);
                         setIsServiceDropdownOpen(false);
                       }}
-                      className="w-full flex items-center justify-between text-xs font-bold py-3.5 px-4 bg-white border border-gray-200 hover:border-primary-teal/40 focus:border-primary-teal rounded-xl outline-none text-navy-blue transition text-left"
+                      className="w-full flex items-center justify-between text-xs font-normal py-3.5 px-4 bg-white border border-gray-200 hover:border-primary-teal/40 focus:border-primary-teal rounded-xl outline-none text-navy-blue transition text-left"
                     >
                       <span className="truncate">{selectedLocation || "Select Clinic Location..."}</span>
                       <svg 
