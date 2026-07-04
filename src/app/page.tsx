@@ -851,7 +851,7 @@ export default function Home() {
      <div className="flex flex-col sm:flex-row justify-center items-center gap-4 pt-4">
       <Link
        href="/contact"
-       className="w-full sm:w-auto bg-primary-teal border border-white hover:bg-white hover:text-navy-blue text-white font-bold py-4 px-8 rounded-full transition-all duration-300 shadow-md text-center"
+       className="w-full sm:w-auto border border-white/20 hover:border-white text-white hover:bg-white/10 font-bold py-4 px-8 rounded-full transition-all duration-300 text-center"
       >
        Book a Consultation
       </Link>
