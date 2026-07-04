@@ -23,6 +23,11 @@ export default function Footer() {
   { name: "Preventive Dentistry", path: "/services#Preventive" },
   { name: "Restorative Dentistry", path: "/services#Restorative" },
   { name: "Pediatric Dentistry", path: "/services#Pediatric" },
+  { name: "Dental Implants", path: "/services#DentalImplants" },
+  { name: "Teeth Whitening", path: "/services#TeethWhitening" },
+  { name: "Dental Veneers", path: "/services#DentalVeneers" },
+  { name: "Gum Care", path: "/services#GumCare" },
+  { name: "Emergency Care", path: "/services#EmergencyCare" },
  ];
 
  return (
