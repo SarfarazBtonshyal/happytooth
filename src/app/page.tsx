@@ -616,7 +616,7 @@ export default function Home() {
        <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-blue leading-tight">
         Patient Google Reviews
        </h2>
-       <p className="text-soft-gray text-sm md:text-base max-w-md mx-auto font-medium text-justify ">
+       <p className="text-soft-gray text-sm md:text-base max-w-md mx-auto font-medium text-center">
         Read feedback from patients who completed root canal treatments, pediatric care, and restorative procedures at our clinics.
        </p>
       </div>
