@@ -227,10 +227,10 @@ export default function AppointmentForm() {
             onClick={() => {
               setIsDropdownOpen(!isDropdownOpen);
             }}
-            className={`w-full flex items-center justify-between text-base border rounded-2xl py-4 px-5 outline-none transition-all duration-300 text-left bg-white ${
+            className={`w-full flex items-center justify-between text-base border rounded-2xl py-4 px-5 outline-none transition-all duration-300 text-left ${
               isDropdownOpen 
-                ? "border-primary-teal ring-2 ring-primary-teal/15" 
-                : "border-gray-200 bg-gray-50/50 hover:bg-gray-50"
+                ? "border-primary-teal ring-2 ring-primary-teal/15 bg-[#FAF8F5]" 
+                : "border-gray-200 bg-white hover:border-gray-300"
             }`}
           >
             <span className={formData.location ? "text-navy-blue font-bold" : "text-soft-gray font-normal"}>
