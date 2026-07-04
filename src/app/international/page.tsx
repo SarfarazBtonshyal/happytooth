@@ -193,7 +193,7 @@ export default function InternationalPatients() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {reasons.map((r, idx) => (
-              <div key={idx} className="bg-white p-6 md:p-8 rounded-3xl border border-gray-50/70 shadow-xs flex flex-col gap-2 hover:-translate-y-1 transition duration-300">
+              <div key={idx} className="bg-white p-6 md:p-8 rounded-3xl border border-gray-200 shadow-sm flex flex-col gap-2 hover:-translate-y-1 hover:shadow-md transition duration-300">
                 <h4 className="font-extrabold text-primary-teal text-sm md:text-base flex items-center gap-2">
                   <span className="w-1.5 h-3.5 bg-primary-teal rounded-full"></span>
                   {r.title}
