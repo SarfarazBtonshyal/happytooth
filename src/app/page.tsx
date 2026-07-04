@@ -841,7 +841,7 @@ export default function Home() {
      <span className="text-[10px] font-black text-accent-teal tracking-widest uppercase bg-white/10 py-1.5 px-4 rounded-full inline-block">
       Get Started
      </span>
-     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white">
+     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-white">
       Come in once. <br />
       See what proper dental care feels like.
      </h2>
