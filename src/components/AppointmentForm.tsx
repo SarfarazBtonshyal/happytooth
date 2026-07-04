@@ -317,11 +317,9 @@ export default function AppointmentForm() {
         <button
           type="submit"
           disabled={status === "submitting"}
-          className="w-full relative overflow-hidden group bg-primary-teal text-white font-bold py-4 px-8 text-base rounded-2xl transition duration-300 shadow-md hover:shadow-xl hover:shadow-primary-teal/10 flex items-center justify-center gap-2 transform active:scale-98 disabled:opacity-75 disabled:pointer-events-none"
+          className="w-full bg-navy-blue hover:bg-accent-teal text-white font-bold py-4 px-8 text-base rounded-2xl transition-all duration-300 shadow-sm hover:shadow-md flex items-center justify-center gap-2 active:scale-95 disabled:opacity-75 disabled:pointer-events-none"
         >
-          <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-accent-teal to-primary-teal opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
-          
-          <span className="relative z-10 flex items-center gap-2">
+          <span className="flex items-center gap-2">
             {status === "submitting" ? (
               <>
                 <svg
