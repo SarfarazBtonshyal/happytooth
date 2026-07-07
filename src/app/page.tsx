@@ -87,7 +87,52 @@ export default function Home() {
 
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-      {/* Left Column: Headings & Selector */}
+      {/* Left Column: Overlapping Image Collage */}
+      <ScrollReveal animation="fade-left" className="lg:col-span-6 relative flex justify-center items-center lg:justify-start py-8">
+       <div className="relative w-full max-w-md sm:max-w-lg h-[28rem] md:h-[32rem]">
+        {/* 1. Main Background Image */}
+        <div className="absolute top-4 left-6 w-[80%] h-[75%] rounded-[2rem] overflow-hidden shadow-2xl border border-gray-100 bg-white p-3 z-10 transform hover:scale-[1.01] transition duration-500">
+         <div className="relative w-full h-full rounded-2xl overflow-hidden">
+          <Image
+           src="/images/indian_rct_procedure.png"
+           alt="Indian Dentist performing root canal treatment"
+           fill
+           sizes="(max-width: 768px) 100vw, 450px"
+           className="object-cover"
+           priority
+          />
+         </div>
+        </div>
+
+        {/* 2. Overlapping Card */}
+        <div className="absolute bottom-4 right-4 w-[55%] h-[45%] rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white p-2.5 z-20 transform hover:rotate-1 hover:scale-102 transition duration-500">
+         <div className="relative w-full h-full rounded-xl overflow-hidden">
+          <Image
+           src="/images/dr_thushara.png"
+           alt="Doctor Profile Dr. Thushara Sudhakaran"
+           fill
+           sizes="(max-width: 768px) 50vw, 250px"
+           className="object-cover"
+          />
+         </div>
+        </div>
+
+        {/* 3. Floating Card */}
+        <div className="absolute top-16 left-0 w-[40%] h-[35%] rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white p-2 z-20 transform hover:-rotate-1 hover:scale-102 transition duration-500">
+         <div className="relative w-full h-full rounded-xl overflow-hidden">
+          <Image
+           src="/images/indian_dentist_team.png"
+           alt="Indian Dentist Specialist Team"
+           fill
+           sizes="(max-width: 768px) 40vw, 200px"
+           className="object-cover"
+          />
+         </div>
+        </div>
+       </div>
+      </ScrollReveal>
+
+      {/* Right Column: Headings & Selector */}
       <div className="lg:col-span-6 space-y-6 text-center lg:text-left">
        <ScrollReveal animation="fade-up">
         <span className="inline-block text-primary-teal font-extrabold text-xs tracking-widest uppercase bg-primary-teal/15 py-2 px-5 rounded-full">
@@ -268,52 +313,6 @@ export default function Home() {
        </div>
       </div>
 
-      {/* Right Column: Overlapping Image Collage */}
-      <ScrollReveal animation="fade-left" className="lg:col-span-6 relative flex justify-center items-center lg:justify-end py-8">
-       <div className="relative w-full max-w-md sm:max-w-lg h-[28rem] md:h-[32rem]">
-        {/* 1. Main Background Image */}
-        <div className="absolute top-4 left-6 w-[80%] h-[75%] rounded-[2rem] overflow-hidden shadow-2xl border border-gray-100 bg-white p-3 z-10 transform hover:scale-[1.01] transition duration-500">
-         <div className="relative w-full h-full rounded-2xl overflow-hidden">
-          <Image
-           src="/images/indian_rct_procedure.png"
-           alt="Indian Dentist performing root canal treatment"
-           fill
-           sizes="(max-width: 768px) 100vw, 450px"
-           className="object-cover"
-           priority
-          />
-         </div>
-        </div>
-
-        {/* 2. Overlapping Card */}
-        <div className="absolute bottom-4 right-4 w-[55%] h-[45%] rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white p-2.5 z-20 transform hover:rotate-1 hover:scale-102 transition duration-500">
-         <div className="relative w-full h-full rounded-xl overflow-hidden">
-          <Image
-           src="/images/dr_thushara.png"
-           alt="Doctor Profile Dr. Thushara Sudhakaran"
-           fill
-           sizes="(max-width: 768px) 50vw, 250px"
-           className="object-cover"
-          />
-         </div>
-        </div>
-
-        {/* 3. Floating Card */}
-        <div className="absolute top-16 left-0 w-[40%] h-[35%] rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white p-2 z-20 transform hover:-rotate-1 hover:scale-102 transition duration-500 hidden sm:block">
-         <div className="relative w-full h-full rounded-xl overflow-hidden">
-          <Image
-           src="/images/indian_dentist_team.png"
-           alt="Indian Dentist Specialist Team"
-           fill
-           sizes="(max-width: 768px) 40vw, 200px"
-           className="object-cover"
-          />
-         </div>
-        </div>
-
-
-       </div>
-      </ScrollReveal>
      </div>
     </div>
    </section>
