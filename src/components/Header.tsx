@@ -101,11 +101,11 @@ export default function Header() {
          />
         </div>
        </Link>
-       {/* Tagline */}
-       <div className="hidden xl:flex flex-col pl-4 border-l border-primary-teal/20 leading-tight py-1">
-        <span className="text-[10px] font-black text-navy-blue tracking-widest uppercase">Saving Teeth.</span>
-        <span className="text-[10px] font-black text-primary-teal tracking-widest uppercase">Designing Smiles</span>
-       </div>
+        {/* Tagline */}
+        <div className="flex flex-col pl-3 border-l border-primary-teal/20 leading-tight py-0.5 sm:py-1">
+         <span className="text-[8px] sm:text-[10px] font-black text-navy-blue tracking-widest uppercase">Saving Teeth.</span>
+         <span className="text-[8px] sm:text-[10px] font-black text-primary-teal tracking-widest uppercase">Designing Smiles</span>
+        </div>
       </div>
 
       {/* Right Group: Desktop Navigation & CTA Button */}
