@@ -295,19 +295,19 @@ export default function Facilities() {
       ))}
      </div>
 
-      <ScrollReveal animation="scale">
-       <div className="rounded-[2.5rem] overflow-hidden shadow-xl border border-gray-150 bg-white p-3 relative h-64 md:h-80 hover-lift">
-        <div className="relative w-full h-full rounded-[1.8rem] overflow-hidden img-zoom">
-         <Image
-          src="/images/happytooth-varkala4.jpg"
-          alt="Lobby reception and play zone"
-          fill
-          sizes="(max-width: 1024px) 100vw, 960px"
-          className="object-cover transition-transform duration-700 ease-out"
-         />
+       <ScrollReveal animation="scale">
+        <div className="rounded-[2.5rem] overflow-hidden shadow-xl border border-gray-150 bg-white p-3 relative h-[24rem] md:h-[36rem] hover-lift">
+         <div className="relative w-full h-full rounded-[1.8rem] overflow-hidden bg-bg-light-blue/10 img-zoom">
+          <Image
+           src="/images/happytooth-varkala4.jpg"
+           alt="Lobby reception and play zone"
+           fill
+           sizes="(max-width: 1024px) 100vw, 960px"
+           className="object-contain transition-transform duration-700 ease-out"
+          />
+         </div>
         </div>
-       </div>
-      </ScrollReveal>
+       </ScrollReveal>
 
     </div>
    </section>
